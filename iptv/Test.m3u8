@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:0 tvg-country="TH" tvg-logo="https://play-lh.googleusercontent.com/rsba5M-OM9aZBX_cJKsoxy69eH0UxChtbHQbcFTLdcJ8IApNP51dsMuCg6EaLngOdA=w480-h960-rw" group-title="Thai TV",Thai Rath #1
+http://live.thairath.co.th/trtv2/playlist.m3u8?checkedby:dailyfreeiptvlist.com
+#EXTINF:0 tvg-country="TH" tvg-logo="https://play-lh.googleusercontent.com/rsba5M-OM9aZBX_cJKsoxy69eH0UxChtbHQbcFTLdcJ8IApNP51dsMuCg6EaLngOdA=w480-h960-rw" group-title="Thai TV",Thai Rath #2
+http://live.thairath.co.th/trtv2/playlist_720p/index.m3u8?checkedby:dailyfreeiptvlist.com
