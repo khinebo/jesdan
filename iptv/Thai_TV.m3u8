@@ -9,3 +9,5 @@ https://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8?checkedby:ip
 http://live.thairath.co.th/trtv2/playlist_720p/index.m3u8?checkedby:dailyfreeiptvlist.com
 #EXTINF:0 tvg-country="TH" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7DI_SmJ4ADyqObzydMnO_EpocdqG8irQKgB6D3ZpR&s" group-title="Thai TV",Channel 3
 https://ch3-33-web.cdn.byteark.com/live/playlist.m3u8?x_ark_access_id=D78MkxZFEr5Zr9PE&x_ark_auth_type=ark-v2&x_ark_expires=1669652935&x_ark_max_resolution=720p&x_ark_path_prefix=%2Flive%2F&x_ark_signature=JZU1bYkgsPkxm37BlOY6nQ
+#EXTINF:0 tvg-country="TH" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f9/Nation_TV_logo.png" group-title="Thai TV",Nation TV
+https://stream-04.sg1.dailymotion.com/sec(ccIVIlWaGsSkNrAGI3_YSfKMWer3N9WdvlI39HZ1slbui4onVQRROrZ8IB6MeYWK)/dm/3/x6eoldf/d/live-3.m3u8
