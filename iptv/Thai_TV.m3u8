@@ -2,7 +2,7 @@
 #EXTINF:0 tvg-country="TH" tvg-logo="https://news1live.com/images/social-share-logo.png" group-title="Thai TV",News 1
 http://news1.live14.com/stream/news1.m3u8
 #EXTINF:0 tvg-country="TH" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png" group-title="Thai TV",Channel 5
-http://110.170.117.27:1935/apptv5hd1live/vdo-tv5hd1/playlist.m3u8?checkedby:iptvcat.net
+https://cdn6.goprimetime.info/feed/202205171929/ch5hd/index.m3u8
 #EXTINF:0 tvg-country="TH" tvg-logo="https://i.imgur.com/b4l0w2m.png" group-title="Thai TV",Thai PBS 3
 https://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8?checkedby:iptvcat.net
 #EXTINF:0 tvg-country="TH" tvg-logo="https://play-lh.googleusercontent.com/rsba5M-OM9aZBX_cJKsoxy69eH0UxChtbHQbcFTLdcJ8IApNP51dsMuCg6EaLngOdA=w480-h960-rw" group-title="Thai TV",Thai Rath
