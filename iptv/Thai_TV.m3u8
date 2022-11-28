@@ -3,7 +3,7 @@
 https://ch3-33-web.cdn.byteark.com/live/playlist.m3u8?x_ark_access_id=D78MkxZFEr5Zr9PE&x_ark_auth_type=ark-v2&x_ark_expires=1669652935&x_ark_max_resolution=720p&x_ark_path_prefix=%2Flive%2F&x_ark_signature=JZU1bYkgsPkxm37BlOY6nQ
 #EXTINF:0 tvg-country="TH" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png" group-title="Thai TV",Channel 5
 https://cdn6.goprimetime.info/feed/202205171929/ch5hd/index.m3u8
-#EXTINF:0 tvg-country="TH" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/a9/CH7_TH_1967.svg/revision/latest?cb=20170731084654" group-title="Thai TV",Channel 7
+#EXTINF:0 tvg-country="TH" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png" group-title="Thai TV",Channel 7
 https://cdn6.goprimetime.info/feed/202205171929/ch7hd/index.m3u8
 #EXTINF:0 tvg-country="TH" tvg-logo="https://play-lh.googleusercontent.com/rsba5M-OM9aZBX_cJKsoxy69eH0UxChtbHQbcFTLdcJ8IApNP51dsMuCg6EaLngOdA=w480-h960-rw" group-title="Thai TV",Thai Rath
 http://live.thairath.co.th/trtv2/playlist_720p/index.m3u8?checkedby:dailyfreeiptvlist.com
