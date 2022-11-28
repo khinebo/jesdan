@@ -5,6 +5,8 @@ https://ch3-33-web.cdn.byteark.com/live/playlist.m3u8?x_ark_access_id=D78MkxZFEr
 https://cdn6.goprimetime.info/feed/202205171929/ch5hd/index.m3u8
 #EXTINF:0 tvg-country="TH" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png" group-title="Thai TV",Channel 7
 https://cdn6.goprimetime.info/feed/202205171929/ch7hd/index.m3u8
+#EXTINF:0 tvg-country="TH" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png" group-title="Thai TV",Channel 8
+https://cdn6.goprimetime.info/feed/202205171929/ch8/index.m3u8 
 #EXTINF:0 tvg-country="TH" tvg-logo="https://play-lh.googleusercontent.com/rsba5M-OM9aZBX_cJKsoxy69eH0UxChtbHQbcFTLdcJ8IApNP51dsMuCg6EaLngOdA=w480-h960-rw" group-title="Thai TV",Thai Rath
 http://live.thairath.co.th/trtv2/playlist_720p/index.m3u8?checkedby:dailyfreeiptvlist.com
 #EXTINF:0 tvg-country="TH" tvg-logo="https://i.imgur.com/b4l0w2m.png" group-title="Thai TV",Thai PBS 3
