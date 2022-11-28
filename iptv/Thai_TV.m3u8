@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:0 tvg-country="TH" tvg-logo="https://news1live.com/images/social-share-logo.png" group-title="Thai TV",ASTV News 1,News 1
 http://news1.live14.com/stream/news1_hi.m3u8?checkedby:iptvcat.net
-#EXTINF:0 tvg-country="TH" tvg-logo="https://news1live.com/images/social-share-logo.png" group-title="Thai TV",News 1 B
-https://server1.streamssl.com/stream/news1_hi.m3u8
 #EXTINF:0 tvg-country="TH" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png" group-title="Thai TV",Channel 5
 http://110.170.117.27:1935/apptv5hd1live/vdo-tv5hd1/playlist.m3u8?checkedby:iptvcat.net
 #EXTINF:0 tvg-country="TH" tvg-logo="https://i.imgur.com/b4l0w2m.png" group-title="Thai TV",Thai PBS 3
