@@ -1,0 +1,43 @@
+#EXTM3U
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png",Channel 3
+https://cdn6.goprimetime.info/feed/202205171929/ch3hd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png",Channel 5
+https://cdn6.goprimetime.info/feed/202205171929/ch5hd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png",Channel 7
+https://cdn6.goprimetime.info/feed/202205171929/ch7hd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8
+https://cdn6.goprimetime.info/feed/202205171929/ch8/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mcot.png",MCOT
+https://cdn6.goprimetime.info/feed/202205171929/chmcothd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nbt.png",NBT
+https://cdn6.goprimetime.info/feed/202205171929/chnbt/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png",Thai PBS
+https://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8nah
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nation.png",Nation TV
+https://stream-04.sg1.dailymotion.com/sec(ccIVIlWaGsSkNrAGI3_YSfKMWer3N9WdvlI39HZ1slbui4onVQRROrZ8IB6MeYWK)/dm/3/x6eoldf/d/live-3.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_onehd.png",One HD
+https://cdn6.goprimetime.info/feed/202205171929/chonehd/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png",Thai Rath TV
+https://cdn6.goprimetime.info/feed/202205171929/chthairath/index.m3u8 
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_amarin.png",Amarin TV
+https://cdn6.goprimetime.info/feed/202205171929/chamarin/index.m3u
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_pptv.png",PPTV
+https://freelive2.inwstream.com:1936/freelive-edge/pptvhd/chunks.m3u8
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_th_workpoint.png",Workpoint
+https://cdn6.goprimetime.info/feed/202205171929/chworkpoint/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mono.png",Mono 29
+https://cdn6.goprimetime.info/feed/202205171929/chmono29/index.m3u8 
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_gmm.png",GMM25
+https://cdn6.goprimetime.info/feed/202205171929/chgmm/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tnn.png",TNN 24
+https://cdn6.goprimetime.info/feed/202205171929/chtnn/index.m3u8 
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_true4u.png",TRUE4U
+https://cdn6.goprimetime.info/feed/202205171929/202105171329/chtrue4u/index.m3u8
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_news1.png",News1
+http://news1.live14.com/stream/news1.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_jkn.png",JKN
+https://cdn6.goprimetime.info/feed/202205171929/newtv/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_altv.png",ALTV
+https://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_topnews.png",Top News
+https://live.topnews.co.th/hls/topnews.m3u8
