@@ -23,7 +23,7 @@ https://cdn6.goprimetime.info/feed/202205171929/chthairath/index.m3u8
 https://cdn6.goprimetime.info/feed/202205171929/chamarin/index.m3u
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_pptv.png",PPTV
 https://freelive2.inwstream.com:1936/freelive-edge/pptvhd/chunks.m3u8
-#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_th_workpoint.png",Workpoint
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_workpoint.png",Workpoint
 https://cdn6.goprimetime.info/feed/202205171929/chworkpoint/index.m3u8 
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mono.png",Mono 29
 https://cdn6.goprimetime.info/feed/202205171929/chmono29/index.m3u8 
