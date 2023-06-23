@@ -1,26 +1,30 @@
 #EXTM3U
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png",Channel 3
-https://m1.ballnaja.com/live/CH3_HD/playlist.m3u8
+http://appdootv2.dootvde.com:1935/live/50001_ch3.stream.smil/playlist.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png",Channel 5
-https://cdn6.goprimetime.info/feed/202205171929/ch5hd/index.m3u8
+http://appdootv2.dootvde.com:1935/live/50002_ch5.stream.smil/playlist.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png",Channel 7
-https://cdn6.goprimetime.info/feed/202205171929/ch7hd/index.m3u8
+http://appdootv2.dootvde.com:1935/live/50003_ch7.stream.smil/playlist.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8
 https://cdn6.goprimetime.info/feed/202205171929/ch8/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_amarin.png",Amarin
+http://appdootv2.dootvde.com:1935/live/50025_amarin_tv_hd.stream.smil/playlist.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mcot.png",MCOT
-https://cdn6.goprimetime.info/feed/202205171929/chmcothd/index.m3u8
+http://appdootv2.dootvde.com:1935/live/50004_ch9.stream.smil/playlist.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nation.png",Nation
+http://appdootv2.dootvde.com:1935/live/50015_nation.stream.smil/playlist.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nbt.png",NBT
-https://cdn6.goprimetime.info/feed/202205171929/chnbt/index.m3u8
+https://nbt-n0s4jp.cdn.byteark.com/fleetstream/nbt-live/480p/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png",Thai PBS
 https://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_onehd.png",One HD
-https://cdn6.goprimetime.info/feed/202205171929/chonehd/index.m3u8 
+http://appdootv2.dootvde.com:1935/live/50022_one_hd.stream.smil/playlist.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png",Thai Rath TV
-https://cdn6.goprimetime.info/feed/202205171929/chthairath/index.m3u8 
+https://live.thairath.co.th/trtv2/playlist_720p/index.m3u8 
 #EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_workpoint.png",Workpoint
-https://cdn6.goprimetime.info/feed/202205171929/chworkpoint/index.m3u8 
+http://appdootv2.dootvde.com:1935/live/50016_workpoint_tv.stream.smil/playlist.m3u8 
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mono.png",Mono 29
-https://cdn6.goprimetime.info/feed/202205171929/chmono29/index.m3u8 
+http://appdootv2.dootvde.com:1935/live/50021_mono_tv.stream.smil/playlist.m3u8
 #EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_gmm.png",GMM25
 https://cdn6.goprimetime.info/feed/202205171929/chgmm/index.m3u8 
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tnn.png",TNN 24
