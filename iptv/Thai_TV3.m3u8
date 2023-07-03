@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/bbc.jpg",BBC World News
-http://119.59.125.18:8081/live/bbc/playlist.m3u8
+http://iyvhm8br.akciatv.ru/iptv/2XGFGMMXT97LQZ/545/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/cnn.png",CNN
 https://cnn-cnninternational-1-eu.rakuten.wurl.tv/206849c7acd1570962df1ad525fa8688.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png",Channel 3
