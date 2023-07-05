@@ -12,11 +12,11 @@ https://cdn6.goprimetime.info/feed/202306140918/ch7hd/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8
 https://cdn6.goprimetime.info/feed/202306140918/ch8/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_amarin.png",Amarin
-http://appdootv2.dootvde.com:1935/live/50025_amarin_tv_hd.stream.smil/playlist.m3u8
+https://cdn6.goprimetime.info/feed/202306140918/chamarin3/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mcot.png",MCOT
 https://cdn6.goprimetime.info/feed/202306140918/chmcothd/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nation.png",Nation
-http://appdootv2.dootvde.com:1935/live/50015_nation.stream.smil/playlist.m3u8
+https://cdn6.goprimetime.info/feed/202306140918/chnation3/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nbt.png",NBT
 https://cdn6.goprimetime.info/feed/202306140918/chnbt/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png",Thai PBS
