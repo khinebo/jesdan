@@ -1,0 +1,49 @@
+#EXTM3U
+#EXTINF:-1 group-title="Sports" tvg-logo="https://khinebo.github.io/jesdan/iptv/tennis.ppg",Tennis Channel
+https://e3.thetvapp.to/hls/TennisChannel.m3u8?token=pNhCJBft7CzWujXhPIfEYA&expires=1697249969
+#EXTINF:-1 group-title="Sports" tvg-logo="https://khinebo.github.io/jesdan/iptv/espn.png",ESPN
+https://v-edge-3.thetvapp.to/hls/ESPN.m3u8?token=Ear8bC4p7ohDzip4NMvNiw&expires=1697250502
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/bbc.jpg",BBC World News
+https://v-edge-5.thetvapp.to/hls/BBCWorldNewsNorthAmerica.m3u8?token=EqTeYFno0NNEBLQ3RGcduQ&expires=1697249028
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/cnn.png",CNN
+https://cnn-cnninternational-1-eu.rakuten.wurl.tv/206849c7acd1570962df1ad525fa8688.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png",Channel 3
+https://cdn6.goprimetime.info/feed/202306140918/ch3hd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png",Channel 5
+https://cdn6.goprimetime.info/feed/202306140918/ch5hd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png",Channel 7
+https://cdn6.goprimetime.info/feed/202306140918/ch7hd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8
+https://cdn6.goprimetime.info/feed/202306140918/ch8/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_amarin.png",Amarin
+https://cdn6.goprimetime.info/feed/202306140918/chamarin3/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mcot.png",MCOT
+https://cdn6.goprimetime.info/feed/202306140918/chmcothd/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nation.png",Nation
+https://cdn6.goprimetime.info/feed/202306140918/chnation3/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_nbt.png",NBT
+https://cdn6.goprimetime.info/feed/202306140918/chnbt/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png",Thai PBS
+https://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_onehd.png",One HD
+https://cdn6.goprimetime.info/feed/202306140918/chonehd/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png",Thai Rath TV
+https://cdn6.goprimetime.info/feed/202306140918/chthairath/index.m3u8 
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_workpoint.png",Workpoint
+https://cdn6.goprimetime.info/feed/202306140918/chworkpoint/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mono.png",Mono 29
+https://cdn6.goprimetime.info/feed/202306140918/chmono29/index.m3u8 
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_gmm.png",GMM25
+https://cdn6.goprimetime.info/feed/202306140918/chgmm/index.m3u8 
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tnn.png",TNN 24
+https://cdn6.goprimetime.info/feed/202306140918/chtnn/index.m3u8 
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_true4u.png",TRUE4U
+https://cdn6.goprimetime.info/feed/202306140918/202105171329/chtrue4u/index.m3u8
+#EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_news1.png",News1
+http://news1.live14.com/stream/news1.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_jkn.png",JKN
+https://cdn6.goprimetime.info/feed/202306140918/newtv/index.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_altv.png",ALTV4
+https://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_topnews.png",Top News
+https://live.topnews.co.th/hls/topnews.m3u8
