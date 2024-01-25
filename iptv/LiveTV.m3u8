@@ -30,7 +30,7 @@ https://thaipbs-live.cdn.byteark.com/live/playlist_1080p/index.m3u8
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_onehd.png",One HD
 https://cdn6.goprimetime.info/feed/eI5rczhSQpWBcgOtqRLNWw/chonehd/index.m3u8 
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png",Thai Rath TV
-https://cdn6.goprimetime.info/feed/eI5rczhSQpWBcgOtqRLNWw/chthairath/index.m3u8 
+https://cdn6.goprimetime.info/feed/eI5rczhSQpWBcgOtqRLNWw/chthairath3/index.m3u8
 #EXTINF:-1  group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_workpoint.png",Workpoint
 https://cdn6.goprimetime.info/feed/eI5rczhSQpWBcgOtqRLNWw/chworkpoint/index.m3u8 
 #EXTINF:-1 group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_mono.png",Mono 29
