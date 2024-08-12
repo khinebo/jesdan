@@ -21,7 +21,7 @@ https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8
 https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelfareast_all/playlist.m3u8
 #EXTINF:-1 tvg-id="News1.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_astv.png",ASTV News 1 (720p) [Not 24/7]
 http://news1.live14.com/stream/news1.m3u8
-#EXTINF:-1 tvg-id="BBCNewsAsiaPacific.uk" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/bbc.png",BBC News Asia Pacific (720p)
+#EXTINF:-1 tvg-id="BBCNewsAsiaPacific.uk" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/bbc.jpg",BBC News Asia Pacific (720p)
 https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8
 #EXTINF:-1 tvg-id="BloombergTVAsia.hk" group-title="Thai TV" tvg-logo="https://i.imgur.com/OuogLHx.png",Bloomberg TV Asia (720p)
 https://bloomberg.com/media-manifest/streams/asia.m3u8
