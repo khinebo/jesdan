@@ -31,9 +31,9 @@ https://bloomberg.com/media-manifest/streams/asia-event.m3u8
 http://210.210.155.37/qwr9ew/s/s19/index.m3u8
 #EXTINF:-1 tvg-id="Channel5.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/wOIaqg7.png",Channel 5 (1080p)
 https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel7.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/tehHdZN.png",Channel 7
+#EXTINF:-1 tvg-id="Channel7.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png",Channel 7
 http://streaming-hwc.ch7.com/livech7hd/HD.m3u8
-#EXTINF:-1 tvg-id="Channel8.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/S9SQm3Y.png",Channel 8 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Channel8.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8 (1080p) [Not 24/7]
 http://usa.login.in.th:1935/ch8/ch8/playlist.m3u8
 #EXTINF:-1 tvg-id="CinemaWorld.my" group-title="Thai TV" tvg-logo="https://i.imgur.com/D2qNVZ7.png",CinemaWorld (576p)
 http://210.210.155.37/dr9445/h/h04/index.m3u8
