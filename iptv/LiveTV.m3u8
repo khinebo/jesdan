@@ -21,13 +21,13 @@ https://edge2a.v2h-cdn.com/boomerang/boomerang.stream/playlist.m3u8
 http://news1.live14.com/stream/news1.m3u8
 #EXTINF:-1 tvg-id="CableChannel37.th" tvg-logo="https://cablechannel37.net/assets/images/main/logos/cable_channel_37.png" group-title="Thai TV",Cable Channel 37
 http://www5.cabletv.co.th/StreamToCTV/cablechannel/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel3.th" tvg-name="CH3 HD" group-title="Thai TV" tvg-logo="https://i.imgur.com/YRiulCU.png",Channel 3 HD
+#EXTINF:-1 tvg-id="Channel3.th" tvg-name="Channel 3 HD" group-title="Thai TV" tvg-logo="https://i.imgur.com/YRiulCU.png",Channel 3 HD
 https://edge2a.v2h-cdn.com/3hd/3hd.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel5.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/wOIaqg7.png",Channel 5 (1080p)
 https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel7.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png",Channel 7 HD
 https://edge2a.v2h-cdn.com/7hd/7hd.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="ThaiChannel8.th" tvg-name="CH 8" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/ch8.png",Channel 8
+#EXTINF:-1 tvg-id="ThaiChannel8.th" tvg-name="Channel 8" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/ch8.png",Channel 8
 https://edge2a.v2h-cdn.com/ch8/ch8.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel8.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8 Thailand
 http://usa.login.in.th:1935/ch8/ch8/playlist.m3u8
