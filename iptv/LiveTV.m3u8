@@ -19,7 +19,7 @@ https://edge2a.v2h-cdn.com/altv2/altv.stream/playlist.m3u8
 https://edge2a.v2h-cdn.com/boomerang/boomerang.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="News1.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_news1.png",ASTV News 1 (720p)
 http://news1.live14.com/stream/news1.m3u8
-#EXTINF:-1 tvg-id="CableChannel37.th" tvg-logo="https://cablechannel37.net/assets/images/main/logos/cable_channel_37.png" group-title="Undefined",Cable Channel 37
+#EXTINF:-1 tvg-id="CableChannel37.th" tvg-logo="https://cablechannel37.net/assets/images/main/logos/cable_channel_37.png" group-title="Thai TV",Cable Channel 37
 http://www5.cabletv.co.th/StreamToCTV/cablechannel/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel3.th" tvg-name="CH3 HD" group-title="Thai TV" tvg-logo="https://i.imgur.com/YRiulCU.png",Channel 3 HD
 https://edge2a.v2h-cdn.com/3hd/3hd.stream/playlist.m3u8
