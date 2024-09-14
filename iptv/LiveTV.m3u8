@@ -64,7 +64,7 @@ https://edge2a.v2h-cdn.com/mono/mono.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NationTV.th" tvg-name="Nation TV" group-title="Thai TV" tvg-logo="https://i.imgur.com/h3TY38F.png",Nation TV
 https://edge2a.v2h-cdn.com/nation/nation.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NBT11Central.th" tvg-logo="https://i.imgur.com/8hYQIxS.png" group-title="Thai TV",NBT 11 Central
-https://cdn-edge-ott.prd.go.th/live_vlc/smil:01f1-8b4b-971e-aa35-d5fa.smil/playlist.m3u8?DVR
+https://edge2a.v2h-cdn.com/nbt/nbt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="One31.th" tvg-name="ONE HD" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/one.png",ONE HD
 https://edge2a.v2h-cdn.com/onehd/onehd.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="PoliceTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/GhboFGt.png",Police TV (1080p)
