@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 group-title="Others" tvg-logo="https://imageresizer.static9.net.au/MFJ65H8J3Itwr7-HcHQxr-jBssc=/768x0/vms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2015%2F11%2F11%2F9_Colour_RGB.png",Channel 9-AU
+https://9now-livestreams-fhd-t.akamaized.net/u/prod/simulcast/nlm/ch9/bne/r1/index.m3u8
 #EXTINF:-1 group-title="Others" tvg-logo="https://khinebo.github.io/jesdan/iptv/gaora.png",Gaora-JP
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17
 #EXTINF:-1 tvg-id="JSPORTS1.jp" tvg-logo="https://i.imgur.com/vEpjLnj.png" group-title="Others",J Sports 1 (544p)
