@@ -45,8 +45,6 @@ http://streaming-hwc.ch7.com/livech7hd/HD.m3u8
 https://edge2a.v2h-cdn.com/ch8/ch8.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel8.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8 Thailand
 http://usa.login.in.th:1935/ch8/ch8/playlist.m3u8
-#EXTINF:-1 tvg-id="EsanTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/cpNg9Fy.png",Esan TV (720p)
-https://psiiptv-b.sky-cdn.com/ttd20-playlist/index.m3u8
 #EXTINF:-1 tvg-id="ETV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/Dsgpo4I.png",ETV (1080p)
 http://150.95.66.20:1935/live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="GMM25.th" tvg-name="GMM 25" group-title="Thai TV" tvg-logo="https://i.imgur.com/uARba6N.png",GMM 25
