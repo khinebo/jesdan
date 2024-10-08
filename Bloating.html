@@ -1,0 +1,1927 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <base target="_blank">
+  <style>
+/* latin */
+@font-face {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/4UaHrEJDsxBrF37olUeD96rp57F2IwM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/K2FifZFYk-dHSE0UPPuwQ7CrD94i-NCKm-U48M1wqxnDirZPl3v-.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --fg: #000; /* foreground  */
+  --bg: #fff; /* background  */
+  --bd: #000; /* border  */
+  --lk: #006fa5; /* link */
+  --lkv: #d33bf0; /* link visited */
+  --hg: #ffff81; /* highlight  */
+}
+html {
+  overflow: overlay;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 30px auto 0 auto;
+  padding: 10px;
+  position: relative;
+
+  color: var(--fg);
+  border-color: var(--bd);
+  background-color: var(--bg);
+}
+body[data-mode$="dark"] {
+  --lk: #0096de;
+}
+body[data-mode="light"] {
+  color-scheme: light;
+  --fg: #222;
+  --bd: #222;
+  --bg: whitesmoke;
+}
+body[data-mode="dark"] {
+  color-scheme: dark;
+  --fg: #eee;
+  --bd: #eee;
+  --bg: #333;
+}
+body[data-mode="sepia"] {
+  color-scheme: light;
+  --fg: #5b4636;
+  --bd: #5b4636;
+  --bg: #f4ecd8;
+}
+body[data-mode="solarized-light"] {
+  color-scheme: light;
+  --fg: #586e75;
+  --bd: #586e75;
+  --bg: #fdf6e3;
+}
+body[data-mode="nord-light"] {
+  color-scheme: light;
+  --fg: #2e3440;
+  --bd: #2e3440;
+  --bg: #e5e9f0;
+}
+body[data-mode="groove-dark"] {
+  color-scheme: dark;
+  --fg: #cec4ac;
+  --bd: #cec4ac;
+  --bg: #282828;
+}
+body[data-mode="solarized-dark"] {
+  color-scheme: dark;
+  --fg: #839496;
+  --bd: #839496;
+  --bg: #002b36;
+}
+body[data-mode="nord-dark"] {
+  color-scheme: dark;
+  --fg: #e5e9f0;
+  --bd: #e5e9f0;
+  --bg: #2e3440;
+}
+
+@media print {
+  body[data-mode] {
+    --fg: #000;
+    --bd: #000;
+    --bg: #fff;
+
+    width: unset;
+    padding: 0;
+    margin: 0;
+  }
+}
+body[data-loaded=true] {
+  
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+img:not([width])[src$=".svg"] {
+  max-width: 100px;
+}
+body[data-images=false] canvas,
+body[data-images=false] svg,
+body[data-images=false] img {
+  display: none;
+}
+svg:not([width]):not([height]) {
+  max-width: 25vmin;
+}
+a {
+  color: var(--lk);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--lkv);
+}
+
+hr {
+  background-color: var(--bd);
+  height: 1px;
+  border: 0;
+}
+#reader-domain {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border-bottom-color: currentcolor;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: inline-block;
+  direction: ltr;
+}
+#reader-domain > span:first-child {
+  font-size: 1.1em;
+}
+#reader-domain > span:last-child {
+  font-size: 0.8em;
+}
+#reader-title {
+  font-size: 1.6em;
+  line-height: 1.25em;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0;
+}
+#reader-credits,
+#doi,
+#published-time,
+#reader-estimated-time {
+  font-size: 0.85em;
+  line-height: 1.48em;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+#reader-credits:not(:empty)::after {
+  content: ' ⋮ ';
+}
+#published-time:not(:empty)::before {
+  content: ' ⋮ ';
+}
+#doi-json {
+  overflow: hidden;
+}
+#doi-json code {
+  overflow: auto;
+  max-height: 400px;
+}
+#published-time:empty,
+#reader-credits:empty {
+  display: none;
+}
+mark.hghlght {
+  background-color: var(--hg);
+}
+body:not([data-columns="1"]) .page :is(h1, h2) {
+  column-span: all;
+  background-color: rgba(125, 125, 125, 0.1);
+  padding: 10px;
+}
+.hidden {
+  display: none;
+}
+</style>
+  <style id="user-css">body {
+  padding-bottom: 64px;
+}
+pre {
+  white-space: pre-wrap;
+}
+pre code {
+  background-color: #eff0f1;
+  color: #393318;
+  font-family: monospace;
+  display: block;
+  padding: 5px 10px;
+}
+body[data-mode="dark"] pre code {
+  background-color: #585858;
+  color: #e8e8e8;
+}
+
+/* CSS for sans-serif fonts */
+body[data-font=sans-serif] {}
+/* CSS for serif fonts */
+body[data-font=serif] {}
+
+/* CSS for "sepia" theme */
+body[data-mode=sepia] {}
+/* CSS for "light" theme */
+body[data-mode=light] {}
+/* CSS for "dark" theme */
+body[data-mode=dark] {}</style>
+<title>Bloating and functional gastro-intestinal disorders: Where are we and where are we going?</title><title>Bloating and functional gastro-intestinal disorders: Where are we and where are we going? :: Reader View</title></head>
+<body tabindex="1" data-images="true" data-mode="sepia" data-font="sans-serif" data-columns="1" data-loaded="true">
+  <span></span> <!-- for IntersectionObserver -->
+  <a id="reader-domain" href="https://www.wjgnet.com/1007-9327/full/v20/i39/14407.htm">
+    <span>www.wjgnet.com</span>
+    <span>/1007-9327/full/v20/i39/14407.htm</span>
+  </a>
+  <h1 dir="auto" id="reader-title">Bloating and functional gastro-intestinal disorders: Where are we and where are we going?</h1>
+  <span dir="auto" id="reader-credits">Giuseppe Chiarioni</span>
+  <span dir="auto" id="reader-estimated-time">66-84 minutes</span>
+  <span dir="auto" id="published-time"></span><div id="doi">DOI: <a href="https://doi.org/10.3748/wjg.v20.i39.14407" target="_blank">10.3748/wjg.v20.i39.14407</a>, <a href="#">Show Details</a></div>
+  <hr>
+  <div id="readability-page-1" class="page"><div id="articlebody">
+    <!--<div class="article-subject">
+    &nbsp;&nbsp;Review
+</div>-->
+<p><span>Review</span>
+    <span>Open Access</span>
+</p>
+<!--Top Content-->
+<div id="dptop">
+    <p><a href="http://www.wjgnet.com/bpg/gerinfo/207" target="_blank">Copyright</a>
+        <b>©2014 Baishideng Publishing Group Inc.</b><span> All rights reserved.</span>
+    </p>
+    <p><span>World J Gastroenterol.&nbsp;</span><span>Oct 21, 2014;&nbsp;</span><span>20(39): 14407-14419</span><br>
+        <span>Published online Oct 21, 2014.&nbsp;doi: <a href="http://dx.doi.org/10.3748/wjg.v20.i39.14407" target="_self">10.3748/wjg.v20.i39.14407</a></span>
+    </p>
+    
+    
+    
+    <p>
+        Bloating and functional gastro-intestinal disorders: Where are we and where are we going?
+    </p>
+    
+    
+    
+    <div id="dpaff">
+        <p><b>Paola Iovino, Cristina Bucci, Antonella Santonicola, </b>Gastrointestinal Unit,  Department of Medicine and Surgery,  University of Salerno,  84081 Baronissi,  Salerno,  Italy</p><p><b>Fabrizio Tremolaterra, </b>IRCCS,  Centro di riferimento Oncologico di Basilicata,  Rionero in Vulture,  85100 Potenza,  Italy</p><p><b>Giuseppe Chiarioni, </b>Division of Gastroenterology of the University of Verona,  Azienda Ospedaliera Universitaria Integrata di Verona,  37100 Verona,  Italy</p><p><b>Giuseppe Chiarioni, </b>Division of Gastroenterology and Hepatology and Center for functional GI and Motility Disorders,  University of North Carolina at Chapel Hill,  Chapel Hill,  NC 27599,  United States</p>
+    </div>
+    
+    <div id="dpfn">
+        <p><b>Author contributions</b>:  Iovino P contributed to conception and design of the study, analysis and interpretation of data, revising of the article critically for important intellectual content and final approval of the version to be published; Bucci C contributed to conception and design of the study, analysis and interpretation of data, drafting of the article and final approval of the version to be published; Tremolaterra F and Santonicola A contributed to acquisition of interpretation, drafting of the article and final approval of the version to be published; Chiarioni G contributed to conception and study design, revising of the article critically for important intellectual content and final approval of the version to be published.</p>
+<p><b>Correspondence to</b>:  Paola Iovino, MD, Gastrointestinal Unit, Department of Medicine and Surgery, University of Salerno, Via S Allende, 84081 Baronissi-Salerno, Italy. <a href="mailto:piovino@unisa.it">piovino@unisa.it</a></p>
+<p><b>Telephone</b>:  +39-89-965030 Fax: +39-89-672452</p>
+<p><b>Received:</b> February 13, 2014<br><b>Revised:</b> April 7, 2014<br><b>Accepted:</b> June 13, 2014<br><b>Published online:</b> October 21, 2014<br><b>Processing time:</b> 249 Days and 18 Hours<br></p>
+    </div>
+    <br>
+</div>
+<!--Abstract-->
+<div id="article-abstract-container">
+    <p><span>Abstract</span>
+    </p>
+    <div id="dpabstract">
+        <p>Bloating is one of the most common and bothersome symptoms complained by a large proportion of patients. This symptom has been described with various definitions, such as sensation of a distended abdomen or an abdominal tension or even excessive gas in the abdomen, although bloating should probably be defined as the feeling (<i>e.g</i>. a subjective sensation) of increased pressure within the abdomen. It is usually associated with functional gastrointestinal disorders, like irritable bowel syndrome, but when bloating is not part of another functional bowel or gastrointestinal disorder it is included as an independent entity in Rome III criteria named functional bloating. In terms of diagnosis, major difficulties are due to the lack of measurable parameters to assess and grade this symptom. In addition, it is still unclear to what extent the individual patient complaint of subjective bloating correlates with the objective evidence of abdominal distension. In fact, despite its clinical, social and economic relevance, bloating lacks a clear pathophysiology explanation, and an effective management endorsement, turning this common symptom into a true challenge for both patients and clinicians. Different theories on bloating etiology call into questions an increased luminal contents (gas, stools, liquid or fat) and/or an impaired abdominal empting and/or an altered intra-abdominal volume displacement (abdomino-phrenic theory) and/or an increased perception of intestinal stimuli with a subsequent use of empirical treatments (diet modifications, antibiotics and/or probiotics, prokinetic drugs, antispasmodics, gas reducing agents and tricyclic antidepressants). In this review, our aim was to review the latest knowledge on bloating physiopathology and therapeutic options trying to shed lights on those processes where a clinician could intervene to modify disease course.</p>
+        
+        
+        <p><span></span></p><p><b>Core tip:</b> Bloating is one of the most common and bothersome symptoms complained by a large proportion of patients, mostly with functional gastrointestinal disorders, but when bloating is not part of another functional bowel or gastrointestinal disorder it is included as an independent entity in Rome III criteria named functional bloating. Despite its clinical, social and economic relevance, bloating lacks a clear pathophysiology explanation and an effective management endorsement. Moreover, it is unclear to what extent subjective complaint of bloating correlates with the objective evidence of abdominal distension. The aim of this paper is to review the latest knowledge on bloating and to explore future research directions to improve its management.</p>
+        <p></p>
+        <div id="dpcitation">
+            <hr>
+<ul>
+    <li>
+        <b>Citation: </b>Iovino P, Bucci C, Tremolaterra F, Santonicola A, Chiarioni G.&nbsp;Bloating and functional gastro-intestinal disorders: Where are we and where are we going?&nbsp;<i>World J Gastroenterol</i>&nbsp;2014;&nbsp;20(39): 14407-14419
+    </li>
+    <li>
+        <b>URL: </b><a href="https://www.wjgnet.com/1007-9327/full/v20/i39/14407.htm" target="_self">https://www.wjgnet.com/1007-9327/full/v20/i39/14407.htm</a>
+    </li>
+    <li>
+        <b>DOI: </b><a href="https://dx.doi.org/10.3748/wjg.v20.i39.14407" target="_self">https://dx.doi.org/10.3748/wjg.v20.i39.14407</a>
+    </li>
+</ul>
+<hr>
+        </div>
+    </div>
+</div>
+
+<!--Main article text-->
+<div id="article-main-container">
+    <div>
+        <div id="sec11"><p>BACKGROUND</p><p id="p11">There is no consensus concerning the definition of bloating which is a term very ambiguous both in English and in other languages. Patients refer bloating when they feel a full and tight abdomen, or a sensation of a swollen/distended abdomen, or an abdominal pressure or wall tension, or even the sensation of excessive gas in the abdomen. Furthermore, other complains such as burping and belching which reflect the expulsion of excess gas from the stomach, nausea, crampy, gurgling, or rumbling stomach; or needing to go to the bathroom are misleading with bloating from patient’s perspective. The definition of bloating should probably be regarded as meaning that there is a feeling (subjective sensation) of increased pressure within the abdomen, whereas abdominal distension should be reserved to an actual (objective) increase in diameter of the abdominal area. While often considered closely related, bloating is not always accompanied by visible distention[<a href="#B1" data-jats-ref-type="bibr" data-jats-rid="B1" id="refB11">1</a>,<a href="#B2" data-jats-ref-type="bibr" data-jats-rid="B2" id="refB22">2</a>]. However, irrespective of whether bloating is or is not accompanied by distension, patients usually refer to it as bloating and currently even clinicians tend to use the term bloating to cover both features.</p><p id="p12">Bloating is also reported in organic diseases such as enteropathogenic infections, malabsorptive conditions, acute or subacute bowel ischemia, and even neoplastic diseases. Bloating has been shown to be even useful for the early diagnosis of ovarian cancer and falls into a specific ovarian cancer symptoms index to its earlier detection, while it remains an unspecific signal for gastro-intestinal tumors[<a href="#B1" data-jats-ref-type="bibr" data-jats-rid="B1" id="refB13">1</a><span>-</span><a href="#B4" data-jats-ref-type="bibr" data-jats-rid="B4" id="refB44">4</a>].</p><p id="p13">Bloating is one of the most common and bothersome complaints in a large proportion of patients with various functional gastro-intestinal disorders (FGIDs), namely: functional dyspepsia (FD)[<a href="#B5" data-jats-ref-type="bibr" data-jats-rid="B5" id="refB55">5</a>,<a href="#B6" data-jats-ref-type="bibr" data-jats-rid="B6" id="refB66">6</a>], irritable bowel syndrome (IBS)[<a href="#B5" data-jats-ref-type="bibr" data-jats-rid="B5" id="refB57">5</a><span>-</span><a href="#B7" data-jats-ref-type="bibr" data-jats-rid="B7" id="refB78">7</a>], and functional constipation[<a href="#B5" data-jats-ref-type="bibr" data-jats-rid="B5" id="refB59">5</a>,<a href="#B6" data-jats-ref-type="bibr" data-jats-rid="B6" id="refB610">6</a>,<a href="#B8" data-jats-ref-type="bibr" data-jats-rid="B8" id="refB811">8</a>]. Up to 80% of patients with constipation complain of bloating and abdominal distension[<a href="#B9" data-jats-ref-type="bibr" data-jats-rid="B9" id="refB912">9</a>,<a href="#B10" data-jats-ref-type="bibr" data-jats-rid="B10" id="refB1013">10</a>]. However, bloating in the absence of visible distension is frequently reported by patients with diarrhea[<a href="#B11" data-jats-ref-type="bibr" data-jats-rid="B11" id="refB1114">11</a>]. Bloating is one of the principal symptoms of postprandial distress syndrome, one of the two subgroups of FD, where it is often located in the upper abdomen and precipitated by meals[<a href="#B6" data-jats-ref-type="bibr" data-jats-rid="B6" id="refB615">6</a>,<a href="#B12" data-jats-ref-type="bibr" data-jats-rid="B12" id="refB1216">12</a>].</p><p id="p14">When bloating is not part of another functional bowel or gastroduodenal disorder, functional bloating is also included as an independent entity in Rome III criteria[<a href="#B13" data-jats-ref-type="bibr" data-jats-rid="B13" id="refB1317">13</a>]. In details, its diagnostic criteria include recurrent feeling of bloating or visible distension at least 3 d a month in the last 3 mo with symptom onset at least 6 mo prior to diagnosis[<a href="#B13" data-jats-ref-type="bibr" data-jats-rid="B13" id="refB1318">13</a>]. The name has been changed from functional abdominal bloating in Rome I and II criteria to functional bloating in Rome III criteria[<a href="#B13" data-jats-ref-type="bibr" data-jats-rid="B13" id="refB1319">13</a>].</p><p id="p15">Epidemiologically, one in six to one in five healthy individual reported bloating in population based studies both in western[<a href="#B14" data-jats-ref-type="bibr" data-jats-rid="B14" id="refB1420">14</a>,<a href="#B15" data-jats-ref-type="bibr" data-jats-rid="B15" id="refB1521">15</a>] and east countries[<a href="#B16" data-jats-ref-type="bibr" data-jats-rid="B16" id="refB1622">16</a>]. This prevalence dramatically increases, being reported by up to 96% in IBS patients[<a href="#B7" data-jats-ref-type="bibr" data-jats-rid="B7" id="refB723">7</a>]. Also, the majority of those patients (60%) rate bloating as their most bothersome symptom, scoring worse than abdominal pain[<a href="#B17" data-jats-ref-type="bibr" data-jats-rid="B17" id="refB1724">17</a>].</p><p id="p16">Finally, there is some evidence documenting the association between bloating and quality of life[<a href="#B18" data-jats-ref-type="bibr" data-jats-rid="B18" id="refB1825">18</a>]. However, only abdominal pain and diarrhea, but not bloating and other IBS related symptoms, were independently associated with reduced quality of life[<a href="#B19" data-jats-ref-type="bibr" data-jats-rid="B19" id="refB1926">19</a>,<a href="#B20" data-jats-ref-type="bibr" data-jats-rid="B20" id="refB2027">20</a>].</p><p id="p17">Typically, the symptom is variably reported over the months and fluctuates in intensity over daytime, particularly in the postprandial period, being worse at the end of the day and improving at night-time[<a href="#B11" data-jats-ref-type="bibr" data-jats-rid="B11" id="refB1128">11</a>,<a href="#B21" data-jats-ref-type="bibr" data-jats-rid="B21" id="refB2129">21</a>]. Changes in abdominal girth are greater in patients with IBS, and these patients are more likely to be symptomatic[<a href="#B22" data-jats-ref-type="bibr" data-jats-rid="B22" id="refB2230">22</a>]. The severity of bloating may, therefore, vary from very mild to severe and uncomfortable[<a href="#B15" data-jats-ref-type="bibr" data-jats-rid="B15" id="refB1531">15</a>]. In addition, most of the patients report typical symptom exacerbation after eating, no matter the size of the meal assumed[<a href="#B22" data-jats-ref-type="bibr" data-jats-rid="B22" id="refB2232">22</a>,<a href="#B23" data-jats-ref-type="bibr" data-jats-rid="B23" id="refB2333">23</a>]. High-fiber food and supplements, fatty meals and dairy products are frequently reported as offending[<a href="#B24" data-jats-ref-type="bibr" data-jats-rid="B24" id="refB2434">24</a>,<a href="#B25" data-jats-ref-type="bibr" data-jats-rid="B25" id="refB2535">25</a>]. Bloating symptoms are described more frequently by women[<a href="#B11" data-jats-ref-type="bibr" data-jats-rid="B11" id="refB1136">11</a>,<a href="#B26" data-jats-ref-type="bibr" data-jats-rid="B26" id="refB2637">26</a>,<a href="#B27" data-jats-ref-type="bibr" data-jats-rid="B27" id="refB2738">27</a>] with a female to male ratio of 2:1[<a href="#B26" data-jats-ref-type="bibr" data-jats-rid="B26" id="refB2639">26</a>,<a href="#B27" data-jats-ref-type="bibr" data-jats-rid="B27" id="refB2740">27</a>], but this may be due to divergent health-seeking behaviors[<a href="#B28" data-jats-ref-type="bibr" data-jats-rid="B28" id="refB2841">28</a>].</p><p id="p18">Despite its clinical, social and economic relevance[<a href="#B29" data-jats-ref-type="bibr" data-jats-rid="B29" id="refB2942">29</a>], the pathophysiology of bloating and abdominal distension is complicated and incompletely understood, and no treatment is reported as universally effective. However, with the increasing knowledge of these disorders due to more objective ways of assessing it in combination with the availability of several new therapies over the past decade[<a href="#B30" data-jats-ref-type="bibr" data-jats-rid="B30" id="refB3043">30</a>], we aim to review the latest knowledge on patophysiological mechanisms of bloating, and to explore present and future research directions aimed on improving its management.</p><p id="p19">We reviewed the literature of mechanisms and treatment interventions for abdominal bloating based on a PubMed search on the following terms; “abdominal bloating,”“intestinal gas and IBS,”“distension and IBS” and “FGID.”</p></div><div id="sec12"><p>PATHOPHYSIOLOGY</p><p id="p11">Bloating, like many other abdominal symptoms, is probably a heterogeneous condition produced by a combination of pathophysiological mechanisms that differ among individuals.</p><p id="p12">Different theories on bloating/abdominal distension etiology have been postulated (Figure <a href="#F1" data-jats-ref-type="fig" data-jats-rid="F1">1</a>), incriminating time after time as (1) increased luminal contents (gas, stools, liquid or fat); (2) impaired abdominal empting (<i>e.g</i>., defective propulsion, obstructed evacuation); (3) altered intra-abdominal volume displacement (abdomino-phrenic theory); and/or (4) increased perception of intestinal stimuli (sensory dysfunction or psychological factors).</p><div id="F1">
+    <div>
+        <a href="http://www.wjgnet.com/1007-9327/full/v20/i39/WJG-20-14407-g001.htm" target="_blank">
+            <picture>
+                <source srcset="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g001.webp" alt="Figure 1" loading="lazy" type="image/webp">
+                <img src="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g001.jpg" alt="Figure 1" loading="lazy" title="Figure 1">
+            </picture>
+        </a>
+        
+    </div>
+    <p><b>Figure 1&nbsp;Possible underlining mechanism behind bloating.</b>
+        <span>
+            
+        </span>
+    </p>
+</div>
+<div id="sec24"><p>Increased luminal contents</p><p id="p21"><b>Gas:</b> It can be speculated that bloating and, even more, abdominal distension depend on an increase in intra-abdominal contents. Since years considering the rapidly changing and fluctuating trend of such symptoms, gas has been always considered the element most heavily implicated in explaining them.</p><p id="p22">The homeostasis of intestinal gas depends on the balance between its formation and elimination. Briefly, gas input results at different level in the human being. For example, it results from swallowed air, chemical reactions (specifically, neutralization of acids and alkali in the upper gut), and diffusion from bloodstream. In the lower part of the GI tract it occurs primarily due to bacterial fermentation. Gas output is achieved by belching, absorption into the blood, bacterial consumption, and anal evacuation (Figure <a href="#F2" data-jats-ref-type="fig" data-jats-rid="F2">2</a>)[<a href="#B31" data-jats-ref-type="bibr" data-jats-rid="B31" id="refB3144">31</a>].</p><div id="F2">
+    <div>
+        <a href="http://www.wjgnet.com/1007-9327/full/v20/i39/WJG-20-14407-g002.htm" target="_blank">
+            <picture>
+                <source srcset="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g002.webp" alt="Figure 2" loading="lazy" type="image/webp">
+                <img src="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g002.jpg" alt="Figure 2" loading="lazy" title="Figure 2">
+            </picture>
+        </a>
+        
+    </div>
+    <p><b>Figure 2&nbsp;Gas physiology in the gastrointestinal tract.</b>
+        <span>
+             Gas input is determined by swallowing, chemical reactions (bacterial fermentation, food digestion) and diffusion from blood stream. Output is achieved by belching, absorption into the blood, bacterial consumption and anal evacuation. Adapted from[<a href="#B31" data-jats-ref-type="bibr" data-jats-rid="B31" id="refB3145">31</a>].
+        </span>
+    </p>
+</div>
+<p id="p24">An excessive introduction of gas, for example, occurs in aerophagia, a functional disorder in which patients swallow air so frequently and in such large quantities to result in symptoms of abdominal distention and bloating[<a href="#B32" data-jats-ref-type="bibr" data-jats-rid="B32" id="refB3246">32</a>]. Increased air swallowing, however, is either not or rarely observed in IBS patients[<a href="#B33" data-jats-ref-type="bibr" data-jats-rid="B33" id="refB3347">33</a>]. Although not covered in this review, eating disorders may also be associated with symptoms of gas and bloating[<a href="#B34" data-jats-ref-type="bibr" data-jats-rid="B34" id="refB3448">34</a>].</p><p id="p25">Moreover, it has been shown that some food components in the normal diet, such as resistant starch, oligosaccharides and plant fibres, are incompletely absorbed in the small bowel and enter the colon[<a href="#B35" data-jats-ref-type="bibr" data-jats-rid="B35" id="refB3549">35</a>] with subsequent fermentation, and secondary bacterial overgrowth with abnormal fermentation of foodstuffs within the small bowel or hyperactive colonic microflora. Some studies suggest that the absorption capacity of certain substrates (<i>e.g</i>., fructose) in the small bowel is reduced in IBS patients[<a href="#B35" data-jats-ref-type="bibr" data-jats-rid="B35" id="refB3550">35</a><span>-</span><a href="#B37" data-jats-ref-type="bibr" data-jats-rid="B37" id="refB3751">37</a>]. However, studies evaluating the benefit of exclusion diets on bloating have given contradictory results[<a href="#B38" data-jats-ref-type="bibr" data-jats-rid="B38" id="refB3852">38</a>,<a href="#B39" data-jats-ref-type="bibr" data-jats-rid="B39" id="refB3953">39</a>].</p><p id="p26">A potential small bowel bacterial overgrowth etiology has been suggested by some studies reporting increased positivity of the lactulose breath test in IBS[<a href="#B40" data-jats-ref-type="bibr" data-jats-rid="B40" id="refB4054">40</a>]. However, the relevance of these data has been questioned for both the low reliability of the test, the weak clinical response to antibiotic therapy and the low placebo effect compared to other IBS studies[<a href="#B41" data-jats-ref-type="bibr" data-jats-rid="B41" id="refB4155">41</a>]. However, there is general agreement that at least in a proportion of patients with IBS and bloating[<a href="#B42" data-jats-ref-type="bibr" data-jats-rid="B42" id="refB4256">42</a><span>-</span><a href="#B44" data-jats-ref-type="bibr" data-jats-rid="B44" id="refB4457">44</a>] an increased bacterial fermentation can contribute to the symptoms[<a href="#B45" data-jats-ref-type="bibr" data-jats-rid="B45" id="refB4558">45</a>].</p><p id="p27">The net effect of colonic microflora on gas metabolism depends on the balance between gas-producing and gas-consuming microorganisms, which varies considerably among individuals[<a href="#B46" data-jats-ref-type="bibr" data-jats-rid="B46" id="refB4659">46</a>].</p><p id="p28">For the most part, the colon hosts bacteria that produce hydrogen and carbon dioxide mainly from the fermentation of carbohydrates[<a href="#B47" data-jats-ref-type="bibr" data-jats-rid="B47" id="refB4760">47</a>,<a href="#B48" data-jats-ref-type="bibr" data-jats-rid="B48" id="refB4861">48</a>]. There is then, other pools of colonic microorganisms, for example sulfate-reducing bacteria, that consume a large proportion of the gases produced by fermentation and, release small amounts of odoriferous sulfur-containing gas. About 30% of the population is also home to methane-producing bacteria that consume large quantities of hydrogen and release methane[<a href="#B48" data-jats-ref-type="bibr" data-jats-rid="B48" id="refB4862">48</a><span>-</span><a href="#B52" data-jats-ref-type="bibr" data-jats-rid="B52" id="refB5263">52</a>]. Relevant factors contributing to the intraluminal gas homeostasis are: (1) the consume of gases (in particular hydrogen) by the bacteria strains; (2) the diffusibility of single gases (greater for oxygen and the carbon dioxide, medium for hydrogen, low for nitrogen); and (3) the gas partial pressure and the time of exposure to the diffusion surface which is influenced by intestinal transit speed[<a href="#B53" data-jats-ref-type="bibr" data-jats-rid="B53" id="refB5364">53</a>,<a href="#B54" data-jats-ref-type="bibr" data-jats-rid="B54" id="refB5465">54</a>]. Everything accounts for the gaseous composition of flatus and is the basis for the hydrogen and methane breath tests.</p><p id="p29">However, evaluation of intestinal gas production by breath tests has yielded inconclusive results. In one study breath hydrogen concentration was found to be similar in both IBS patients and healthy controls[<a href="#B55" data-jats-ref-type="bibr" data-jats-rid="B55" id="refB5566">55</a>]. In contrast, another study measuring total excretion (breath plus anal) by indirect calorimetry showed that IBS patients excreted more hydrogen than healthy subjects when on a standard diet, suggesting an hyperactive gas-producing colonic microflora as potential etiology[<a href="#B45" data-jats-ref-type="bibr" data-jats-rid="B45" id="refB4567">45</a>].</p><p id="p210">However, the stated increase in the production of intestinal gas should lead to an increase in flatulence but not necessarily of bloating, in fact several studies show that most of the normal subjects are able to excrete large amounts of gas without complain of symptoms[<a href="#B24" data-jats-ref-type="bibr" data-jats-rid="B24" id="refB2468">24</a>,<a href="#B56" data-jats-ref-type="bibr" data-jats-rid="B56" id="refB5669">56</a>]. Therefore, additional etiology factors are to be speculated in the genesis of bloating.</p><p id="p211">In their early studies with the washout technique Lasser <i>et al</i>[<a href="#B57" data-jats-ref-type="bibr" data-jats-rid="B57" id="refB5770">57</a>] showed that the amount (and composition) of intestinal gas in IBS patients, in fasting condition, was similar to that of healthy subjects, about 100-300 mL. In these studies, gas was measured by infusing argon into the intestine at a relatively high flow rate (40 mL/min) and recovering rectal gas. The Barcelona group more than twenty years later, using a gas challenge test Figure <a href="#F3" data-jats-ref-type="fig" data-jats-rid="F3">3</a>), came to the same conclusion[<a href="#B58" data-jats-ref-type="bibr" data-jats-rid="B58" id="refB5871">58</a>]. In contrast studies conducted using plain abdominal radiographs concluded that intra-abdominal gas content was larger in IBS patients than in healthy subjects[<a href="#B59" data-jats-ref-type="bibr" data-jats-rid="B59" id="refB5972">59</a>,<a href="#B60" data-jats-ref-type="bibr" data-jats-rid="B60" id="refB6073">60</a>]. However, the differences in the amount of gas between the two groups, reported by these studies, appears to be relatively low in absolute volume and in addition these increases did not correlate with the symptoms reported. In fact, a computed tomography study of intestinal gas could not detect significant differences between controls and patients with significant daytime abdominal girth increments and bloating[<a href="#B21" data-jats-ref-type="bibr" data-jats-rid="B21" id="refB2174">21</a>].</p><div id="F3">
+    <div>
+        <a href="http://www.wjgnet.com/1007-9327/full/v20/i39/WJG-20-14407-g003.htm" target="_blank">
+            <picture>
+                <source srcset="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g003.webp" alt="Figure 3" loading="lazy" type="image/webp">
+                <img src="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g003.jpg" alt="Figure 3" loading="lazy" title="Figure 3">
+            </picture>
+        </a>
+        
+    </div>
+    <p><b>Figure 3&nbsp;Gas challenge test.</b>
+        <span>
+             The method consists in the infusion of a mixture of gases in the jejunum while anal gas output is quantified. Adapted from[<a href="#B65" data-jats-ref-type="bibr" data-jats-rid="B65" id="refB6575">65</a>].
+        </span>
+    </p>
+</div>
+<p id="p213">These data suggest that clinical bloating may not be simply the result of too much intestinal gas, but abnormal gas handling and distribution within the gut might play a relevant role as well.</p><p id="p214"><b>Stools:</b> Bloating is a frequent complains in constipated patients[<a href="#B22" data-jats-ref-type="bibr" data-jats-rid="B22" id="refB2276">22</a>]. Retained feces in the rectum causes delayed small intestinal as well as colonic transit, probably explaining the aggravated bloating in constipated patients[<a href="#B61" data-jats-ref-type="bibr" data-jats-rid="B61" id="refB6177">61</a>]. It has been previously suggested that anorectal dysfunction underlying functional constipation may be an important contributory factor to the development of bloating and abdominal distension[<a href="#B62" data-jats-ref-type="bibr" data-jats-rid="B62" id="refB6278">62</a>].</p><p id="p215">We found that in healthy men who underwent experimentally-controlled 35-d of bed rest, at the end of the study, 60% had new onset of functional constipation fulfilling Rome III criteria, moreover, there was a significant increase in flatulence and a significant correlation between the change in flatulence and the change in number of evacuations that significantly decreased[<a href="#B63" data-jats-ref-type="bibr" data-jats-rid="B63" id="refB6379">63</a>]. It is possible that during bed rest due to an ineffective evacuation of stools, a larger amount of faeces were retained in the rectum, then causing rectal distension and explaining the decreased bowel frequency and the increase in desire of defecate along the experimental period. It is common knowledge that also normal subjects when provided with a sensation of stooling may show a dyssynergic pattern of defecation, particularly when tested in left lateral position[<a href="#B64" data-jats-ref-type="bibr" data-jats-rid="B64" id="refB6480">64</a>]. Since in healthy subjects experimentally-induced rectal distension accelerates gas evacuation and prevents gas retention[<a href="#B65" data-jats-ref-type="bibr" data-jats-rid="B65" id="refB6581">65</a>], we hypothesized this mechanism underlying the demonstrated increase in flatulence. In fact, intestinal gas handling is a dynamic and efficient process that allows the normal gut to accommodate and evacuate large gas loads without inducing symptoms[<a href="#B65" data-jats-ref-type="bibr" data-jats-rid="B65" id="refB6582">65</a>].</p><p id="p216">Although the relationship between bloating/abdominal distension and constipation can be intuitive, contrasting data have been published showing that also IBS-D patients claim for bloating. In 2006, Houghton <i>et al</i>[<a href="#B22" data-jats-ref-type="bibr" data-jats-rid="B22" id="refB2283">22</a>] showed that in IBS patients there is a real increase in abdominal circumference (up to 12 cm in IBS) compared to healthy subjects. However, a direct correlation among bloating, abdominal distension and girth increase was evident in IBS-constipation patient only. In this study, the relationship of distension to subjective bloating showed a good correlation in constipation-predominant patients but not in diarrhea-predominant IBS[<a href="#B66" data-jats-ref-type="bibr" data-jats-rid="B66" id="refB6684">66</a>]. Conflicting results were evidenced by Chang <i>et al</i>[<a href="#B11" data-jats-ref-type="bibr" data-jats-rid="B11" id="refB1185">11</a>] who correlated IBS patterns with bloating and objective abdominal distension showing that patients complaining bloating plus abdominal distension were more frequently constipated (IBS-C), while those complaining of simple bloating were more frequently diarrhea-predominant (IBS-D). These data has been subsequently confirmed by Jiang <i>et al</i>[<a href="#B14" data-jats-ref-type="bibr" data-jats-rid="B14" id="refB1486">14</a>] who reported that IBS-C patients, compared to controls, experienced more frequently abdominal distension (14-fold more likely) than IBS-D who report more frequently bloating alone. In the attempt to explain possible underlining mechanisms, Authors again implicate an impaired colonic transit with subsequent bacterial overgrowth, fermentation and increased abdominal girth distension, even if definitive data are still lacking.</p><p id="p217"><b>Liquids:</b> Once eaten, food is diluted in a large amount of gastric secretion in order to suspend and disperse solid parts and facilitate digestion and absorption mechanisms. Typically, bloating patients do not claim for symptoms when fasten, but shortly after a meal. Thus one can speculate that the liquid, proximal, small bowel stimulation can be responsible for symptoms in bloating patients. Moreover, it has been shown that in bloating patients a liquid infusion of lipids is associated with slow gut propulsive motility significantly more than in healthy individuals[<a href="#B67" data-jats-ref-type="bibr" data-jats-rid="B67" id="refB6787">67</a>]. This stimulus seems to begin in the proximal small bowel for an impaired motor jejunum response, while distal ileum and colon are not affected by any change in motor patters. Moreover jejunal gas infusion, but not distal infusions, was able to induce abdominal symptoms[<a href="#B68" data-jats-ref-type="bibr" data-jats-rid="B68" id="refB6888">68</a>].</p><p id="p218"><b>Fat:</b> An excessive weight is known to be correlated with some clinical manifestations of functional GI disorders, such as dyspepsia, however, the relationship between bloating and BMI is contradictory. Two clinical studies demonstrated that a BMI ≥ 30 positively correlates with bloating symptoms[<a href="#B69" data-jats-ref-type="bibr" data-jats-rid="B69" id="refB6989">69</a>,<a href="#B70" data-jats-ref-type="bibr" data-jats-rid="B70" id="refB7090">70</a>], while a recent meta-analysis showed that there was no relationship between bloating and increasing BMI[<a href="#B71" data-jats-ref-type="bibr" data-jats-rid="B71" id="refB7191">71</a>].</p><p id="p219">Two interesting studies showed the possible association between weight gain and bloating. In 1994, Sullivan <i>et al</i>[<a href="#B72" data-jats-ref-type="bibr" data-jats-rid="B72" id="refB7292">72</a>] indicated that about 40% of bloating complainers gained weight concurrently to the onset of symptoms and, in 2001, Chang <i>et al</i>[<a href="#B11" data-jats-ref-type="bibr" data-jats-rid="B11" id="refB1193">11</a>] found that 24% of patients believed that their bloating symptoms began when weight started to increase. In our experience massive obese patients on a waiting list prior to bariatric surgery do not have a significant increase in intensity-frequency scores of bloating and flatulence compared to controls[<a href="#B34" data-jats-ref-type="bibr" data-jats-rid="B34" id="refB3494">34</a>]. Thus one can speculate that the recent fat accumulation in the abdomen, not massive obesity as chronic condition may favor the development or awareness of bloating as a symptom.</p></div><div id="sec25"><p>Impaired abdominal empting</p><p id="p21">Even if intestinal motility since long is recognized as one of the key features in functional bowel disorders pathophysiology[<a href="#B73" data-jats-ref-type="bibr" data-jats-rid="B73" id="refB7395">73</a>], its central role can be questioned when it comes to bloating generation using conventional techniques[<a href="#B74" data-jats-ref-type="bibr" data-jats-rid="B74" id="refB7496">74</a>]. A recent study has also suggested that altered colon transit correlates poorly or not at all with IBS symptoms such as bloating, flatulence or pain[<a href="#B75" data-jats-ref-type="bibr" data-jats-rid="B75" id="refB7597">75</a>]. On the other hand the Barcelona group has undertaken a series of elegant studies on intestinal gas transit and tolerance, which have helped our understanding of how gas might cause symptoms in IBS.</p><p id="p22">They have suggested that while gas volumes may be normal in patients with bloating, they have an impaired intestinal handling of gas loads[<a href="#B57" data-jats-ref-type="bibr" data-jats-rid="B57" id="refB5798">57</a>,<a href="#B67" data-jats-ref-type="bibr" data-jats-rid="B67" id="refB6799">67</a>,<a href="#B76" data-jats-ref-type="bibr" data-jats-rid="B76" id="refB76100">76</a>,<a href="#B77" data-jats-ref-type="bibr" data-jats-rid="B77" id="refB77101">77</a>]. This may be of particular relevance since a sensory-motor gut abnormality might represent the pathophysiological basis of bloating.</p><p id="p23">Lasser <i>et al</i>[<a href="#B57" data-jats-ref-type="bibr" data-jats-rid="B57" id="refB57102">57</a>] evidenced that in a number of patients complaining of bloating the gas infused into the small bowel provokes both the flow back into the stomach of the gas and symptoms such as excessive gas, abdominal pain, and bloating. Over twenty years later, it has been shown that patients with IBS and functional bloating had impaired transit and tolerance of intestinal gas[<a href="#B67" data-jats-ref-type="bibr" data-jats-rid="B67" id="refB67103">67</a>,<a href="#B76" data-jats-ref-type="bibr" data-jats-rid="B76" id="refB76104">76</a>,<a href="#B77" data-jats-ref-type="bibr" data-jats-rid="B77" id="refB77105">77</a>]. For example, they retained gas and complaining about their usual symptoms in response to infusion of gas, which was well tolerated by the majority of healthy subjects. Interestingly abdominal distension correlated with the volume of gas retained in their gut.</p><p id="p24">In healthy volunteers two important mechanisms have been demonstrated to give a possible explanation of the mechanisms of gas retention increased resistance to gas flow and impaired intestinal propulsion[<a href="#B77" data-jats-ref-type="bibr" data-jats-rid="B77" id="refB77106">77</a>]. In particular, subjective abdominal complaints were much higher when it were produced by increased resistance to flow than when gas retention was induced by inhibition of propulsion produced by glucagon-induced motor inhibition. Therefore, if abdominal distention depends largely on the volume of gas retained independently of the mechanism (<i>i.e</i>., high-resistance barrier obstructing flow or an impaired propulsion), symptom perception depends on the mechanism of retention: at the same volumes, flow obstruction produces more symptoms than impaired propulsion. Conceivably, small gas bubbles, pushed against high-resistance barriers (maybe simultaneously at different points of the intestine), may increase intestinal wall tension and produce symptoms also by means of a spatial summation phenomena[<a href="#B58" data-jats-ref-type="bibr" data-jats-rid="B58" id="refB58107">58</a>]. Hence a disorder involving the pelvic floor (defecation disorder) or the voluntary inhibition of anal flatus, might contribute to gas retention and symptoms.</p><p id="p25">The origin of such bowel motor alterations would be an abnormal reflex control. The transit of gas seems to happen secondary to tonic motor activity and unrelated to phasic activity[<a href="#B65" data-jats-ref-type="bibr" data-jats-rid="B65" id="refB65108">65</a>,<a href="#B74" data-jats-ref-type="bibr" data-jats-rid="B74" id="refB74109">74</a>,<a href="#B78" data-jats-ref-type="bibr" data-jats-rid="B78" id="refB78110">78</a>], finely regulated by gastro-intestinal and intestine-intestinal reflexes[<a href="#B65" data-jats-ref-type="bibr" data-jats-rid="B65" id="refB65111">65</a>,<a href="#B67" data-jats-ref-type="bibr" data-jats-rid="B67" id="refB67112">67</a>,<a href="#B78" data-jats-ref-type="bibr" data-jats-rid="B78" id="refB78113">78</a><span>-</span><a href="#B81" data-jats-ref-type="bibr" data-jats-rid="B81" id="refB81114">81</a>]. Gas transit seems also being influenced by posture and physical activity[<a href="#B82" data-jats-ref-type="bibr" data-jats-rid="B82" id="refB82115">82</a><span>-</span><a href="#B85" data-jats-ref-type="bibr" data-jats-rid="B85" id="refB85116">85</a>], suggesting possible somato-visceral reflexes[<a href="#B80" data-jats-ref-type="bibr" data-jats-rid="B80" id="refB80117">80</a>,<a href="#B81" data-jats-ref-type="bibr" data-jats-rid="B81" id="refB81118">81</a>,<a href="#B86" data-jats-ref-type="bibr" data-jats-rid="B86" id="refB86119">86</a>].</p><p id="p26">In healthy subjects it was shown that jejunal gas infusion produced, on similar gas volume retained and abdominal distension, more symptoms than rectal infusion[<a href="#B87" data-jats-ref-type="bibr" data-jats-rid="B87" id="refB87120">87</a>]. These results indicate that the symptoms are influenced by the segment in which the gas is trapped.</p><p id="p27">Moreover, studies performed with a scintigraphic technique, using Xenon 133, have shown that in patients with bloating there is a impaired small-intestinal propulsion of gases[<a href="#B88" data-jats-ref-type="bibr" data-jats-rid="B88" id="refB88121">88</a>], (interestingly the proximal small bowel is the site where are normally produced large amounts of carbon dioxide). More recently this alteration in gas handling was detected in the proximal colon[<a href="#B86" data-jats-ref-type="bibr" data-jats-rid="B86" id="refB86122">86</a>,<a href="#B89" data-jats-ref-type="bibr" data-jats-rid="B89" id="refB89123">89</a>] that is the first physiological site of colonic gas production. While alterations of the aforementioned intestine-intestinal reflexes could explain the small intestinal impaired gas transit[<a href="#B68" data-jats-ref-type="bibr" data-jats-rid="B68" id="refB68124">68</a>,<a href="#B88" data-jats-ref-type="bibr" data-jats-rid="B88" id="refB88125">88</a>], the proximal colon gas retention could be due to a proximal-to-distal uncoupling: low colon proximal tone, increased resistance to flow through the distal colon or both[<a href="#B77" data-jats-ref-type="bibr" data-jats-rid="B77" id="refB77126">77</a>]. However, the clinical correlation remains unclear.</p></div><div id="sec26"><p>Altered intra-abdominal volume displacement</p><p id="p21"><b>Abdomino-phrenic theory:</b> One of the hypotheses for abdominal distension is that if the distension is not related to increased luminal contents, but to gas displacement. In other words, the overall volume is still the same, but is shifted from its original position.</p><p id="p22">The abdomen is limited by the vertebral column, which determines the configuration of the posterior abdominal wall, the diaphragm, and the anterolateral muscles. Furthermore, it is intuitive that abdominal wall mechanics and postural activity are different in supine position compared when the trunk is erect.</p><p id="p23">It has been showed firstly that in healthy individuals, the increase of intra-abdominal volume, using colonic gas infusion, causes girth enlargement and activates muscular contractions of the anterior abdominal wall and that the same phenomena is impaired in bloating patients that showed an altered pattern of abdominal contractions and an exaggerate girth increase caused by abdominal-wall dystony[<a href="#B90" data-jats-ref-type="bibr" data-jats-rid="B90" id="refB90127">90</a>].</p><p id="p24">Subsequently, the same group tested in a series of elegant electromyographic (EMG) studies, the hypothesis of an impaired abdomino-phrenic coordination or abdomino-phrenic dyssynergia.</p><p id="p25">Using colonic gas infusions and EMG of the diaphragm and of the anterior wall, they found that in healthy individuals, studied in the in upright position, gas infusion causes a contraction of the muscles in the anterior abdominal wall (all except the internal oblique muscles already contracted as it exerts anti-gravitational activity)[<a href="#B90" data-jats-ref-type="bibr" data-jats-rid="B90" id="refB90128">90</a>] and an adaptative relaxation of the diaphragm[<a href="#B91" data-jats-ref-type="bibr" data-jats-rid="B91" id="refB91129">91</a>] leading to a volumetric increase of the abdominal cavity by an upper expansion and redistribution of intra-abdominal contents to accommodate the extra volume load preventing an exaggerated girth increments. These changes were observed also during more physiological conditions such as meal ingestion[<a href="#B92" data-jats-ref-type="bibr" data-jats-rid="B92" id="refB92130">92</a>]. In supine position, these responses to volume load express a similar posture-dependent coordination: the diaphragm in this case contracts to exert anti-gravitational activity while the anterior abdominal wall remains inactive. Conversely, in functional patients, by the same experimental model, was shown a paradoxical relaxation of the anterior wall (inhibition of the internal oblique without a significant contraction of the rest of the anterior wall muscles)[<a href="#B90" data-jats-ref-type="bibr" data-jats-rid="B90" id="refB90131">90</a>]. Moreover, by using a simultaneous abdominal CT scans observations in supine position, a marked and significant diaphragmatic drop was evidenced which correlated with the degree of anterior wall distension[<a href="#B93" data-jats-ref-type="bibr" data-jats-rid="B93" id="refB93132">93</a>]. In particular, functional patients exhibit a paradoxical contraction of the diaphragm (change in EMG activity) that in combination with relaxation of the anterior wall muscles determined an altered redistribution of luminal content (Figure <a href="#F4" data-jats-ref-type="fig" data-jats-rid="F4">4</a>). It was further proven a contribution of the thorax to abdominal accommodation during gas load with a simultaneous intercostals muscles contraction coordinated with diaphragmatic relaxation and cephalad displacement, to increase thoracic perimeter[<a href="#B94" data-jats-ref-type="bibr" data-jats-rid="B94" id="refB94133">94</a>]. These abnormal responses to gas load in patients, may be triggered by uncomfortable abdominal sensation[<a href="#B95" data-jats-ref-type="bibr" data-jats-rid="B95" id="refB95134">95</a>,<a href="#B96" data-jats-ref-type="bibr" data-jats-rid="B96" id="refB96135">96</a>]. So, even modest gas retention, alone or in conjunction with other factors such as meals, stress, <i>etc</i>., may induce symptoms and visible abdominal distension[<a href="#B8" data-jats-ref-type="bibr" data-jats-rid="B8" id="refB8136">8</a>].</p><div id="F4">
+    <div>
+        <a href="http://www.wjgnet.com/1007-9327/full/v20/i39/WJG-20-14407-g004.htm" target="_blank">
+            <picture>
+                <source srcset="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g004.webp" alt="Figure 4" loading="lazy" type="image/webp">
+                <img src="https://f6publishing.blob.core.windows.net/797aea13-b877-408f-ac87-3e4964b145bb/WJG-20-14407-g004.jpg" alt="Figure 4" loading="lazy" title="Figure 4">
+            </picture>
+        </a>
+        
+    </div>
+    <p><b>Figure 4&nbsp;Altered intra-abdominal volume displacement as possible explanation of bloating.</b>
+        <span>
+             Bloating patients show an impaired abdomino-phrenic coordination with a paradoxical contraction of the diaphragm coupled with a relaxation of the abdominal wall leading to a modification in abdominal girth. Adapted from[<a href="#B129" data-jats-ref-type="bibr" data-jats-rid="B129" id="refB129137">129</a>].
+        </span>
+    </p>
+</div>
+</div><div id="sec27"><p>Increased perception of intestinal stimuli</p><p id="p21"><b>Sensory dysfunction:</b> As previously reported, patients with dyspepsia perceived and tolerated smaller meal volumes than healthy subjects[<a href="#B97" data-jats-ref-type="bibr" data-jats-rid="B97" id="refB97138">97</a>,<a href="#B98" data-jats-ref-type="bibr" data-jats-rid="B98" id="refB98139">98</a>]. Perception of intragastric content depends on stimulation of tension receptors in the gastric wall[<a href="#B99" data-jats-ref-type="bibr" data-jats-rid="B99" id="refB99140">99</a>].</p><p id="p22">The difference between patients and healthy subjects is more pronounced in the postprandial period because the presence of nutrients increases visceral sensitivity in healthy subjects[<a href="#B100" data-jats-ref-type="bibr" data-jats-rid="B100" id="refB100141">100</a>], but this effect is exaggerated in patients with dyspepsia[<a href="#B101" data-jats-ref-type="bibr" data-jats-rid="B101" id="refB101142">101</a>]. Although during rectal distension not all IBS patients show visceral hypersensitivity, the presence of an altered visceral sensitivity is considered greatly important in the pathogenesis of IBS[<a href="#B10" data-jats-ref-type="bibr" data-jats-rid="B10" id="refB10143">10</a>]. The gas challenge test proved a role of sensory disturbances in IBS patients, and recent clinical experiment has demonstrated that bloating without visible distension is associated with visceral hypersensitivity[<a href="#B8" data-jats-ref-type="bibr" data-jats-rid="B8" id="refB8144">8</a>]. Moreover, IBS patients with bloating pay more attention to their abdominal symptoms, which is a kind of hyper-vigilance[<a href="#B102" data-jats-ref-type="bibr" data-jats-rid="B102" id="refB102145">102</a>]. Therefore, altered sensory threshold combined with altered conscious perception may explain the mechanism of bloating. Moreover, a role for hormones has been hypothesized based on female predominance in IBS. Although healthy women may report changes in bowel function at the time of menstruation, this effect is far more pronounced in women with IBS with approximately 40%-75% claiming that bowel habit and bloating are exacerbated perimenstrually[<a href="#B11" data-jats-ref-type="bibr" data-jats-rid="B11" id="refB11146">11</a>,<a href="#B72" data-jats-ref-type="bibr" data-jats-rid="B72" id="refB72147">72</a>,<a href="#B103" data-jats-ref-type="bibr" data-jats-rid="B103" id="refB103148">103</a>]. This suggests that bloating may be strongly influenced by hormonal status to modify visceral sensitivity. However, whether estrogens have pronociceptive or antinociceptive properties is still a controversial issue[<a href="#B104" data-jats-ref-type="bibr" data-jats-rid="B104" id="refB104149">104</a>].</p><p id="p23"><b>Psycological factors:</b> The role of psychological factors in the etiology induction pathogenesis of bloating is still controversial. Some authors reported a strong link between symptoms of mental stress such as depression, sleeping difficulties, problems of coping and abdominal complaints, including bloating, in IBS patients[<a href="#B105" data-jats-ref-type="bibr" data-jats-rid="B105" id="refB105150">105</a>], although this association was not confirmed by others[<a href="#B106" data-jats-ref-type="bibr" data-jats-rid="B106" id="refB106151">106</a>].</p><p id="p24">Neri <i>et al</i>[<a href="#B107" data-jats-ref-type="bibr" data-jats-rid="B107" id="refB107152">107</a>] rated abdominal bloating as one of the six useful symptoms on discriminating functional bowel disorders. More recently, Jiang <i>et al</i>[<a href="#B14" data-jats-ref-type="bibr" data-jats-rid="B14" id="refB14153">14</a>] reported higher Somatic Symptom Checklist (a measure of somatization) scores in patients with bloating and distension, suggesting that the process of somatization could play a role. Further studies applying standardized psychiatric questionnaires and the Diagnostic and Statistical Manual of Mental Disorders criteria are needed to clarify the possible association between psychological factors and bloating.</p></div></div><div id="sec13"><p>TREATMENT</p><p id="p11">As a consequence of unclear pathophysiological mechanisms underlining bloating, the management remains mostly empiric. Currently, the primary therapeutic aim is limited on reducing gas production or accelerating colonic transit, but there is a lack of concrete scientific basis. Also, there are few trails assessing relief of bloating as primary end point, thus therapeutic options derive from data extrapolated from IBS studies with a consequent limited reliability.</p><p id="p12">A change in diet habits is commonly considered as first line therapy. Most of the primary care patients have already tested the efficacy of different exclusion diet before consulting a gastroenterologist. Among exclusion diets, recent evidences suggest a strong role of FODMAPs (fermentable oligosaccharides, disaccharides, monosaccharides, and polyols) in the genesis of IBS symptoms. Halmos <i>et al</i>[<a href="#B108" data-jats-ref-type="bibr" data-jats-rid="B108" id="refB108154">108</a>] tested the effects of a low FODMAPs diet in a randomized, controlled, single-blind, cross-over trial of patients with IBS showing a reduction of overall IBS symptoms, including bloating, pain and passage of gas[<a href="#B39" data-jats-ref-type="bibr" data-jats-rid="B39" id="refB39155">39</a>].</p><p id="p13">Evidences of a role of physical activity on bloating symptoms were studied by the Barcelona group. They showed that mild physical activity and upright position accelerate gas transit and reduce bloating and abdominal distension[<a href="#B87" data-jats-ref-type="bibr" data-jats-rid="B87" id="refB87156">87</a>]. Theoretically, a change in hydrostatic forces distribution and increased intra-abdominal pressure during upright position or a propulsive gut motor response induced by exercise, promote gas transit. Non-pharmacological agents showed inconstant results. We speculated that mechanical compression of the abdominal wall could exert a passive effect on gas displacement and stimulate a propulsive gut motor response, making the gas evacuation easier and the symptoms to reduce. On the contrary, our data demonstrated that a mechanical massage of the abdominal wall does not modify colonic gas evacuation, perception and abdominal distension[<a href="#B86" data-jats-ref-type="bibr" data-jats-rid="B86" id="refB86157">86</a>].</p><p id="p14">An interesting hypothesis is the possibility to correct the abnormal abdominal-phrenic coordination, which, as mentioned above, is one of the theories involved in the abdominal bloating genesis. Preliminary data show the effectiveness of a new treatments based on correction of inappropriate diaphragm contraction with bio-feedback techniques to prevent anterior protrusion of the abdominal wall and so manage bloating[<a href="#B109" data-jats-ref-type="bibr" data-jats-rid="B109" id="refB109158">109</a>].</p><p id="p15">A second widely used approach to treat bloating is the use of antibiotics and/or probiotics. The rationale underling this drug is that an intestinal dysbiosis could increase gas production. In 2006, Sharara <i>et al</i>[<a href="#B110" data-jats-ref-type="bibr" data-jats-rid="B110" id="refB110159">110</a>] demonstrated that a 10 d course of rifaximin is effective in reducing bloating symptoms without significant adverse events. Also, another interesting double blind, randomized, placebo-controlled trial, showed that patients with IBS (based on Rome I criteria) treated with rifaximin reported a significant improvement in bloating and IBS symptoms compared to patients who received placebo (<i>P</i> = 0.010)[<a href="#B111" data-jats-ref-type="bibr" data-jats-rid="B111" id="refB111160">111</a>].</p><p id="p16">The same group in 2011 analyzing data from 2 large, double-blind, placebo-controlled studies for a total of 1260 non-constipated IBS patients (TARGET 1 and 2) found that, compared to placebo, patients in the rifaximin group were more likely to have adequate relief of bloating (<i>P</i> &lt; 0.001)[<a href="#B112" data-jats-ref-type="bibr" data-jats-rid="B112" id="refB112161">112</a>].</p><p id="p17">Regarding the use of probiotics, conflicting results were published in the last years. Most of the studies were limited for relevant methodological limitations, such as the use of different probiotic bacteria in each study and, the use of heterogeneous and not clearly defined study population. An interesting study in 2003 showed that in Rome II IBS-D patients, VSL#3 reduced post-treatment abdominal bloating (<i>P</i> = 0.046) and the same Authors in the subsequent trial in patients with IBS and significant abdominal bloating demonstrated that VSL#3 reduces specifically flatulence[<a href="#B113" data-jats-ref-type="bibr" data-jats-rid="B113" id="refB113162">113</a>]. A recent trial of <i>Lactobacillus acidophilus</i> and <i>Bifidobacterium lactis</i> in patients with IBS found an improvement in bloating severity during an 8-wk trial period[<a href="#B114" data-jats-ref-type="bibr" data-jats-rid="B114" id="refB114163">114</a>].</p><p id="p18">Conversely, our group found that a in IBS patients (Rome III criteria) a symbiotic mixture (Probinul, 5 g bid) for 4 wk was effective in decreasing the severity of flatulence in IBS patients, but failed to achieve an improvement in global satisfactory relief of flatulence and bloating[<a href="#B115" data-jats-ref-type="bibr" data-jats-rid="B115" id="refB115164">115</a>] although maintenance for further 6 mo still showed a benefits on flatulence[<a href="#B116" data-jats-ref-type="bibr" data-jats-rid="B116" id="refB116165">116</a>].</p><p id="p19">A recent metanalysis, among different items, specifically addressed the use of probiotics in bloating patients (Table <a href="#T1" data-jats-ref-type="table" data-jats-rid="T1">1</a>). After including all published trials in which probiotics were tested to asses bloating or distension relief as primary or secondary endpoints in IBS or non IBS patients, conclusion was that speciﬁc probiotics can lead to bloating relief in some patients with IBS[<a href="#B117" data-jats-ref-type="bibr" data-jats-rid="B117" id="refB117166">117</a>].</p><figure id="T1">
+    <figcaption>
+        <p><a href="http://www.wjgnet.com/1007-9327/full/v20/i39/14407-T1.htm" target="_blank"><span>Table 1</span></a>&nbsp;Summary of randomised clinical trials specifically assessing bloating reliefs.
+        </p>
+    </figcaption>
+    <div>
+        <table><thead><tr><td><b>Agent</b></td><td><b>Main outcome on bloating symptom</b></td><td><b>Rome criteria</b></td></tr></thead><tbody><tr><td rowspan="3">Probiotics</td><td><i>Bifidobacterium bifidum</i> MIMBb75: Improving bloating/distension[<a href="#B136" data-jats-ref-type="bibr" data-jats-rid="B136" id="refB136167">136</a>]</td><td>II</td></tr><tr><td><i>Lactobacillus plantarum</i> 299v: improvement[<a href="#B137" data-jats-ref-type="bibr" data-jats-rid="B137" id="refB137168">137</a>]</td><td>III</td></tr><tr><td>Multispecies: improvement[<a href="#B138" data-jats-ref-type="bibr" data-jats-rid="B138" id="refB138169">138</a>]</td><td>III</td></tr><tr><td>Symbiotics</td><td>Symbiotic mixture: no benefits[<a href="#B115" data-jats-ref-type="bibr" data-jats-rid="B115" id="refB115170">115</a>,<a href="#B116" data-jats-ref-type="bibr" data-jats-rid="B116" id="refB116171">116</a>]</td><td>III</td></tr><tr><td rowspan="2">Antibiotics</td><td>Rifaximin: reduction in bloating-specific scores[<a href="#B110" data-jats-ref-type="bibr" data-jats-rid="B110" id="refB110172">110</a>]</td><td>II</td></tr><tr><td>Rifaximin: improvement (39.5% <i>vs</i> 28.7%)[<a href="#B112" data-jats-ref-type="bibr" data-jats-rid="B112" id="refB112173">112</a>]</td><td>II</td></tr><tr><td rowspan="4">Prokinetics</td><td>Tegaserod: improvement[<a href="#B120" data-jats-ref-type="bibr" data-jats-rid="B120" id="refB120174">120</a>]</td><td>I</td></tr><tr><td>Tegaserod: improvement[<a href="#B139" data-jats-ref-type="bibr" data-jats-rid="B139" id="refB139175">139</a><span>-</span><a href="#B141" data-jats-ref-type="bibr" data-jats-rid="B141" id="refB141176">141</a>]</td><td>II</td></tr><tr><td>Tegaserod: no differences <i>vs</i> placebo[<a href="#B142" data-jats-ref-type="bibr" data-jats-rid="B142" id="refB142177">142</a>]</td><td>II</td></tr><tr><td>Prucalopride: improvement[<a href="#B126" data-jats-ref-type="bibr" data-jats-rid="B126" id="refB126178">126</a>]</td><td>II</td></tr><tr><td rowspan="2">Antispasmodic</td><td>Otilonium bromide improvement[<a href="#B143" data-jats-ref-type="bibr" data-jats-rid="B143" id="refB143179">143</a>]</td><td>II</td></tr><tr><td>Mebeverine <i>vs</i> Otilonium bromide: improvement significantly achieved by both treatments[<a href="#B144" data-jats-ref-type="bibr" data-jats-rid="B144" id="refB144180">144</a>]</td><td>II</td></tr><tr><td rowspan="3">Antidepressant</td><td>Paroxetine: no difference <i>vs</i> placebo[<a href="#B145" data-jats-ref-type="bibr" data-jats-rid="B145" id="refB145181">145</a>]</td><td>I</td></tr><tr><td>Citalopram: improvement[<a href="#B146" data-jats-ref-type="bibr" data-jats-rid="B146" id="refB146182">146</a>]</td><td>II</td></tr><tr><td>Fluoxetine: improvement[<a href="#B147" data-jats-ref-type="bibr" data-jats-rid="B147" id="refB147183">147</a>]</td><td>II</td></tr></tbody></table>
+    </div>
+    
+</figure>
+<p id="p111">Experimental data in healthy controls showed that glucagon, a potent muscle relaxant, reduced abdominal symptoms but gas retention and objective abdominal distension were unaffected[<a href="#B77" data-jats-ref-type="bibr" data-jats-rid="B77" id="refB77184">77</a>]. Domperidone has been shown to be ineffective in IBS symptoms[<a href="#B118" data-jats-ref-type="bibr" data-jats-rid="B118" id="refB118185">118</a>] whereas the administration of neostigmine, a prokinetic drug, produced gas clearance and improvement of both abdominal symptoms and objective distension[<a href="#B119" data-jats-ref-type="bibr" data-jats-rid="B119" id="refB119186">119</a>]. Likewise the 5-HT4 receptor agonist tegaserod has demonstrated potent prokinetic effects on small intestinal and colonic transit in IBS patients with constipation, also reducing the symptoms of bloating[<a href="#B120" data-jats-ref-type="bibr" data-jats-rid="B120" id="refB120187">120</a>]. Ischemic cardiac effects have been reported with tegaserod used in a patient population at potentially high risk of cardiovascular complications[<a href="#B121" data-jats-ref-type="bibr" data-jats-rid="B121" id="refB121188">121</a><span>-</span><a href="#B123" data-jats-ref-type="bibr" data-jats-rid="B123" id="refB123189">123</a>]. For these reasons, its use in clinical practice is very limited. Prucalopride is a highly selective 5-HT4 receptor agonist with strong enterokinetic activity[<a href="#B124" data-jats-ref-type="bibr" data-jats-rid="B124" id="refB124190">124</a>,<a href="#B125" data-jats-ref-type="bibr" data-jats-rid="B125" id="refB125191">125</a>] and requires lower dose for this therapeutic effect[<a href="#B119" data-jats-ref-type="bibr" data-jats-rid="B119" id="refB119192">119</a>] making this drug potentially suitable for bloating patients[<a href="#B126" data-jats-ref-type="bibr" data-jats-rid="B126" id="refB126193">126</a>]. Itopride, a dopamine receptors antagonist and acetylcholinesterase inhibitor, has shown conflicting results in patients with functional dyspepsia[<a href="#B127" data-jats-ref-type="bibr" data-jats-rid="B127" id="refB127194">127</a>,<a href="#B128" data-jats-ref-type="bibr" data-jats-rid="B128" id="refB128195">128</a>].</p><p id="p112">Other commonly used drugs to relieve bloating and more general IBS symptoms are antispasmodics (including peppermint oil), gas reducing agents such as simethicone and tricyclic antidepressants (TCAs).</p><p id="p113">Antispasmodics, such as mebeverine, otilonium, and trimebutine, act decreasing the tone and contractility of intestinal smooth muscle by an antimuscarinic effect. Those drugs are widely prescribed and whereas scientific evidence on relieving IBS symptom exists[<a href="#B129" data-jats-ref-type="bibr" data-jats-rid="B129" id="refB129196">129</a>], efficacy on bloating is under discussion[<a href="#B130" data-jats-ref-type="bibr" data-jats-rid="B130" id="refB130197">130</a>]. In a meta-analysis of therapeutic options in IBS, Ford <i>et al</i>[<a href="#B131" data-jats-ref-type="bibr" data-jats-rid="B131" id="refB131198">131</a>] reviewed clinical trials on peppermint oil in IBS patients. Authors’ conclusions were that it was superior to placebo, although with a statistically significant heterogeneity among those studies (4 in total). In 2013, Khanna <i>et al</i>[<a href="#B132" data-jats-ref-type="bibr" data-jats-rid="B132" id="refB132199">132</a>], reviewing published data on this drug, concluded that peppermint oil is significantly superior to placebo in controlling both IBS symptoms and abdominal pain with some minor and brief adverse events (manly heartburn).</p><p id="p114">As regard to gas adsorbing agents, the first licensed for bloating symptoms was metylpolysiloxane or syloxone then substituted by simethicone[<a href="#B133" data-jats-ref-type="bibr" data-jats-rid="B133" id="refB133200">133</a>]. A combination of simethicone plus activated charcoal and magnesium oxide was tested against placebo in a double blind, randomized, multicenter trial in patients with FD meeting the Rome III criteria[<a href="#B134" data-jats-ref-type="bibr" data-jats-rid="B134" id="refB134201">134</a>]. This study showed a reductions in the intensity of post-prandial fullness, epigastric pain, epigastric burning and bloating in the active treatment arm compared to placebo[<a href="#B134" data-jats-ref-type="bibr" data-jats-rid="B134" id="refB134202">134</a>].</p><p id="p115">Low dose of antidepressants are effective treatment for IBS. The rationale behind the use of these drugs is that at low dosage they act, through an anticholinergic effect, similarly to spasmolytics agents. A recent systematic review and meta-analysis of 12 randomized controlled trials showed that TCAs are effective in the treatment of IBS while there is less high-quality evidence for psychological therapies in IBS[<a href="#B135" data-jats-ref-type="bibr" data-jats-rid="B135" id="refB135203">135</a>].</p><p id="p116">In conclusion, advances in the understanding of functional bloating have accelerated in the past decade owing to increased attention placed on the definition and diagnostic criteria, and inroads into the understanding of the underlying pathophysiology. Other studies that may also add significant breakthroughs in therapy are welcomed.</p></div>
+    </div>
+    <p><span>Footnotes</span>
+    </p>
+    <p><b>P- Reviewer</b>:  Abraham P, Bortolotti M, de Medina FS, Tsujikawa T S- Editor: Ma YJ L- Editor: A E- Editor: Liu XM</p>
+
+    <p><span>References</span>
+    </p>
+    <div>
+        <div id="B1">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 1 in text" ref-list-rid="B1" target="_self" href="#refB11">1.&nbsp;</a></td>
+            <td>
+                <span><b>Panzuto F</b>,&nbsp;Chiriatti A,&nbsp;Bevilacqua S,&nbsp;Giovannetti P,&nbsp;Russo G,&nbsp;Impinna S,&nbsp;Pistilli F,&nbsp;Capurso G,&nbsp;Annibale B,&nbsp;Delle Fave G.&nbsp;Symptom-based approach to colorectal cancer: survey of primary care physicians in Italy.</span>
+                <span>
+                    <em>Dig Liver Dis</em>.&nbsp;2003;<b>35</b>:869-875.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/14703882" pub-id-type="pubmed" pub-id="14703882" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B1thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+<div id="B5">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 5 in text" ref-list-rid="B5" target="_self" href="#refB55">5.&nbsp;</a></td>
+            <td>
+                <span><b>Knill-Jones RP</b>.&nbsp;A formal approach to symptoms in dyspepsia.</span>
+                <span>
+                    <em>Clin Gastroenterol</em>.&nbsp;1985;<b>14</b>:517-529.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/3905086" pub-id-type="pubmed" pub-id="3905086" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B5thiscited">3</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B6">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 6 in text" ref-list-rid="B6" target="_self" href="#refB66">6.&nbsp;</a></td>
+            <td>
+                <span><b>Talley NJ</b>,&nbsp;Phillips SF,&nbsp;Melton J,&nbsp;Wiltgen C,&nbsp;Zinsmeister AR.&nbsp;A patient questionnaire to identify bowel disease.</span>
+                <span>
+                    <em>Ann Intern Med</em>.&nbsp;1989;<b>111</b>:671-674.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/2679285" pub-id-type="pubmed" pub-id="2679285" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B6thiscited">4</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B9">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 9 in text" ref-list-rid="B9" target="_self" href="#refB912">9.&nbsp;</a></td>
+            <td>
+                <span><b>Marcus SN</b>,&nbsp;Heaton KW.&nbsp;Irritable bowel-type symptoms in spontaneous and induced constipation.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;1987;<b>28</b>:156-159.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/3030901" pub-id-type="pubmed" pub-id="3030901" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B9thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B12">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 12 in text" ref-list-rid="B12" target="_self" href="#refB1216">12.&nbsp;</a></td>
+            <td>
+                <span><b>Caldarella MP</b>,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Antro-fundic dysfunctions in functional dyspepsia.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;2003;<b>124</b>:1220-1229.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/12730863" pub-id-type="pubmed" pub-id="12730863" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B12thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B15">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 15 in text" ref-list-rid="B15" target="_self" href="#refB1521">15.&nbsp;</a></td>
+            <td>
+                <span><b>Sandler RS</b>,&nbsp;Stewart WF,&nbsp;Liberman JN,&nbsp;Ricci JA,&nbsp;Zorich NL.&nbsp;Abdominal pain, bloating, and diarrhea in the United States: prevalence and impact.</span>
+                <span>
+                    <em>Dig Dis Sci</em>.&nbsp;2000;<b>45</b>:1166-1171.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/10877233" pub-id-type="pubmed" pub-id="10877233" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B15thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B18">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 18 in text" ref-list-rid="B18" target="_self" href="#refB1825">18.&nbsp;</a></td>
+            <td>
+                <span><b>Wiklund IK</b>,&nbsp;Fullerton S,&nbsp;Hawkey CJ,&nbsp;Jones RH,&nbsp;Longstreth GF,&nbsp;Mayer EA,&nbsp;Peacock RA,&nbsp;Wilson IK,&nbsp;Naesdal J.&nbsp;An irritable bowel syndrome-specific symptom questionnaire: development and validation.</span>
+                <span>
+                    <em>Scand J Gastroenterol</em>.&nbsp;2003;<b>38</b>:947-954.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/14531531" pub-id-type="pubmed" pub-id="14531531" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B18thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B21">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 21 in text" ref-list-rid="B21" target="_self" href="#refB2129">21.&nbsp;</a></td>
+            <td>
+                <span><b>Maxton DG</b>,&nbsp;Martin DF,&nbsp;Whorwell PJ,&nbsp;Godfrey M.&nbsp;Abdominal distension in female patients with irritable bowel syndrome: exploration of possible mechanisms.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;1991;<b>32</b>:662-664.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/2060875" pub-id-type="pubmed" pub-id="2060875" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B21thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B23">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 23 in text" ref-list-rid="B23" target="_self" href="#refB2333">23.&nbsp;</a></td>
+            <td>
+                <span><b>Lewis MJ</b>,&nbsp;Reilly B,&nbsp;Houghton LA,&nbsp;Whorwell PJ.&nbsp;Ambulatory abdominal inductance plethysmography: towards objective assessment of abdominal distension in irritable bowel syndrome.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;2001;<b>48</b>:216-220.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/11156643" pub-id-type="pubmed" pub-id="11156643" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B23thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B26">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 26 in text" ref-list-rid="B26" target="_self" href="#refB2637">26.&nbsp;</a></td>
+            <td>
+                <span><b>Smith RC</b>,&nbsp;Greenbaum DS,&nbsp;Vancouver JB,&nbsp;Henry RC,&nbsp;Reinhart MA,&nbsp;Greenbaum RB,&nbsp;Dean HA,&nbsp;Mayle JE.&nbsp;Gender differences in Manning criteria in the irritable bowel syndrome.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;1991;<b>100</b>:591-595.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/1993482" pub-id-type="pubmed" pub-id="1993482" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B26thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B29">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 29 in text" ref-list-rid="B29" target="_self" href="#refB2942">29.&nbsp;</a></td>
+            <td>
+                <span><b>Longstreth GF</b>,&nbsp;Wilson A,&nbsp;Knight K,&nbsp;Wong J,&nbsp;Chiou CF,&nbsp;Barghout V,&nbsp;Frech F,&nbsp;Ofman JJ.&nbsp;Irritable bowel syndrome, health care use, and costs: a U.S. managed care perspective.</span>
+                <span>
+                    <em>Am J Gastroenterol</em>.&nbsp;2003;<b>98</b>:600-607.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/12650794" pub-id-type="pubmed" pub-id="12650794" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B29thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="B35">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 35 in text" ref-list-rid="B35" target="_self" href="#refB3549">35.&nbsp;</a></td>
+            <td>
+                <span><b>Fernández-Bañares F</b>,&nbsp;Esteve-Pardo M,&nbsp;de Leon R,&nbsp;Humbert P,&nbsp;Cabré E,&nbsp;Llovet JM,&nbsp;Gassull MA.&nbsp;Sugar malabsorption in functional bowel disease: clinical implications.</span>
+                <span>
+                    <em>Am J Gastroenterol</em>.&nbsp;1993;<b>88</b>:2044-2050.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/8249972" pub-id-type="pubmed" pub-id="8249972" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B35thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B36">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 36 in text" ref-list-rid="B36" target="_self" href="#refB3550">36.&nbsp;</a></td>
+            <td>
+                <span><b>Rumessen JJ</b>,&nbsp;Gudmand-Høyer E.&nbsp;Functional bowel disease: malabsorption and abdominal distress after ingestion of fructose, sorbitol, and fructose-sorbitol mixtures.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;1988;<b>95</b>:694-700.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/3396816" pub-id-type="pubmed" pub-id="3396816" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B36thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B37">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 37 in text" ref-list-rid="B37" target="_self" href="#refB3751">37.&nbsp;</a></td>
+            <td>
+                <span><b>Symons P</b>,&nbsp;Jones MP,&nbsp;Kellow JE.&nbsp;Symptom provocation in irritable bowel syndrome. Effects of differing doses of fructose-sorbitol.</span>
+                <span>
+                    <em>Scand J Gastroenterol</em>.&nbsp;1992;<b>27</b>:940-944.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/1455191" pub-id-type="pubmed" pub-id="1455191" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B37thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B38">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 38 in text" ref-list-rid="B38" target="_self" href="#refB3852">38.&nbsp;</a></td>
+            <td>
+                <span><b>McKee AM</b>,&nbsp;Prior A,&nbsp;Whorwell PJ.&nbsp;Exclusion diets in irritable bowel syndrome: are they worthwhile?</span>
+                <span>
+                    <em>J Clin Gastroenterol</em>.&nbsp;1987;<b>9</b>:526-528.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/3680901" pub-id-type="pubmed" pub-id="3680901" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B38thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B41">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 41 in text" ref-list-rid="B41" target="_self" href="#refB4155">41.&nbsp;</a></td>
+            <td>
+                <span><b>Hasler WL</b>.&nbsp;Lactulose breath testing, bacterial overgrowth, and IBS: just a lot of hot air?</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;2003;<b>125</b>:1898-1900; discussion 1900.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/14724846" pub-id-type="pubmed" pub-id="14724846" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B41thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B42">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 42 in text" ref-list-rid="B42" target="_self" href="#refB4256">42.&nbsp;</a></td>
+            <td>
+                <span><b>Spiller RC</b>.&nbsp;Postinfectious irritable bowel syndrome.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;2003;<b>124</b>:1662-1671.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/12761724" pub-id-type="pubmed" pub-id="12761724" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B42thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B45">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 45 in text" ref-list-rid="B45" target="_self" href="#refB4558">45.&nbsp;</a></td>
+            <td>
+                <span><b>King TS</b>,&nbsp;Elia M,&nbsp;Hunter JO.&nbsp;Abnormal colonic fermentation in irritable bowel syndrome.</span>
+                <span>
+                    <em>Lancet</em>.&nbsp;1998;<b>352</b>:1187-1189.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/9777836" pub-id-type="pubmed" pub-id="9777836" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B45thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B47">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 47 in text" ref-list-rid="B47" target="_self" href="#refB4760">47.&nbsp;</a></td>
+            <td>
+                <span><b>Levitt MD</b>,&nbsp;Bond JH.&nbsp;Volume, composition, and source of intestinal gas.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;1970;<b>59</b>:921-929.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/5486278" pub-id-type="pubmed" pub-id="5486278" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B47thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B48">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 48 in text" ref-list-rid="B48" target="_self" href="#refB4861">48.&nbsp;</a></td>
+            <td>
+                <span><b>Suarez F</b>,&nbsp;Furne J,&nbsp;Springfield J,&nbsp;Levitt M.&nbsp;Insights into human colonic physiology obtained from the study of flatus composition.</span>
+                <span>
+                    <em>Am J Physiol</em>.&nbsp;1997;<b>272</b>:G1028-G1033.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/9176210" pub-id-type="pubmed" pub-id="9176210" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B48thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B49">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 49 in text" ref-list-rid="B49" target="_self" href="#refB4862">49.&nbsp;</a></td>
+            <td>
+                <span><b>Flourié B</b>,&nbsp;Pellier P,&nbsp;Florent C,&nbsp;Marteau P,&nbsp;Pochart P,&nbsp;Rambaud JC.&nbsp;Site and substrates for methane production in human colon.</span>
+                <span>
+                    <em>Am J Physiol</em>.&nbsp;1991;<b>260</b>:G752-G757.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/2035644" pub-id-type="pubmed" pub-id="2035644" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B49thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B50">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 50 in text" ref-list-rid="B50" target="_self" href="#refB4862">50.&nbsp;</a></td>
+            <td>
+                <span><b>Kajs TM</b>,&nbsp;Fitzgerald JA,&nbsp;Buckner RY,&nbsp;Coyle GA,&nbsp;Stinson BS,&nbsp;Morel JG,&nbsp;Levitt MD.&nbsp;Influence of a methanogenic flora on the breath H2 and symptom response to ingestion of sorbitol or oat fiber.</span>
+                <span>
+                    <em>Am J Gastroenterol</em>.&nbsp;1997;<b>92</b>:89-94.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/8995944" pub-id-type="pubmed" pub-id="8995944" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B50thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B52">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 52 in text" ref-list-rid="B52" target="_self" href="#refB5263">52.&nbsp;</a></td>
+            <td>
+                <span><b>Strocchi A</b>,&nbsp;Furne J,&nbsp;Ellis C,&nbsp;Levitt MD.&nbsp;Methanogens outcompete sulphate reducing bacteria for H2 in the human colon.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;1994;<b>35</b>:1098-1101.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/7926913" pub-id-type="pubmed" pub-id="7926913" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B52thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B53">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 53 in text" ref-list-rid="B53" target="_self" href="#refB5364">53.&nbsp;</a></td>
+            <td>
+                <span><b>Forster RE</b>.&nbsp;Physiological basis of gas exchange in the gut.</span>
+                <span>
+                    <em>Ann N Y Acad Sci</em>.&nbsp;1968;<b>150</b>:4-12.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/5238842" pub-id-type="pubmed" pub-id="5238842" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B53thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B54">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 54 in text" ref-list-rid="B54" target="_self" href="#refB5465">54.&nbsp;</a></td>
+            <td>
+                <span><b>Pogrund RS</b>,&nbsp;Steggerda FR.&nbsp;Influence of gaseous transfer between the colon and blood stream on percentage gas compositions of intestinal flatus in man.</span>
+                <span>
+                    <em>Am J Physiol</em>.&nbsp;1948;<b>153</b>:475-482.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/18882183" pub-id-type="pubmed" pub-id="18882183" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B54thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B55">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 55 in text" ref-list-rid="B55" target="_self" href="#refB5566">55.&nbsp;</a></td>
+            <td>
+                <span><b>Haderstorfer B</b>,&nbsp;Psycholgin D,&nbsp;Whitehead WE,&nbsp;Schuster MM.&nbsp;Intestinal gas production from bacterial fermentation of undigested carbohydrate in irritable bowel syndrome.</span>
+                <span>
+                    <em>Am J Gastroenterol</em>.&nbsp;1989;<b>84</b>:375-378.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/2929557" pub-id-type="pubmed" pub-id="2929557" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B55thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B56">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 56 in text" ref-list-rid="B56" target="_self" href="#refB5669">56.&nbsp;</a></td>
+            <td>
+                <span><b>Serra J</b>,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Intestinal gas dynamics and tolerance in humans.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;1998;<b>115</b>:542-550.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/9721151" pub-id-type="pubmed" pub-id="9721151" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B56thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B58">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 58 in text" ref-list-rid="B58" target="_self" href="#refB5871">58.&nbsp;</a></td>
+            <td>
+                <span><b>Serra J</b>,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Modulation of gut perception in humans by spatial summation phenomena.</span>
+                <span>
+                    <em>J Physiol</em>.&nbsp;1998;<b>506</b>:579-587.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/9490880" pub-id-type="pubmed" pub-id="9490880" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B58thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B59">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 59 in text" ref-list-rid="B59" target="_self" href="#refB5972">59.&nbsp;</a></td>
+            <td>
+                <span><b>Chami TN</b>,&nbsp;Schuster MM,&nbsp;Bohlman ME,&nbsp;Pulliam TJ,&nbsp;Kamal N,&nbsp;Whitehead WE.&nbsp;A simple radiologic method to estimate the quantity of bowel gas.</span>
+                <span>
+                    <em>Am J Gastroenterol</em>.&nbsp;1991;<b>86</b>:599-602.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/2028951" pub-id-type="pubmed" pub-id="2028951" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B59thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="B66">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 66 in text" ref-list-rid="B66" target="_self" href="#refB6684">66.&nbsp;</a></td>
+            <td>
+                <span><b>Kii Y</b>,&nbsp;Ito T.&nbsp;Effects of 5-HT4-receptor agonists, cisapride, mosapride citrate, and zacopride, on cardiac action potentials in guinea pig isolated papillary muscles.</span>
+                <span>
+                    <em>J Cardiovasc Pharmacol</em>.&nbsp;1997;<b>29</b>:670-675.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/9213211" pub-id-type="pubmed" pub-id="9213211" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B66thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="B72">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 72 in text" ref-list-rid="B72" target="_self" href="#refB7292">72.&nbsp;</a></td>
+            <td>
+                <span><b>Sullivan SN</b>.&nbsp;A prospective study of unexplained visible abdominal bloating.</span>
+                <span>
+                    <em>N Z Med J</em>.&nbsp;1994;<b>107</b>:428-430.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/7970340" pub-id-type="pubmed" pub-id="7970340" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B72thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B73">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 73 in text" ref-list-rid="B73" target="_self" href="#refB7395">73.&nbsp;</a></td>
+            <td>
+                <span><b>Cann PA</b>,&nbsp;Read NW,&nbsp;Brown C,&nbsp;Hobson N,&nbsp;Holdsworth CD.&nbsp;Irritable bowel syndrome: relationship of disorders in the transit of a single solid meal to symptom patterns.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;1983;<b>24</b>:405-411.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/6840614" pub-id-type="pubmed" pub-id="6840614" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B73thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B74">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 74 in text" ref-list-rid="B74" target="_self" href="#refB7496">74.&nbsp;</a></td>
+            <td>
+                <span><b>Galati JS</b>,&nbsp;McKee DP,&nbsp;Quigley EM.&nbsp;Response to intraluminal gas in irritable bowel syndrome. Motility versus perception.</span>
+                <span>
+                    <em>Dig Dis Sci</em>.&nbsp;1995;<b>40</b>:1381-1387.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/7781464" pub-id-type="pubmed" pub-id="7781464" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B74thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B76">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 76 in text" ref-list-rid="B76" target="_self" href="#refB76100">76.&nbsp;</a></td>
+            <td>
+                <span><b>Caldarella MP</b>,&nbsp;Serra J,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Prokinetic effects in patients with intestinal gas retention.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;2002;<b>122</b>:1748-1755.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/12055580" pub-id-type="pubmed" pub-id="12055580" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B76thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B77">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 77 in text" ref-list-rid="B77" target="_self" href="#refB77101">77.&nbsp;</a></td>
+            <td>
+                <span><b>Serra J</b>,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Mechanisms of intestinal gas retention in humans: impaired propulsion versus obstructed evacuation.</span>
+                <span>
+                    <em>Am J Physiol Gastrointest Liver Physiol</em>.&nbsp;2001;<b>281</b>:G138-G143.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/11408265" pub-id-type="pubmed" pub-id="11408265" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B77thiscited">5</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B79">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 79 in text" ref-list-rid="B79" target="_self" href="#refB78113">79.&nbsp;</a></td>
+            <td>
+                <span><b>Hernando-Harder AC</b>,&nbsp;Serra J,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Sites of symptomatic gas retention during intestinal lipid perfusion in healthy subjects.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;2004;<b>53</b>:661-665.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/15082583" pub-id-type="pubmed" pub-id="15082583" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B79thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B80">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 80 in text" ref-list-rid="B80" target="_self" href="#refB78113">80.&nbsp;</a></td>
+            <td>
+                <span><b>Serra J</b>,&nbsp;Salvioli B,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Lipid-induced intestinal gas retention in irritable bowel syndrome.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;2002;<b>123</b>:700-706.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/12198695" pub-id-type="pubmed" pub-id="12198695" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B80thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B83">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 83 in text" ref-list-rid="B83" target="_self" href="#refB82115">83.&nbsp;</a></td>
+            <td>
+                <span><b>Dainese R</b>,&nbsp;Serra J,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Influence of body posture on intestinal transit of gas.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;2003;<b>52</b>:971-974.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/12801953" pub-id-type="pubmed" pub-id="12801953" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B83thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+<div id="B87">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 87 in text" ref-list-rid="B87" target="_self" href="#refB87120">87.&nbsp;</a></td>
+            <td>
+                <span><b>Harder H</b>,&nbsp;Serra J,&nbsp;Azpiroz F,&nbsp;Passos MC,&nbsp;Aguadé S,&nbsp;Malagelada JR.&nbsp;Intestinal gas distribution determines abdominal symptoms.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;2003;<b>52</b>:1708-1713.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/14633947" pub-id-type="pubmed" pub-id="14633947" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B87thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B88">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 88 in text" ref-list-rid="B88" target="_self" href="#refB88121">88.&nbsp;</a></td>
+            <td>
+                <span><b>Salvioli B</b>,&nbsp;Serra J,&nbsp;Azpiroz F,&nbsp;Lorenzo C,&nbsp;Aguade S,&nbsp;Castell J,&nbsp;Malagelada JR.&nbsp;Origin of gas retention and symptoms in patients with bloating.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;2005;<b>128</b>:574-579.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/15765392" pub-id-type="pubmed" pub-id="15765392" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B88thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="B98">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 98 in text" ref-list-rid="B98" target="_self" href="#refB98139">98.&nbsp;</a></td>
+            <td>
+                <span><b>Tack J</b>,&nbsp;Piessevaux H,&nbsp;Coulie B,&nbsp;Caenepeel P,&nbsp;Janssens J.&nbsp;Role of impaired gastric accommodation to a meal in functional dyspepsia.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;1998;<b>115</b>:1346-1352.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/9834261" pub-id-type="pubmed" pub-id="9834261" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B98thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B99">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 99 in text" ref-list-rid="B99" target="_self" href="#refB99140">99.&nbsp;</a></td>
+            <td>
+                <span><b>Tack J</b>,&nbsp;Caenepeel P,&nbsp;Corsetti M,&nbsp;Janssens J.&nbsp;Role of tension receptors in dyspeptic patients with hypersensitivity to gastric distention.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;2004;<b>127</b>:1058-1066.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/15480984" pub-id-type="pubmed" pub-id="15480984" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B99thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B100">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 100 in text" ref-list-rid="B100" target="_self" href="#refB100141">100.&nbsp;</a></td>
+            <td>
+                <span><b>Accarino AM</b>,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Modification of small bowel mechanosensitivity by intestinal fat.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;2001;<b>48</b>:690-695.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/11302970" pub-id-type="pubmed" pub-id="11302970" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B100thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B102">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 102 in text" ref-list-rid="B102" target="_self" href="#refB102145">102.&nbsp;</a></td>
+            <td>
+                <span><b>Accarino AM</b>,&nbsp;Azpiroz F,&nbsp;Malagelada JR.&nbsp;Attention and distraction: effects on gut perception.</span>
+                <span>
+                    <em>Gastroenterology</em>.&nbsp;1997;<b>113</b>:415-422.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/9247458" pub-id-type="pubmed" pub-id="9247458" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B102thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B103">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 103 in text" ref-list-rid="B103" target="_self" href="#refB103148">103.&nbsp;</a></td>
+            <td>
+                <span><b>Heitkemper MM</b>,&nbsp;Jarrett M,&nbsp;Cain KC,&nbsp;Shaver J,&nbsp;Walker E,&nbsp;Lewis L.&nbsp;Daily gastrointestinal symptoms in women with and without a diagnosis of IBS.</span>
+                <span>
+                    <em>Dig Dis Sci</em>.&nbsp;1995;<b>40</b>:1511-1519.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/7628275" pub-id-type="pubmed" pub-id="7628275" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B103thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B105">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 105 in text" ref-list-rid="B105" target="_self" href="#refB105150">105.&nbsp;</a></td>
+            <td>
+                <span><b>Johnsen R</b>,&nbsp;Jacobsen BK,&nbsp;Førde OH.&nbsp;Associations between symptoms of irritable colon and psychological and social conditions and lifestyle.</span>
+                <span>
+                    <em>Br Med J (Clin Res Ed)</em>.&nbsp;1986;<b>292</b>:1633-1635.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/3087551" pub-id-type="pubmed" pub-id="3087551" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B105thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B106">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 106 in text" ref-list-rid="B106" target="_self" href="#refB106151">106.&nbsp;</a></td>
+            <td>
+                <span><b>Song JY</b>,&nbsp;Merskey H,&nbsp;Sullivan S,&nbsp;Noh S.&nbsp;Anxiety and depression in patients with abdominal bloating.</span>
+                <span>
+                    <em>Can J Psychiatry</em>.&nbsp;1993;<b>38</b>:475-479.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/8242519" pub-id-type="pubmed" pub-id="8242519" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B106thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B107">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 107 in text" ref-list-rid="B107" target="_self" href="#refB107152">107.&nbsp;</a></td>
+            <td>
+                <span><b>Neri M</b>,&nbsp;Laterza F,&nbsp;Howell S,&nbsp;Di Gioacchino M,&nbsp;Festi D,&nbsp;Ballone E,&nbsp;Cuccurullo F,&nbsp;Talley NJ.&nbsp;Symptoms discriminate irritable bowel syndrome from organic gastrointestinal diseases and food allergy.</span>
+                <span>
+                    <em>Eur J Gastroenterol Hepatol</em>.&nbsp;2000;<b>12</b>:981-988.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/11007133" pub-id-type="pubmed" pub-id="11007133" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B107thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B109">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 109 in text" ref-list-rid="B109" target="_self" href="#refB109158">109.&nbsp;</a></td>
+            <td>
+                <span><b>Burri E</b>,&nbsp;Azpiroz A,&nbsp;Hernandez C,&nbsp;Accarino A,&nbsp;Malagelada JR.&nbsp;Biofeedback treatment of abdominal distention: a proof-of-concept.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;2010;<b>59</b>:A137.
+                </span>
+                
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B109thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B111">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 111 in text" ref-list-rid="B111" target="_self" href="#refB111160">111.&nbsp;</a></td>
+            <td>
+                <span><b>Pimentel M</b>,&nbsp;Park S,&nbsp;Mirocha J,&nbsp;Kane SV,&nbsp;Kong Y.&nbsp;The effect of a nonabsorbed oral antibiotic (rifaximin) on the symptoms of the irritable bowel syndrome: a randomized trial.</span>
+                <span>
+                    <em>Ann Intern Med</em>.&nbsp;2006;<b>145</b>:557-563.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/17043337" pub-id-type="pubmed" pub-id="17043337" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B111thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="B117">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 117 in text" ref-list-rid="B117" target="_self" href="#refB117166">117.&nbsp;</a></td>
+            <td>
+                <span><b>Hungin AP, Mulligan C, Pot B, Whorwell P, Agréus L, Fracasso P, Lionis C, Mendive J, Philippart de Foy JM, Rubin G, Winchester C, de Wit N</b>.&nbsp;Systematic review: probiotics in the management of lower gastrointestinal symptoms in clinical practice -- an evidence-based international guide.</span>
+                <span>
+                    <em>Aliment Pharmacol Ther</em>.&nbsp;2013;<b>38</b>:864-886.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/23981066" pub-id-type="pubmed" pub-id="23981066" target="_blank">PubMed</a>]</span>
+                <span>&nbsp;[<a href="https://dx.doi.org/10.1111/apt.12460" pub-id-type="doi" pub-id="10.1111/apt.12460" target="_blank">DOI</a>]</span>
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B117thiscited">1</span><span>]</span></span>
+                <span>&nbsp;<span>[</span>Cited by in Crossref: 138<span>]</span></span>
+                <span>&nbsp;<span>[</span><a href="https://www.wjgnet.com/1007-9327/CitedArticlesInF6?id=10.1111%2fapt.12460" target="_blank">Cited by in F6Publishing: 133</a><span>]</span></span>
+                <span>&nbsp;<span>[</span>Article Influence: 12.1<span>]</span></span>
+                <span>&nbsp;<span>[</span>Reference Citation Analysis (0)<span>]</span></span>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B118">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 118 in text" ref-list-rid="B118" target="_self" href="#refB118185">118.&nbsp;</a></td>
+            <td>
+                <span><b>Cann PA</b>,&nbsp;Read NW,&nbsp;Holdsworth CD.&nbsp;Oral domperidone: double blind comparison with placebo in irritable bowel syndrome.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;1983;<b>24</b>:1135-1140.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/6357963" pub-id-type="pubmed" pub-id="6357963" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B118thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B120">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 120 in text" ref-list-rid="B120" target="_self" href="#refB120174">120.&nbsp;</a></td>
+            <td>
+                <span><b>Müller-Lissner SA</b>,&nbsp;Fumagalli I,&nbsp;Bardhan KD,&nbsp;Pace F,&nbsp;Pecher E,&nbsp;Nault B,&nbsp;Rüegg P.&nbsp;Tegaserod, a 5-HT(4) receptor partial agonist, relieves symptoms in irritable bowel syndrome patients with abdominal pain, bloating and constipation.</span>
+                <span>
+                    <em>Aliment Pharmacol Ther</em>.&nbsp;2001;<b>15</b>:1655-1666.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/11564007" pub-id-type="pubmed" pub-id="11564007" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B120thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B121">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 121 in text" ref-list-rid="B121" target="_self" href="#refB121188">121.&nbsp;</a></td>
+            <td>
+                <span><b>Busti AJ</b>,&nbsp;Murillo JR,&nbsp;Cryer B.&nbsp;Tegaserod-induced myocardial infarction: case report and hypothesis.</span>
+                <span>
+                    <em>Pharmacotherapy</em>.&nbsp;2004;<b>24</b>:526-531.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/15098809" pub-id-type="pubmed" pub-id="15098809" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B121thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+<div id="B124">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 124 in text" ref-list-rid="B124" target="_self" href="#refB124190">124.&nbsp;</a></td>
+            <td>
+                <span><b>Bouras EP</b>,&nbsp;Camilleri M,&nbsp;Burton DD,&nbsp;McKinzie S.&nbsp;Selective stimulation of colonic transit by the benzofuran 5HT4 agonist, prucalopride, in healthy humans.</span>
+                <span>
+                    <em>Gut</em>.&nbsp;1999;<b>44</b>:682-686.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/10205205" pub-id-type="pubmed" pub-id="10205205" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B124thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B125">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 125 in text" ref-list-rid="B125" target="_self" href="#refB125191">125.&nbsp;</a></td>
+            <td>
+                <span><b>De Schryver AM</b>,&nbsp;Andriesse GI,&nbsp;Samsom M,&nbsp;Smout AJ,&nbsp;Gooszen HG,&nbsp;Akkermans LM.&nbsp;The effects of the specific 5HT(4) receptor agonist, prucalopride, on colonic motility in healthy volunteers.</span>
+                <span>
+                    <em>Aliment Pharmacol Ther</em>.&nbsp;2002;<b>16</b>:603-612.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/11876716" pub-id-type="pubmed" pub-id="11876716" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B125thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+<div id="B129">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 129 in text" ref-list-rid="B129" target="_self" href="#refB129137">129.&nbsp;</a></td>
+            <td>
+                <span><b>Poynard T</b>,&nbsp;Regimbeau C,&nbsp;Benhamou Y.&nbsp;Meta-analysis of smooth muscle relaxants in the treatment of irritable bowel syndrome.</span>
+                <span>
+                    <em>Aliment Pharmacol Ther</em>.&nbsp;2001;<b>15</b>:355-361.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/11207510" pub-id-type="pubmed" pub-id="11207510" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B129thiscited">2</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+<div id="B133">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 133 in text" ref-list-rid="B133" target="_self" href="#refB133200">133.&nbsp;</a></td>
+            <td>
+                <span><b>Kimura KK</b>,&nbsp;Treon JF,&nbsp;Benson FR.&nbsp;Therapeutic use of methylpolysiloxane.</span>
+                <span>
+                    <em>Curr Ther Res Clin Exp</em>.&nbsp;1964;<b>6</b>:202-216.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/14133311" pub-id-type="pubmed" pub-id="14133311" target="_blank">PubMed</a>]</span>
+                
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B133thiscited">1</span><span>]</span></span>
+                
+                
+                
+                
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="B138">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 138 in text" ref-list-rid="B138" target="_self" href="#refB138169">138.&nbsp;</a></td>
+            <td>
+                <span><b>Yoon JS</b>,&nbsp;Sohn W,&nbsp;Lee OY,&nbsp;Lee SP,&nbsp;Lee KN,&nbsp;Jun DW,&nbsp;Lee HL,&nbsp;Yoon BC,&nbsp;Choi HS,&nbsp;Chung WS.&nbsp;Effect of multispecies probiotics on irritable bowel syndrome: a randomized, double-blind, placebo-controlled trial.</span>
+                <span>
+                    <em>J Gastroenterol Hepatol</em>.&nbsp;2014;<b>29</b>:52-59.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/23829297" pub-id-type="pubmed" pub-id="23829297" target="_blank">PubMed</a>]</span>
+                <span>&nbsp;[<a href="https://dx.doi.org/10.1111/jgh.12322" pub-id-type="doi" pub-id="10.1111/jgh.12322" target="_blank">DOI</a>]</span>
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B138thiscited">1</span><span>]</span></span>
+                <span>&nbsp;<span>[</span>Cited by in Crossref: 106<span>]</span></span>
+                <span>&nbsp;<span>[</span><a href="https://www.wjgnet.com/1007-9327/CitedArticlesInF6?id=10.1111%2fjgh.12322" target="_blank">Cited by in F6Publishing: 122</a><span>]</span></span>
+                <span>&nbsp;<span>[</span>Article Influence: 12.2<span>]</span></span>
+                <span>&nbsp;<span>[</span>Reference Citation Analysis (0)<span>]</span></span>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+<div id="B140">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 140 in text" ref-list-rid="B140" target="_self" href="#refB139175">140.&nbsp;</a></td>
+            <td>
+                <span><b>Kamm MA, Müller-Lissner S, Talley NJ, Tack J, Boeckxstaens G, Minushkin ON, Kalinin A, Dzieniszewski J, Haeck P, Fordham F, Hugot-Cournez S, Nault B</b>.&nbsp;Tegaserod for the treatment of chronic constipation: a randomized, double-blind, placebo-controlled multinational study.</span>
+                <span>
+                    <em>Am J Gastroenterol</em>.&nbsp;2005;<b>100</b>:362-372.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/15667494" pub-id-type="pubmed" pub-id="15667494" target="_blank">PubMed</a>]</span>
+                <span>&nbsp;[<a href="https://dx.doi.org/10.1111/j.1572-0241.2005.40749.x" pub-id-type="doi" pub-id="10.1111/j.1572-0241.2005.40749.x" target="_blank">DOI</a>]</span>
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B140thiscited">1</span><span>]</span></span>
+                <span>&nbsp;<span>[</span>Cited by in Crossref: 138<span>]</span></span>
+                <span>&nbsp;<span>[</span><a href="https://www.wjgnet.com/1007-9327/CitedArticlesInF6?id=10.1111%2fj.1572-0241.2005.40749.x" target="_blank">Cited by in F6Publishing: 137</a><span>]</span></span>
+                <span>&nbsp;<span>[</span>Article Influence: 7.2<span>]</span></span>
+                <span>&nbsp;<span>[</span>Reference Citation Analysis (0)<span>]</span></span>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+<div id="B141">
+    <table>
+        <tbody><tr>
+            <td><a title="View reference 141 in text" ref-list-rid="B141" target="_self" href="#refB141176">141.&nbsp;</a></td>
+            <td>
+                <span><b>Vakil N</b>,&nbsp;Laine L,&nbsp;Talley NJ,&nbsp;Zakko SF,&nbsp;Tack J,&nbsp;Chey WD,&nbsp;Kralstein J,&nbsp;Earnest DL,&nbsp;Ligozio G,&nbsp;Cohard-Radice M.&nbsp;Tegaserod treatment for dysmotility-like functional dyspepsia: results of two randomized, controlled trials.</span>
+                <span>
+                    <em>Am J Gastroenterol</em>.&nbsp;2008;<b>103</b>:1906-1919.
+                </span>
+                <span>&nbsp;[<a href="http://www.ncbi.nlm.nih.gov/pubmed/18616658" pub-id-type="pubmed" pub-id="18616658" target="_blank">PubMed</a>]</span>
+                <span>&nbsp;[<a href="https://dx.doi.org/10.1111/j.1572-0241.2008.01953.x" pub-id-type="doi" pub-id="10.1111/j.1572-0241.2008.01953.x" target="_blank">DOI</a>]</span>
+                <span>&nbsp;<span>[</span>Cited in This Article: <span id="B141thiscited">1</span><span>]</span></span>
+                <span>&nbsp;<span>[</span>Cited by in Crossref: 13<span>]</span></span>
+                <span>&nbsp;<span>[</span><a href="https://www.wjgnet.com/1007-9327/CitedArticlesInF6?id=10.1111%2fj.1572-0241.2008.01953.x" target="_blank">Cited by in F6Publishing: 30</a><span>]</span></span>
+                <span>&nbsp;<span>[</span>Article Influence: 1.9<span>]</span></span>
+                <span>&nbsp;<span>[</span>Reference Citation Analysis (0)<span>]</span></span>
+            </td>
+        </tr>
+    </tbody></table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div>
+</div></div>
+  <span></span> <!-- for IntersectionObserver -->
+  
+  
+  
+  
+
+
+<style id="note-styling">
+    .note {
+      position: absolute;
+      z-index: 10;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 5px;
+      min-width: 32px;
+      min-height: 32px;
+    }
+    .note:focus {
+      z-index: 11;
+    }
+    .note[type="0"] {
+      background-color: #fff740;
+      color: #2c2c2d;
+    }
+    .note[type="0"]::placeholder {
+      color: #868226;
+    }
+    .note[type="1"] {
+      background-color: #feff9c;
+      color: #2c2c2d;
+    }
+    .note[type="1"]::placeholder {
+      color: #6d6d3d;
+    }
+    .note[type="2"] {
+      background-color: #ff65a3;
+      color: #2c2c2d;
+    }
+    .note[type="2"]::placeholder {
+      color: #65263f;
+    }
+    .note[type="3"] {
+      background-color: #ff7eb9;
+      color: #2c2c2d;
+    }
+    .note[type="3"]::placeholder {
+      color: #562b3f;
+    }
+    .note[type="4"] {
+      background-color: #7afcff;
+      color: #295c5d;
+    }
+    .note[type="4"]::placeholder {
+      color: #377677;
+    }</style></body><style>body {
+      font-size:  18px;
+      font-family: Helvetica, Arial, sans-serif;
+      width: 950px;
+    }
+    p {
+      text-align: justify
+    }
+    .page {
+      line-height: 27.0px;
+      column-count: unset;
+    }
+    h1, h2, h3 {
+      line-height: initial;
+    }</style></html>
