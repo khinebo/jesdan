@@ -60,9 +60,9 @@ http://49.0.87.24:1936/HDDragon/Dragon/playlist.m3u8
 #EXTINF:-1 tvg-id="MCOTHD.th" tvg-name="MCOT HD" group-title="Thai TV" tvg-logo="https://i.imgur.com/ejPxGmU.png",MCOT HD
 https://edge2a.v2h-cdn.com/mcothd/mcothd.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Mono29.th" tvg-name="MONO 29" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/mono29.png",MONO 29
-https://edge2a.v2h-cdn.com/mono/mono.stream/playlist.m3u8
+https://streaming.monomax.me/Mono29LiveStream/ngrp:myStream_all/master.m3u8
 #EXTINF:-1 tvg-id="NationTV.th" tvg-name="Nation TV" group-title="Thai TV" tvg-logo="https://i.imgur.com/h3TY38F.png",Nation TV
-https://edge2a.v2h-cdn.com/nation/nation.stream/playlist.m3u8
+https://nationtv-1jdcjo.cdn.byteark.com/fleetstream/nationtvlive/index.m3u8
 #EXTINF:-1 tvg-id="NBT11Central.th" tvg-logo="https://i.imgur.com/8hYQIxS.png" group-title="Thai TV",NBT 11 Central
 https://edge2a.v2h-cdn.com/nbt/nbt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="One31.th" tvg-name="ONE HD" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/one.png",ONE HD
