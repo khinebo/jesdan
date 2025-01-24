@@ -94,6 +94,6 @@ https://edge6a.v2h-cdn.com/tvb_thai/tvb_thai.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="WhiteChannel.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/Chx0AV9.png",White Channel (1080p)
 http://symc-cdn.violin.co.th:1935/tndedge/whitechannel/chunklist.m3u8
 #EXTINF:-1 tvg-id="Workpoint23.th" tvg-name="Workpoint TV" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/workpoint.png",Workpoint TV
-https://edge2a.v2h-cdn.com/workpoint/workpoint.stream/playlist.m3u8
+http://appdootv2.dootvde.com:1935/live/50016_workpoint_tv.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ZabbChannel.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/4TMtUjW.png",Zabb Channel (720p)
 https://vdo.plathong.net/flash7057/flash7057/playlist.m3u8
