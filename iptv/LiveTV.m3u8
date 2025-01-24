@@ -82,7 +82,7 @@ https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TPTV.th" tvg-name="TPTV" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/tptv.png",Thai Parliament TV
 https://edge2a.v2h-cdn.com/tptv/tptv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ThairathTV32.th" tvg-name="Thairath TV" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/thairath.png",Thairath TV
-https://edge2a.v2h-cdn.com/thairathhd/thairathHD.stream/playlist.m3u8
+http://appdootv2.dootvde.com:1935/live/50023_thairath_hd.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TNN16.th" tvg-name="TNN 16" group-title="Thai TV" tvg-logo="https://iptv36.my.to/logo/tnn16.png",TNN 16
 https://edge2a.v2h-cdn.com/tnn24/tnn24.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TopNews.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/tRFnV9M.png",Top News (720p)
