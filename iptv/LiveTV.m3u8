@@ -85,7 +85,7 @@ https://live.bangkokstream.com:19360/suwannabhumi/suwannabhumi.m3u8
 https://edge2a.v2h-cdn.com/t_sport/t_sport.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ThaiChaiyo.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/uOfb3y1.png",Thai Chaiyo (720p)
 https://live-iptv.thaichaiyo.tv/tcy/live-manifest.m3u8
-#EXTINF:-1 tvg-id="ThaiNews.th tvg-logo="https://thaitvstream.com/streaming/thainews/thainews.png" group-title="Thai TV",Thai News
+#EXTINF:-1 tvg-id="ThaiNews.th tvg-logo="https://www.muanchononlinenews.com/wp-content/uploads/2023/01/S__27025565.jpg" group-title="Thai TV",Thai News
 https://live.thaitvstream.com/play/thainews/index.m3u8
 #EXTINF:-1 tvg-id="ThaiPBS.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png",Thai PBS (1080p)
 https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
