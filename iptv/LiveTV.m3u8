@@ -91,7 +91,7 @@ https://live.thaitvstream.com/play/thainews/index.m3u8
 https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TPTV.th" tvg-name="TPTV" group-title="Thai TV" tvg-logo="https://cms.dmpcdn.com/livetv/2023/11/22/2a4de600-8919-11ee-8416-3dc6bea66698_webp_original.webp",Thai Parliament TV
 https://edge2a.v2h-cdn.com/tptv/tptv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="ThairathTV32.th" tvg-name="Thairath TV" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.pnghttps://iptv36.my.to/logo/thairath.png",Thairath TV
+#EXTINF:-1 tvg-id="ThairathTV32.th" tvg-name="Thairath TV" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png",Thairath TV
 https://lb-mvtv-live.v2h-cdn.com/redirect/hd_thairath/hd_thairath.stream?type=m3u8
 #EXTINF:-1 tvg-id="TNN16.th" tvg-name="TNN 16" group-title="Thai TV" tvg-logo="https://cms.dmpcdn.com/livetv/2023/10/02/75023d90-60f1-11ee-935a-5d4eba985103_webp_original.webp",TNN 16
 https://edge2a.v2h-cdn.com/tnn24/tnn24.stream/playlist.m3u8
