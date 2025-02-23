@@ -9,12 +9,16 @@ http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs19
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs21
 #EXTINF:-1 tvg-id="JSPORTS4.jp" tvg-logo="https://i.imgur.com/fBcyZNL.png" group-title="Others",J Sports 4 (544p)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs22
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Smithsonian_Channel.png" group-title="Entertainemnt",Smithsonian Channel
+http://iptv12k.com:35461/654321/123456/2070
 #EXTINF:-1 tvg-id="ABCNewsLive.au" tvg-logo="https://w7.pngwing.com/pngs/726/169/png-transparent-australian-broadcasting-corporation-abc-logo-television-c-television-text-trademark.png" group-title="News",ABC News (AUS)
 https://c.mjh.nz/abc-news.m3u8
 #EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/ABC_News_Live_logo_2021.svg/512px-ABC_News_Live_logo_2021.svg.png" group-title="News",ABC News (US)
 https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png" group-title="News",Al Jazeera English
 https://d1cy85syyhvqz5.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/aljazeeraLive/AJE/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="AL JAZEERA ENGLISH" tvg-logo="http://go4.pw/INDONESIA/AL_JAZEERA_ENGLISH.png" group-title="News",Al Jazeera English
+http://suprino.xyz:80/PMF3J9X/BV7HG8H/584470
 #EXTINF:-1 tvg-id="BBCNewsAsiaPacific.uk" group-title="News" tvg-logo="https://khinebo.github.io/jesdan/iptv/bbc.jpg",BBC News Asia Pacific
 https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8
 #EXTINF:-1 tvg-id="BloombergTVAsia.hk" group-title="News" tvg-logo="https://i.imgur.com/OuogLHx.png",Bloomberg TV Asia
@@ -23,6 +27,8 @@ https://bloomberg.com/media-manifest/streams/asia.m3u8
 https://apollo.production-public.tubi.io/live/ac-cbc2.m3u8
 #EXTINF:-1 tvg-id="CNAInternational.sg" tvg-logo="https://i.imgur.com/xWglicB.png" group-title="News",CNA International
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="CNBC" tvg-logo="http://go4.pw/INDONESIA/CNBC.png" group-title="News",CNBC
+http://suprino.xyz:80/PMF3J9X/BV7HG8H/584529
 #EXTINF:-1 tvg-id="CNNInternationalEurope.us" tvg-logo="https://khinebo.github.io/jesdan/iptv/cnn.png" group-title="News",CNN International
 https://turnerlive.warnermediacdn.com/hls/live/586497/cnngo/cnni/VIDEO_0_3564000.m3u8
 #EXTINF:-1 tvg-id="DWEnglish.de" tvg-logo="https://i.imgur.com/A1xzjOI.png" group-title="News",DW English
