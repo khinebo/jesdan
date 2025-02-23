@@ -52,7 +52,7 @@ http://streaming-hwc.ch7.com/livech7hd/HD.m3u8
 #EXTINF:-1 tvg-id="ThaiChannel8.th" tvg-name="Channel 8" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8
 https://edge2a.v2h-cdn.com/ch8/ch8.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="GMM25.th" tvg-name="GMM 25" group-title="Thai TV" tvg-logo="https://i.imgur.com/uARba6N.png",GMM 25
-https://edge2a.v2h-cdn.com/gmm25/gmm25.stream/playlist.m3u8
+https://lb-mvtv-live.v2h-cdn.com/redirect/gmm25/gmm25.stream?type=m3u8
 #EXTINF:-1 tvg-id="GoodIdeaTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/ETgVyTy.png",Good Idea TV (720p)
 http://stream1.ai-net.net:1935/gtv1/_definst_/smil:gtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LaoThaiTV.us" group-title="Thai TV" tvg-logo="https://i.imgur.com/q6cQzbv.png",Lao-Thai TV (720p)
@@ -63,14 +63,14 @@ http://49.0.87.24:1936/HDDragon/Dragon/playlist.m3u8
 https://edge2a.v2h-cdn.com/mcothd/mcothd.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Mono29.th" tvg-name="MONO 29" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0016.png",MONO 29
 https://streaming.monomax.me/Mono29LiveStream/ngrp:myStream_all/master.m3u8
-#EXTINF:-1 tvg-id="One31.th" tvg-name="ONE HD" group-title="Thai TV" tvg-logo="https://assets.oned.net/3/logo_one31.png",ONE 31
-https://lb-mvtv-live.v2h-cdn.com/redirect/hd_one/hd_one.stream?type=m3u8
 #EXTINF:-1 tvg-id="NationTV.th" tvg-name="Nation TV" group-title="Thai TV" tvg-logo="https://i.imgur.com/h3TY38F.png",Nation TV
 https://nationtv-1jdcjo.cdn.byteark.com/fleetstream/nationtvlive/index.m3u8
 #EXTINF:-1 tvg-id="NBT11Central.th" tvg-logo="https://i.imgur.com/8hYQIxS.png" group-title="Thai TV",NBT 11 Central
 https://edge2a.v2h-cdn.com/nbt/nbt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id=""News1 tvg-name="News 1" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0036.png" group-title="Thai TV",News 1
 https://server1.streamssl.com/stream/news1.m3u8
+#EXTINF:-1 tvg-id="One31.th" tvg-name="ONE HD" group-title="Thai TV" tvg-logo="https://assets.oned.net/3/logo_one31.png",ONE 31
+https://lb-mvtv-live.v2h-cdn.com/redirect/hd_one/hd_one.stream?type=m3u8
 #EXTINF:-1 tvg-id="PoliceTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/GhboFGt.png",Police TV (1080p)
 https://cdn-th-vip.livestreaming.in.th/policetv/policetv/playlist.m3u8
 #EXTINF:-1 tvg-id="SuwannabhumiChannel.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/6AGKP0A.png",Suwannabhumi Channel (720p)
@@ -90,7 +90,7 @@ https://lb-mvtv-live.v2h-cdn.com/redirect/hd_thairath/hd_thairath.stream?type=m3
 #EXTINF:-1 tvg-id="TNN16.th" tvg-name="TNN 16" group-title="Thai TV" tvg-logo="https://cms.dmpcdn.com/livetv/2023/10/02/75023d90-60f1-11ee-935a-5d4eba985103_webp_original.webp",TNN 16
 https://edge2a.v2h-cdn.com/tnn24/tnn24.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TopNews.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/tRFnV9M.png",Top News (720p)
-https://live.topnews.co.th/hls/topnews_a_720.m3u8
+https://lb-mvtv-live.v2h-cdn.com/redirect/new/new.stream?type=m3u8
 #EXTINF:-1 tvg-id="True4U.th" tvg-name="True 4U" group-title="Thai TV" tvg-logo="https://i.imgur.com/O6Xre1O.png",True 4U
 https://edge2a.v2h-cdn.com/true4u/true4u.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBThai.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tvbt.png",TVB Thai (1080p)
