@@ -17,7 +17,7 @@ https://c.mjh.nz/abc-news.m3u8
 https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png" group-title="News",Al Jazeera English
 https://d1cy85syyhvqz5.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/aljazeeraLive/AJE/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="AL JAZEERA ENGLISH" tvg-logo="http://go4.pw/INDONESIA/AL_JAZEERA_ENGLISH.png" group-title="News",Al Jazeera English
+#EXTINF:-1 tvg-id="" tvg-name="AL JAZEERA ENGLISH" tvg-logo="http://go4.pw/INDONESIA/AL_JAZEERA_ENGLISH.png" group-title="News",Al Jazeera English 2
 http://suprino.xyz:80/PMF3J9X/BV7HG8H/584470
 #EXTINF:-1 tvg-id="BBCNewsAsiaPacific.uk" group-title="News" tvg-logo="https://khinebo.github.io/jesdan/iptv/bbc.jpg",BBC News Asia Pacific
 https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8
