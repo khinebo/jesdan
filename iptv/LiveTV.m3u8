@@ -23,8 +23,6 @@ https://bloomberg.com/media-manifest/streams/asia.m3u8
 https://apollo.production-public.tubi.io/live/ac-cbc2.m3u8
 #EXTINF:-1 tvg-id="CNAInternational.sg" tvg-logo="https://i.imgur.com/xWglicB.png" group-title="News",CNA International
 https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="CNBC" tvg-logo="http://go4.pw/INDONESIA/CNBC.png" group-title="News",CNBC
-http://suprino.xyz:80/PMF3J9X/BV7HG8H/584529
 #EXTINF:-1 tvg-id="CNNInternationalEurope.us" tvg-logo="https://khinebo.github.io/jesdan/iptv/cnn.png" group-title="News",CNN International
 https://turnerlive.warnermediacdn.com/hls/live/586497/cnngo/cnni/VIDEO_0_3564000.m3u8
 #EXTINF:-1 tvg-id="DWEnglish.de" tvg-logo="https://i.imgur.com/A1xzjOI.png" group-title="News",DW English
