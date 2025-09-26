@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Betting Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .calculators {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .calculator {
+            padding: 40px;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .calculator:last-child {
+            border-right: none;
+        }
+
+        .calculator h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #34495e;
+            font-size: 1rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e0e6ed;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #667eea;
+            background: white;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .results {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 25px;
+            border: 1px solid #dee2e6;
+        }
+
+        .results h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .result-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .result-value {
+            font-weight: 700;
+            color: #28a745;
+            font-size: 1.1rem;
+        }
+
+        .profit {
+            color: #28a745 !important;
+        }
+
+        .warning {
+            color: #dc3545 !important;
+        }
+
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .info-box p {
+            color: #1565c0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .side-inputs {
+            display: grid;
+            gap: 15px;
+        }
+
+        .toggle-side {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            margin-left: 10px;
+        }
+
+        .toggle-side:hover {
+            background: #5a6268;
+        }
+
+        .toggle-side.active {
+            background: #28a745;
+        }
+
+        .stake-input {
+            width: 120px;
+            padding: 8px 12px;
+            border: 2px solid #e0e6ed;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: right;
+            background: white;
+            color: #28a745;
+            transition: all 0.3s ease;
+        }
+
+        .stake-input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+            .calculators {
+                grid-template-columns: 1fr;
+            }
+            
+            .calculator {
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+            }
+            
+            .calculator:last-child {
+                border-bottom: none;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .calculator {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Sports Betting Calculator</h1>
+            <p>Maximize your returns with bonus bets and arbitrage opportunities</p>
+        </div>
+        
+        <div class="calculators">
+            <!-- Arbitrage Optimizer -->
+            <div class="calculator">
+                <h2>
+                    <div class="icon">⚖️</div>
+                    Arbitrage Optimizer
+                </h2>
+                
+                <div class="form-group">
+                    <label for="totalStake">Total Stake Available ($)</label>
+                    <input type="number" id="totalStake" placeholder="e.g., 1000" step="0.01" min="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="odds1">Side 1 Odds (Decimal)</label>
+                    <input type="number" id="odds1" placeholder="e.g., 2.10" step="0.01" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="odds2">Side 2 Odds (Decimal)</label>
+                    <input type="number" id="odds2" placeholder="e.g., 2.20" step="0.01" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="odds3">
+                        Side 3 Odds (Decimal)
+                        <button type="button" class="toggle-side" id="toggleSide3" onclick="toggleThirdSide()">Optional</button>
+                    </label>
+                    <input type="number" id="odds3" placeholder="e.g., 4.00" step="0.01" min="1" style="display: none;">
+                </div>
+                
+                <div class="results" id="arbResults">
+                    <h3>📊 Stakes & Results</h3>
+                    <div class="result-item">
+                        <span class="result-label">Stake on Side 1:</span>
+                        <input type="number" id="stakeInput1" class="stake-input" placeholder="0.00" step="0.01" min="0">
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Stake on Side 2:</span>
+                        <input type="number" id="stakeInput2" class="stake-input" placeholder="0.00" step="0.01" min="0">
+                    </div>
+                    <div class="result-item" id="stake3Row" style="display: none;">
+                        <span class="result-label">Stake on Side 3:</span>
+                        <input type="number" id="stakeInput3" class="stake-input" placeholder="0.00" step="0.01" min="0">
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Stake:</span>
+                        <span class="result-value" id="actualTotalStake">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Guaranteed Profit:</span>
+                        <span class="result-value profit" id="arbProfit">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Profit Margin:</span>
+                        <span class="result-value" id="profitMargin">0.00%</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Arbitrage Status:</span>
+                        <span class="result-value" id="arbStatus">Enter odds to check</span>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <p><strong>How it works:</strong> Arbitrage betting exploits differences in odds across different bookmakers. When the combined implied probability is less than 100%, you can guarantee profit by betting on all outcomes proportionally.</p>
+                </div>
+            </div>
+            
+            <!-- Bonus Bet Maximizer -->
+            <div class="calculator">
+                <h2>
+                    <div class="icon">💰</div>
+                    Bonus Bet Maximizer
+                </h2>
+                
+                <div class="form-group">
+                    <label for="bonusBetAmount">Bonus Bet Amount ($)</label>
+                    <input type="number" id="bonusBetAmount" placeholder="e.g., 100" step="0.01" min="0">
+                </div>
+                
+                <div class="form-group">
+                    <label for="bonusBetOdds">Bonus Bet Odds (Decimal)</label>
+                    <input type="number" id="bonusBetOdds" placeholder="e.g., 2.50" step="0.01" min="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="oppositeOdds">Best Opposite Market Odds (Decimal)</label>
+                    <input type="number" id="oppositeOdds" placeholder="e.g., 1.80" step="0.01" min="1">
+                </div>
+                
+                <div class="results" id="bonusResults">
+                    <h3>📊 Results</h3>
+                    <div class="result-item">
+                        <span class="result-label">Stake on Opposite Bet:</span>
+                        <span class="result-value" id="oppositeStake">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Guaranteed Profit:</span>
+                        <span class="result-value profit" id="guaranteedProfit">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Total Investment:</span>
+                        <span class="result-value" id="totalInvestment">$0.00</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Return Rate:</span>
+                        <span class="result-value" id="returnRate">0.00%</span>
+                    </div>
+                </div>
+                
+                <div class="info-box">
+                    <p><strong>How it works:</strong> Bonus bets return only the profit (not the stake). This calculator finds the optimal hedge amount to guarantee profit regardless of outcome. Place your bonus bet on one side and the calculated amount on the opposite market.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let useThirdSide = false;
+        let isUpdatingStakes = false;
+
+        function toggleThirdSide() {
+            const odds3Input = document.getElementById('odds3');
+            const toggleBtn = document.getElementById('toggleSide3');
+            const stake3Row = document.getElementById('stake3Row');
+            
+            useThirdSide = !useThirdSide;
+            
+            if (useThirdSide) {
+                odds3Input.style.display = 'block';
+                toggleBtn.textContent = 'Remove';
+                toggleBtn.classList.add('active');
+                stake3Row.style.display = 'flex';
+            } else {
+                odds3Input.style.display = 'none';
+                odds3Input.value = '';
+                toggleBtn.textContent = 'Optional';
+                toggleBtn.classList.remove('active');
+                stake3Row.style.display = 'none';
+                document.getElementById('stakeInput3').value = '';
+            }
+            
+            calculateArbitrage();
+        }
+
+        function calculateBonusBet() {
+            const bonusAmount = parseFloat(document.getElementById('bonusBetAmount').value) || 0;
+            const bonusOdds = parseFloat(document.getElementById('bonusBetOdds').value) || 0;
+            const oppositeOdds = parseFloat(document.getElementById('oppositeOdds').value) || 0;
+
+            if (bonusAmount <= 0 || bonusOdds <= 1 || oppositeOdds <= 1) {
+                document.getElementById('oppositeStake').textContent = '$0.00';
+                document.getElementById('guaranteedProfit').textContent = '$0.00';
+                document.getElementById('totalInvestment').textContent = '$0.00';
+                document.getElementById('returnRate').textContent = '0.00%';
+                return;
+            }
+
+            // Calculate optimal opposite stake - CORRECTED FORMULA
+            // Bonus bet returns: bonusAmount * (bonusOdds - 1) (profit only, no stake returned)
+            const bonusWinning = bonusAmount * (bonusOdds - 1);
+            // Correct hedge formula: equalize net profit in both scenarios
+            const oppositeStake = bonusWinning / oppositeOdds;
+            
+            // Calculate guaranteed profit (whichever side wins)
+            // If bonus bet wins: get bonus winnings, lose opposite stake
+            const profitIfBonusWins = bonusWinning - oppositeStake;
+            // If opposite bet wins: get opposite profit (stake * (odds-1)), lose nothing from bonus
+            const profitIfOppositeWins = oppositeStake * (oppositeOdds - 1);
+            const guaranteedProfit = Math.min(profitIfBonusWins, profitIfOppositeWins);
+            
+            // Calculate return rate
+            const returnRate = (guaranteedProfit / oppositeStake) * 100;
+
+            document.getElementById('oppositeStake').textContent = `${oppositeStake.toFixed(2)}`;
+            document.getElementById('guaranteedProfit').textContent = `${guaranteedProfit.toFixed(2)}`;
+            document.getElementById('totalInvestment').textContent = `${oppositeStake.toFixed(2)}`;
+            document.getElementById('returnRate').textContent = `${returnRate.toFixed(2)}%`;
+        }
+
+        function calculateArbitrage() {
+            const totalStake = parseFloat(document.getElementById('totalStake').value) || 0;
+            const odds1 = parseFloat(document.getElementById('odds1').value) || 0;
+            const odds2 = parseFloat(document.getElementById('odds2').value) || 0;
+            const odds3 = useThirdSide ? (parseFloat(document.getElementById('odds3').value) || 0) : 0;
+
+            if (odds1 <= 1 || odds2 <= 1 || (useThirdSide && odds3 <= 1)) {
+                updateStakeInputs(0, 0, 0);
+                updateArbitrageResults(0, 0, 0, 0);
+                document.getElementById('arbStatus').textContent = 'Enter valid odds';
+                return;
+            }
+
+            let impliedProb1, impliedProb2, impliedProb3 = 0;
+            let totalImpliedProb;
+            let stake1, stake2, stake3 = 0;
+            
+            if (useThirdSide && odds3 > 1) {
+                // Three-way arbitrage
+                impliedProb1 = 1 / odds1;
+                impliedProb2 = 1 / odds2;
+                impliedProb3 = 1 / odds3;
+                totalImpliedProb = impliedProb1 + impliedProb2 + impliedProb3;
+                
+                stake1 = totalStake * (impliedProb1 / totalImpliedProb);
+                stake2 = totalStake * (impliedProb2 / totalImpliedProb);
+                stake3 = totalStake * (impliedProb3 / totalImpliedProb);
+            } else {
+                // Two-way arbitrage
+                impliedProb1 = 1 / odds1;
+                impliedProb2 = 1 / odds2;
+                totalImpliedProb = impliedProb1 + impliedProb2;
+                
+                stake1 = totalStake * (impliedProb1 / totalImpliedProb);
+                stake2 = totalStake * (impliedProb2 / totalImpliedProb);
+            }
+
+            updateStakeInputs(stake1, stake2, stake3);
+            calculateFromStakes();
+        }
+
+        function updateStakeInputs(stake1, stake2, stake3) {
+            if (isUpdatingStakes) return;
+            
+            isUpdatingStakes = true;
+            document.getElementById('stakeInput1').value = stake1 > 0 ? stake1.toFixed(2) : '';
+            document.getElementById('stakeInput2').value = stake2 > 0 ? stake2.toFixed(2) : '';
+            document.getElementById('stakeInput3').value = stake3 > 0 ? stake3.toFixed(2) : '';
+            isUpdatingStakes = false;
+        }
+
+        function calculateFromStakes() {
+            if (isUpdatingStakes) return;
+            
+            const stake1 = parseFloat(document.getElementById('stakeInput1').value) || 0;
+            const stake2 = parseFloat(document.getElementById('stakeInput2').value) || 0;
+            const stake3 = parseFloat(document.getElementById('stakeInput3').value) || 0;
+            const odds1 = parseFloat(document.getElementById('odds1').value) || 0;
+            const odds2 = parseFloat(document.getElementById('odds2').value) || 0;
+            const odds3 = useThirdSide ? (parseFloat(document.getElementById('odds3').value) || 0) : 0;
+
+            const actualTotalStake = stake1 + stake2 + stake3;
+
+            if (actualTotalStake <= 0 || odds1 <= 1 || odds2 <= 1 || (useThirdSide && odds3 <= 1)) {
+                updateArbitrageResults(0, 0, 0, actualTotalStake);
+                return;
+            }
+
+            // Calculate guaranteed profit
+            const payout1 = stake1 * odds1;
+            const payout2 = stake2 * odds2;
+            const payout3 = useThirdSide ? stake3 * odds3 : 0;
+            
+            const minPayout = Math.min(payout1, payout2, useThirdSide ? payout3 : payout2);
+            const guaranteedProfit = minPayout - actualTotalStake;
+            const profitMargin = actualTotalStake > 0 ? (guaranteedProfit / actualTotalStake) * 100 : 0;
+
+            // Calculate implied probabilities to check arbitrage status
+            const impliedProb1 = odds1 > 1 ? 1 / odds1 : 0;
+            const impliedProb2 = odds2 > 1 ? 1 / odds2 : 0;
+            const impliedProb3 = (useThirdSide && odds3 > 1) ? 1 / odds3 : 0;
+            const totalImpliedProb = impliedProb1 + impliedProb2 + impliedProb3;
+
+            updateArbitrageResults(guaranteedProfit, profitMargin, totalImpliedProb, actualTotalStake);
+        }
+
+        function updateArbitrageResults(guaranteedProfit, profitMargin, totalImpliedProb, actualTotalStake) {
+            document.getElementById('actualTotalStake').textContent = `${actualTotalStake.toFixed(2)}`;
+            document.getElementById('arbProfit').textContent = `${guaranteedProfit.toFixed(2)}`;
+            document.getElementById('profitMargin').textContent = `${profitMargin.toFixed(2)}%`;
+
+            // Determine arbitrage status
+            let arbStatus;
+            if (totalImpliedProb > 0 && totalImpliedProb < 1) {
+                arbStatus = '✅ Arbitrage Opportunity';
+                document.getElementById('arbStatus').className = 'result-value profit';
+            } else if (totalImpliedProb >= 1) {
+                arbStatus = '❌ No Arbitrage';
+                document.getElementById('arbStatus').className = 'result-value warning';
+            } else {
+                arbStatus = 'Enter odds to check';
+                document.getElementById('arbStatus').className = 'result-value';
+            }
+
+            document.getElementById('arbStatus').textContent = arbStatus;
+        }
+
+        function onStakeChange(changedStake) {
+            if (isUpdatingStakes) return;
+            
+            const odds1 = parseFloat(document.getElementById('odds1').value) || 0;
+            const odds2 = parseFloat(document.getElementById('odds2').value) || 0;
+            const odds3 = useThirdSide ? (parseFloat(document.getElementById('odds3').value) || 0) : 0;
+            
+            if (odds1 <= 1 || odds2 <= 1 || (useThirdSide && odds3 <= 1)) {
+                calculateFromStakes();
+                return;
+            }
+
+            const changedStakeValue = parseFloat(document.getElementById(`stakeInput${changedStake}`).value) || 0;
+            
+            if (changedStakeValue <= 0) {
+                calculateFromStakes();
+                return;
+            }
+
+            let impliedProb1, impliedProb2, impliedProb3 = 0;
+            let totalImpliedProb;
+            
+            if (useThirdSide && odds3 > 1) {
+                impliedProb1 = 1 / odds1;
+                impliedProb2 = 1 / odds2;
+                impliedProb3 = 1 / odds3;
+                totalImpliedProb = impliedProb1 + impliedProb2 + impliedProb3;
+            } else {
+                impliedProb1 = 1 / odds1;
+                impliedProb2 = 1 / odds2;
+                totalImpliedProb = impliedProb1 + impliedProb2;
+            }
+
+            // Calculate optimal stakes based on the changed stake
+            let stake1, stake2, stake3 = 0;
+            
+            if (changedStake === 1) {
+                stake1 = changedStakeValue;
+                const ratio = impliedProb1 / totalImpliedProb;
+                const totalFromRatio = stake1 / ratio;
+                stake2 = totalFromRatio * (impliedProb2 / totalImpliedProb);
+                if (useThirdSide) {
+                    stake3 = totalFromRatio * (impliedProb3 / totalImpliedProb);
+                }
+            } else if (changedStake === 2) {
+                stake2 = changedStakeValue;
+                const ratio = impliedProb2 / totalImpliedProb;
+                const totalFromRatio = stake2 / ratio;
+                stake1 = totalFromRatio * (impliedProb1 / totalImpliedProb);
+                if (useThirdSide) {
+                    stake3 = totalFromRatio * (impliedProb3 / totalImpliedProb);
+                }
+            } else if (changedStake === 3 && useThirdSide) {
+                stake3 = changedStakeValue;
+                const ratio = impliedProb3 / totalImpliedProb;
+                const totalFromRatio = stake3 / ratio;
+                stake1 = totalFromRatio * (impliedProb1 / totalImpliedProb);
+                stake2 = totalFromRatio * (impliedProb2 / totalImpliedProb);
+            }
+
+            isUpdatingStakes = true;
+            if (changedStake !== 1) document.getElementById('stakeInput1').value = stake1.toFixed(2);
+            if (changedStake !== 2) document.getElementById('stakeInput2').value = stake2.toFixed(2);
+            if (changedStake !== 3 && useThirdSide) document.getElementById('stakeInput3').value = stake3.toFixed(2);
+            isUpdatingStakes = false;
+
+            calculateFromStakes();
+        }
+
+        // Event listeners for real-time calculation
+        document.getElementById('bonusBetAmount').addEventListener('input', calculateBonusBet);
+        document.getElementById('bonusBetOdds').addEventListener('input', calculateBonusBet);
+        document.getElementById('oppositeOdds').addEventListener('input', calculateBonusBet);
+
+        document.getElementById('totalStake').addEventListener('input', calculateArbitrage);
+        document.getElementById('odds1').addEventListener('input', calculateArbitrage);
+        document.getElementById('odds2').addEventListener('input', calculateArbitrage);
+        document.getElementById('odds3').addEventListener('input', calculateArbitrage);
+
+        // Event listeners for stake inputs
+        document.getElementById('stakeInput1').addEventListener('input', () => onStakeChange(1));
+        document.getElementById('stakeInput2').addEventListener('input', () => onStakeChange(2));
+        document.getElementById('stakeInput3').addEventListener('input', () => onStakeChange(3));
+    </script>
+</body>
+</html>
