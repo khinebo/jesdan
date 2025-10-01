@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="JSPORTS1.jp" tvg-logo="https://media.licdn.com/dms/image/v2/C4E0BAQGjvnBSYRriIw/company-logo_200_200/company-logo_200_200/0/1646327585440/the_tennis_channel_logo?e=2147483647&v=beta&t=_T_xKpgh-nmQ55dC5pxE4Ng2r2YYmDG25ulDKWSuztQ" group-title="Others",Tennis Channel
+https://fl25.moveonjoy.com/TENNIS_CHANNEL/index.m3u8
 #EXTINF:-1 group-title="Others" tvg-logo="https://khinebo.github.io/jesdan/iptv/gaora.png",Gaora-JP
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17
 #EXTINF:-1 tvg-id="JSPORTS1.jp" tvg-logo="https://i.imgur.com/vEpjLnj.png" group-title="Others",J Sports 1 (544p)
