@@ -70,7 +70,7 @@ https://lb1-live-mv.v2h-cdn.com/hls/ffbc/ffolvgdhk/ffolvgdhk.m3u8
 #EXTINF:-1 tvg-id="MonoPlus.th" tvg-name="MONO Plus" group-title="Thai TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvk9tsrNyXuj2TcSpLQ7pnWGz2m43aQbpGJAh4nySU9xfiP_8q_NjId7yB9D0t1LQG_M&usqp=CAU",MONO Plus
 https://monomax-uiripn.cdn.byteark.com/plain/th/1080p/index.m3u8
 #EXTINF:-1 tvg-id="NationTV.th" tvg-name="Nation TV" group-title="Thai TV" tvg-logo="https://i.imgur.com/h3TY38F.png",Nation TV
-https://nationtv-1jdcjo.cdn.byteark.com/fleetstream/nationtvlive/index.m3u8
+https://edge2a.v2h-cdn.com/nation_1/nation_1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NBT11Central.th" tvg-logo="https://i.imgur.com/8hYQIxS.png" group-title="Thai TV",NBT 11 Central
 https://edge2a.v2h-cdn.com/nbt/nbt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id=""News1 tvg-name="News 1" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0036.png" group-title="Thai TV",News 1
