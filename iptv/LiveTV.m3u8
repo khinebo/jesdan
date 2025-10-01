@@ -37,8 +37,8 @@ https://viamotionhsi.netplus.ch/live/eds/nhk/browser-HLS8/nhk.m3u8
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00663-skynews-skynewsau-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="SkyNewsUK.uk" tvg-logo="https://archive.org/download/sky-news-logo/sky-news-logo.jpg" group-title="News",Sky News (UK)
 https://linear417-gb-hls1-prd-ak.cdn.skycdp.com/100e/Content/HLS_001_1080_30/Live/channel(skynews)/index_1080-30.m3u8
-#EXTINF:-1 channel-id="mjh-bbc-earth-fast" tvg-id="mjh-bbc-earth-fast" tvg-logo="https://imageresizer.static9.net.au/Rc3CC94BjHA9E9BOLrSI22N81PI=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F11%2F648311%2Fgroup-61770.png" group-title="Documentary" , BBC Earth
-https://i.mjh.nz/.r/bbc-earth-fast.m3u8
+#EXTINF:-1 tvg-id="bbc-earth" tvg-logo="https://imageresizer.static9.net.au/Rc3CC94BjHA9E9BOLrSI22N81PI=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F11%2F648311%2Fgroup-61770.png" group-title="Documentary" , BBC Earth
+https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist.m3u8
 #EXTINF:-1 tvg-id="SmithsonianCh.uk" tvg-logo="https://www.si.edu/sites/default/files/styles/grid/public/newsdesk/press_releases/smithsonian-channel-logo-thumbnail.jpg.webp?itok=lFH6Hai3" group-title="Documentary",Smithsonian Channel
 https://fl25.moveonjoy.com/SMITHSONIAN_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="AtTV.th" group-title="Thai TV" tvg-logo="https://files.catbox.moe/6rj9aw.jpg",@TV (720p)
