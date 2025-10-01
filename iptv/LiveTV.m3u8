@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="TennisCh1.jp" tvg-logo="https://media.licdn.com/dms/image/v2/C4E0BAQGjvnBSYRriIw/company-logo_200_200/company-logo_200_200/0/1646327585440/the_tennis_channel_logo?e=2147483647&v=beta&t=_T_xKpgh-nmQ55dC5pxE4Ng2r2YYmDG25ulDKWSuztQ" group-title="Others",Tennis Channel 1
 https://fl25.moveonjoy.com/TENNIS_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="TennisCh2.jp" tvg-logo="https://media.licdn.com/dms/image/v2/C4E0BAQGjvnBSYRriIw/company-logo_200_200/company-logo_200_200/0/1646327585440/the_tennis_channel_logo?e=2147483647&v=beta&t=_T_xKpgh-nmQ55dC5pxE4Ng2r2YYmDG25ulDKWSuztQ" group-title="Others",Tennis Channel 2
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
 #EXTINF:-1 group-title="Others" tvg-logo="https://khinebo.github.io/jesdan/iptv/gaora.png",Gaora-JP
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17
 #EXTINF:-1 tvg-id="JSPORTS1.jp" tvg-logo="https://i.imgur.com/vEpjLnj.png" group-title="Others",J Sports 1 (544p)
@@ -37,7 +37,7 @@ https://viamotionhsi.netplus.ch/live/eds/nhk/browser-HLS8/nhk.m3u8
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00663-skynews-skynewsau-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="SkyNewsUK.uk" tvg-logo="https://archive.org/download/sky-news-logo/sky-news-logo.jpg" group-title="News",Sky News (UK)
 https://linear417-gb-hls1-prd-ak.cdn.skycdp.com/100e/Content/HLS_001_1080_30/Live/channel(skynews)/index_1080-30.m3u8
-#EXTINF:-1 tvg-id="BBCEarth.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/en/4/44/BBC_Earth_logo.png" group-title="Documentary",BBC Earth
+#EXTINF:-1 tvg-id="BBCEarth.uk" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYa2FukFmKWiuUlJoEeTeupo9tPNfxf9A67g&s" group-title="Documentary",BBC Earth
 https://apollo.production-public.tubi.io/live/ac-bbc-earth2.m3u8
 #EXTINF:-1 tvg-id="SmithsonianCh.uk" tvg-logo="https://www.si.edu/sites/default/files/styles/grid/public/newsdesk/press_releases/smithsonian-channel-logo-thumbnail.jpg.webp?itok=lFH6Hai3" group-title="Documentary",Smithsonian Channel
 https://fl25.moveonjoy.com/SMITHSONIAN_CHANNEL/index.m3u8
