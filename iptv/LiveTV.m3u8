@@ -3,16 +3,6 @@
 https://fl25.moveonjoy.com/TENNIS_CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="TennisCh2.jp" tvg-logo="https://media.licdn.com/dms/image/v2/C4E0BAQGjvnBSYRriIw/company-logo_200_200/company-logo_200_200/0/1646327585440/the_tennis_channel_logo?e=2147483647&v=beta&t=_T_xKpgh-nmQ55dC5pxE4Ng2r2YYmDG25ulDKWSuztQ" group-title="Others",Tennis Channel 2
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
-#EXTINF:-1 group-title="Others" tvg-logo="https://khinebo.github.io/jesdan/iptv/gaora.png",Gaora-JP
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs17
-#EXTINF:-1 tvg-id="JSPORTS1.jp" tvg-logo="https://i.imgur.com/vEpjLnj.png" group-title="Others",J Sports 1 (544p)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs18
-#EXTINF:-1 tvg-id="JSPORTS2.jp" tvg-logo="https://i.imgur.com/g1GLVH2.png" group-title="Others",J Sports 2 (544p)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs19
-#EXTINF:-1 tvg-id="JSPORTS3.jp" tvg-logo="https://i.imgur.com/xdI361E.png" group-title="Others",J Sports 3 (544p)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs21
-#EXTINF:-1 tvg-id="JSPORTS4.jp" tvg-logo="https://i.imgur.com/fBcyZNL.png" group-title="Others",J Sports 4 (544p)
-http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs22
 #EXTINF:-1 tvg-id="ABCNews.au" tvg-logo="https://i.imgur.com/BrW7gk8.png" group-title="News",ABC News (AUS)
 https://c.mjh.nz/abc-news.m3u8
 #EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://payload.cargocollective.com/1/4/146919/13926257/V_BoxedBlackBorder_569.png" group-title="News",ABC News (US)
