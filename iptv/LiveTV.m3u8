@@ -46,6 +46,8 @@ https://yahoo-plex.amagi.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="bbc-earth" tvg-logo="https://imageresizer.static9.net.au/Rc3CC94BjHA9E9BOLrSI22N81PI=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F11%2F648311%2Fgroup-61770.png" group-title="Documentary" , BBC Earth
 https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNDocumentary.cn" tvg-logo="https://i.imgur.com/JHv0WxM.png" group-title="Documentary" , CGTN Documentary
+https://english-livebkali.cgtn.com/live/doccgtn.m3u8
 #EXTINF:-1 tvg-id="WNETDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/89/PBS_logo_2019.svg" group-title="Documentary" , PBS
 https://tvpass.org/live/WNET/hd
 #EXTINF:-1 tvg-id="PBSNature.us" tvg-logo="https://i.imgur.com/Brry7cZ.png" group-title="Documentary" , PBS Nature
