@@ -57,8 +57,6 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/56
 #EXTINF:-1 tvg-id="SmithsonianCh.uk" tvg-logo="https://www.si.edu/sites/default/files/styles/grid/public/newsdesk/press_releases/smithsonian-channel-logo-thumbnail.jpg.webp?itok=lFH6Hai3" group-title="Documentary",Smithsonian Channel
 https://fl25.moveonjoy.com/SMITHSONIAN_CHANNEL/index.m3u8
 
-#EXTINF:-1 tvg-id="AtTV.th" group-title="Thai TV" tvg-logo="https://files.catbox.moe/6rj9aw.jpg",@TV (720p)
-http://49.0.87.24:1936/HDAttv/Attv/playlist.m3u8
 #EXTINF:-1 tvg-id="Amarin34HD.th" tvg-name="Amarin TV" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png",Amarin TV
 https://lb-mvtv-live.v2h-cdn.com/redirect/hd_amarin/hdamarin.stream?type=m3u8
 #EXTINF:-1 tvg-id="ALTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/MCbCSWv.png",ALTV (1080p)
@@ -72,7 +70,7 @@ https://lb1-live-mv.v2h-cdn.com/hls/ffae/muulk/muulk.m3u8
 #EXTINF:-1 tvg-id="Channel5.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/wOIaqg7.png",Channel 5 (1080p)
 https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel7.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch7.png",Channel 7 HD
-http://streaming-hwc.ch7.com/livech7hd/HD.m3u8
+https://lb1-live-mv.v2h-cdn.com/hls/ffac/gohg/gohg.m3u8
 #EXTINF:-1 tvg-id="ThaiChannel8.th" tvg-name="Channel 8" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch8.png",Channel 8
 https://edge2a.v2h-cdn.com/ch8/ch8.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="GMM25.th" tvg-name="GMM 25" group-title="Thai TV" tvg-logo="https://i.imgur.com/uARba6N.png",GMM 25
