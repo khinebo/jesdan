@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="TennisCh1.jp" tvg-logo="https://media.licdn.com/dms/image/v2/C4E0BAQGjvnBSYRriIw/company-logo_200_200/company-logo_200_200/0/1646327585440/the_tennis_channel_logo?e=2147483647&v=beta&t=_T_xKpgh-nmQ55dC5pxE4Ng2r2YYmDG25ulDKWSuztQ" group-title="Sports",Tennis Channel 1
-https://fl25.moveonjoy.com/TENNIS_CHANNEL/index.m3u8
+https://tvpass.org/live/TennisChannel/sd
 #EXTINF:-1 tvg-id="TennisCh2.jp" tvg-logo="https://media.licdn.com/dms/image/v2/C4E0BAQGjvnBSYRriIw/company-logo_200_200/company-logo_200_200/0/1646327585440/the_tennis_channel_logo?e=2147483647&v=beta&t=_T_xKpgh-nmQ55dC5pxE4Ng2r2YYmDG25ulDKWSuztQ" group-title="Sports",Tennis Channel 2
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
 #EXTINF:-1 tvg-id="TSN1.ca" tvg-logo="https://i.imgur.com/eRFE0jZ.png" group-title="Sports",TSN1
@@ -13,6 +13,7 @@ https://tvpass.org/live/tsn3/hd
 https://tvpass.org/live/tsn4/hd
 #EXTINF:-1 tvg-id="TSN5.ca" tvg-logo="https://i.imgur.com/eRFE0jZ.png" group-title="Sports",TSN5
 https://tvpass.org/live/tsn5/hd
+
 #EXTINF:-1 tvg-id="ABCNews.au" tvg-logo="https://i.imgur.com/BrW7gk8.png" group-title="News",ABC News (AUS)
 https://c.mjh.nz/abc-news.m3u8
 #EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://payload.cargocollective.com/1/4/146919/13926257/V_BoxedBlackBorder_569.png" group-title="News",ABC News (US)
