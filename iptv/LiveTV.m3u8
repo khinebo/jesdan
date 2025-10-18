@@ -19,7 +19,7 @@ https://c.mjh.nz/abc-news.m3u8
 #EXTINF:-1 tvg-id="ABCNewsLive.us" tvg-logo="https://payload.cargocollective.com/1/4/146919/13926257/V_BoxedBlackBorder_569.png" group-title="News",ABC News (US)
 https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png" group-title="News",Al Jazeera English
-https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+https://live-hls-apps-aje-v3-fa.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="BBCNewsAsiaPacific.uk" group-title="News" tvg-logo="https://khinebo.github.io/jesdan/iptv/bbc.jpg",BBC News Asia Pacific
 https://i.mjh.nz/.r/bbc-news
 #EXTINF:-1 tvg-id="BloombergTVAsia.hk" group-title="News" tvg-logo="https://static-www.adweek.com/wp-content/uploads/sites/3/2023/09/bloomberg-tv.png?w=474",Bloomberg TV Asia
