@@ -67,7 +67,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/56
 https://fl25.moveonjoy.com/SMITHSONIAN_CHANNEL/index.m3u8
 
 #EXTINF:-1 tvg-id="Amarin34HD.th" tvg-name="Amarin TV" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/AmarinTV_NEW512.png",Amarin TV
-https://lb1-live-mv.v2h-cdn.com/hls/ffad/vibomi/vibomi.m3u8
+# https://lb1-live-mv.v2h-cdn.com/hls/ffad/vibomi/vibomi.m3u8
+https://amarin-ks7jcc.cdn.byteark.com/live/playlist.m3u8?x_ark_access_id=fleet-868&x_ark_auth_type=ark-v2&x_ark_expires=1762472995&x_ark_path_prefix=%2Flive%2F&x_ark_signature=vTehgDfLgVfKzCenBBeGwg
 #EXTINF:-1 tvg-id="ALTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/MCbCSWv.png",ALTV (1080p)
 https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8
 #EXTINF:-1 tvg-id="CableChannel37.th" tvg-logo="https://cablechannel37.net/assets/images/main/logos/cable_channel_37.png" group-title="Thai TV",Cable Channel 37
