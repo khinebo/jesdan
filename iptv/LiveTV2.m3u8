@@ -66,6 +66,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/56
 #EXTINF:-1 tvg-id="SmithsonianCh.uk" tvg-logo="https://www.si.edu/sites/default/files/styles/grid/public/newsdesk/press_releases/smithsonian-channel-logo-thumbnail.jpg.webp?itok=lFH6Hai3" group-title="Documentary",Smithsonian Channel
 https://fl25.moveonjoy.com/SMITHSONIAN_CHANNEL/index.m3u8
 
+#EXTINF:-1 tvg-id="ALTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/MCbCSWv.png",ALTV (1080p)
+https://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel5.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/wOIaqg7.png",Channel 5 (1080p)
 https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
 #EXTINF:-1 tvg-id="MonoPlus.th" tvg-name="MONO Plus" group-title="Thai TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvk9tsrNyXuj2TcSpLQ7pnWGz2m43aQbpGJAh4nySU9xfiP_8q_NjId7yB9D0t1LQG_M&usqp=CAU",MONO Plus
@@ -78,3 +80,5 @@ https://live-iptv.thaichaiyo.tv/tcy/live-manifest.m3u8
 https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TopNews.th" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/TOPNEWS.PNG",Top News (720p)
 https://live.topnews.co.th/hls/topnews_a_360.m3u8
+#EXTINF:-1 tvg-id="Workpoint23.th" tvg-name="Workpoint TV" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",Workpoint TV
+https://github.com/winnie3101/WinnieIPTV/raw/refs/heads/main/HLS_Streams/workpointtv.m3u8
