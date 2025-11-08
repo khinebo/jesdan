@@ -68,6 +68,8 @@ https://fl25.moveonjoy.com/SMITHSONIAN_CHANNEL/index.m3u8
 
 #EXTINF:-1 tvg-id="ALTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/MCbCSWv.png",ALTV (1080p)
 https://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8
+#EXTINF:-1 tvg-id="CableChannel37.th" tvg-logo="https://cablechannel37.net/assets/images/main/logos/cable_channel_37.png" group-title="Thai TV",Cable Channel 37
+http://www5.cabletv.co.th/StreamToCTV/cablechannel/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel5.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/wOIaqg7.png",Channel 5 (1080p)
 https://639bc5877c5fe.streamlock.net/tv5hdlive/tv5hdlive/playlist.m3u8
 #EXTINF:-1 tvg-id="MonoPlus.th" tvg-name="MONO Plus" group-title="Thai TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnvk9tsrNyXuj2TcSpLQ7pnWGz2m43aQbpGJAh4nySU9xfiP_8q_NjId7yB9D0t1LQG_M&usqp=CAU",MONO Plus
