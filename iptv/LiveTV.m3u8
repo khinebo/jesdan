@@ -70,7 +70,7 @@ https://fl25.moveonjoy.com/SMITHSONIAN_CHANNEL/index.m3u8
 # https://lb1-live-mv.v2h-cdn.com/hls/ffad/vibomi/vibomi.m3u8
 https://amarin-ks7jcc.cdn.byteark.com/live/playlist.m3u8?x_ark_access_id=fleet-868&x_ark_auth_type=ark-v2&x_ark_expires=1762472995&x_ark_path_prefix=%2Flive%2F&x_ark_signature=vTehgDfLgVfKzCenBBeGwg
 #EXTINF:-1 tvg-id="ALTV.th" group-title="Thai TV" tvg-logo="https://i.imgur.com/MCbCSWv.png",ALTV (1080p)
-https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8
+https://thaipbs-ujxrch.cdn.byteark.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CableChannel37.th" tvg-logo="https://cablechannel37.net/assets/images/main/logos/cable_channel_37.png" group-title="Thai TV",Cable Channel 37
 http://www5.cabletv.co.th/StreamToCTV/cablechannel/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel3.th" tvg-name="Channel 3 HD" group-title="Thai TV" tvg-logo="https://i.imgur.com/YRiulCU.png",Channel 3 HD
@@ -106,7 +106,8 @@ https://live-iptv.thaichaiyo.tv/tcy/live-manifest.m3u8
 #EXTINF:-1 tvg-id="ThaiPBS.th" group-title="Thai TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png",Thai PBS (1080p)
 https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ThairathTV32.th" tvg-name="Thairath TV" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon/0013_R.png",Thairath TV
-https://lb1-live-mv.v2h-cdn.com/hls/ffaf/thairath/thairath.m3u8
+#EXTVLCOPT:http-referrer=https://www.thairath.co.th/tv/live
+https://ssai-streaming.thairath.co.th/bamm-csai/720p/index.m3u8
 #EXTINF:-1 tvg-id="TNN16.th" tvg-name="TNN 16" group-title="Thai TV" tvg-logo="https://cms.dmpcdn.com/livetv/2023/10/02/75023d90-60f1-11ee-935a-5d4eba985103_webp_original.webp",TNN 16
 https://lb1-live-mv.v2h-cdn.com/hls/ffdc/mugvhogvho/mugvhogvho.m3u8
 #EXTINF:-1 tvg-id="TopNews.th" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE//channelicon/TOPNEWS.PNG",Top News (720p)
@@ -114,4 +115,4 @@ https://live.topnews.co.th/hls/topnews_a_360.m3u8
 #EXTINF:-1 tvg-id="True4U.th" tvg-name="True 4U" group-title="Thai TV" tvg-logo="https://i.imgur.com/O6Xre1O.png",True 4U
 https://lb1-live-mv.v2h-cdn.com/hls/ffca/mifainp/mifainp.m3u8
 #EXTINF:-1 tvg-id="Workpoint23.th" tvg-name="Workpoint TV" group-title="Thai TV" tvg-logo="https://ais-s.ais-vidnt.com/ais/play/origin/LIVE/channelicon//0015_R.png",Workpoint TV
-https://lb1-live-mv.v2h-cdn.com/hls/ffcb/gbinrvp/gbinrvp.m3u8
+https://github.com/winnie3101/WinnieIPTV/raw/refs/heads/main/HLS_Streams/workpointtv.m3u8
