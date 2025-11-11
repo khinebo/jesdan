@@ -57,6 +57,8 @@ https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEar
 https://bloomberg.com/media-manifest/streams/qt.m3u8
 #EXTINF:-1 tvg-id="CGTNDocumentary.cn" tvg-logo="https://i.imgur.com/JHv0WxM.png" group-title="Documentary" , CGTN Documentary
 https://english-livebkali.cgtn.com/live/doccgtn.m3u8
+#EXTINF:-1 tvg-id="History.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/512px-History_%282021%29.svg.png" group-title="Documentary" , History Channel
+https://fl1.moveonjoy.com/history_channel/index.m3u8
 #EXTINF:-1 tvg-id="WNETDT1.us" tvg-logo="https://i.imgur.com/sfwIILW.png" group-title="Documentary" , PBS
 https://tvpass.org/live/WNET/hd
 #EXTINF:-1 tvg-id="PBSNature.us" tvg-logo="https://i.imgur.com/Brry7cZ.png" group-title="Documentary" , PBS Nature
