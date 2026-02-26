@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Team Picker · flip tiles</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+        body {
+            background: linear-gradient(145deg, #f6f9fc 0%, #e6f0f5 100%);
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+        }
+        .app-container {
+            max-width: 1200px;
+            width: 100%;
+            background: rgba(255,255,255,0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 48px 48px 32px 32px;
+            box-shadow: 0 25px 40px -10px rgba(0,20,30,0.3), inset 0 1px 3px rgba(255,255,255,0.8);
+            padding: 32px 28px;
+            border: 1px solid rgba(255,255,255,0.5);
+        }
+        h1 {
+            margin: 0 0 12px 0;
+            font-weight: 600;
+            font-size: 2.2rem;
+            color: #1a3e4c;
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        h1 span {
+            background: #d81b60;
+            color: white;
+            font-size: 1rem;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-weight: 500;
+            box-shadow: 0 4px 8px rgba(216,27,96,0.3);
+        }
+        .control-panel {
+            background: white;
+            border-radius: 48px;
+            padding: 28px 30px;
+            margin-bottom: 36px;
+            box-shadow: 0 10px 20px rgba(0, 30, 40, 0.1), inset 0 1px 4px #ffffff;
+            border: 1px solid rgba(255,255,255,0.7);
+        }
+        .input-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px 30px;
+            align-items: flex-end;
+        }
+        .input-group {
+            flex: 1 1 220px;
+            min-width: 200px;
+        }
+        .input-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #1d5a6d;
+            margin-bottom: 8px;
+            margin-left: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 16px 20px;
+            border: none;
+            background: #f0f7fa;
+            border-radius: 60px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #042630;
+            box-shadow: inset 2px 4px 8px rgba(0,20,30,0.08), 0 1px 2px rgba(255,255,255,1);
+            transition: 0.15s;
+        }
+        .input-group input:focus {
+            outline: 2px solid #6ab0c5;
+            background: #ffffff;
+        }
+        .input-group input::placeholder {
+            color: #8fafbb;
+            font-weight: 400;
+        }
+        .generate-btn {
+            background: #1f5f73;
+            border: none;
+            color: white;
+            font-weight: 700;
+            padding: 16px 38px;
+            border-radius: 60px;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            cursor: pointer;
+            box-shadow: 0 12px 0 #0a2e3a, 0 6px 18px rgba(24, 85, 104, 0.5);
+            transition: 0.1s linear;
+            border: 1px solid #99cadb;
+            margin-top: 6px;
+            min-width: 200px;
+        }
+        .generate-btn:active {
+            transform: translateY(6px);
+            box-shadow: 0 6px 0 #0a2e3a, 0 8px 14px rgba(24, 85, 104, 0.5);
+        }
+        .info-badge {
+            margin-top: 14px;
+            margin-left: 8px;
+            font-size: 1rem;
+            color: #2b697e;
+            font-weight: 500;
+            background: rgba(141, 196, 214, 0.25);
+            padding: 8px 22px;
+            border-radius: 40px;
+            display: inline-block;
+        }
+        .grid-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 18px;
+            padding: 24px 10px 10px 10px;
+            transition: 0.2s;
+            min-height: 240px;
+        }
+        /* tile wrapper for 3D flip */
+        .tile-flip {
+            background-color: transparent;
+            width: 110px;
+            height: 110px;
+            perspective: 1800px;
+            cursor: pointer;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        @media (max-width: 550px) {
+            .tile-flip {
+                width: 85px;
+                height: 85px;
+            }
+        }
+        .tile-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+            transform-style: preserve-3d;
+            border-radius: 50%;
+            box-shadow: 0 12px 22px -6px rgba(0,40,50,0.4);
+        }
+        .tile-flip[data-flipped="true"] .tile-inner {
+            transform: rotateY(180deg);
+        }
+        .tile-front, .tile-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            box-shadow: inset 0 -4px 6px rgba(0,0,0,0.1), inset 0 4px 6px rgba(255,255,255,0.7);
+            text-shadow: 0 2px 3px rgba(0,0,0,0.2);
+            transition: 0.2s;
+        }
+        /* face-up: question mark */
+        .tile-front {
+            background: #f2ba7e;  /* warm fallback – each tile gets unique color via js */
+            color: white;
+            font-size: 3.2rem;
+            transform: rotateY(0deg);
+            border: 3px solid rgba(255,255,240,0.9);
+        }
+        /* face-down: team name */
+        .tile-back {
+            background: #4f7a8b; /* base, but will be overridden by inline style */
+            color: white;
+            font-size: 1.2rem;
+            transform: rotateY(180deg);
+            word-break: break-word;
+            padding: 8px;
+            text-align: center;
+            line-height: 1.3;
+            font-weight: 600;
+            border: 3px solid rgba(255,255,255,0.8);
+        }
+        /* tiny badge for stats */
+        .footnote {
+            text-align: center;
+            color: #2f5b6b;
+            font-weight: 500;
+            margin-top: 30px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+<div class="app-container">
+    <h1>
+        ⚡ TEAM PICKER
+        <span>flip to reveal</span>
+    </h1>
+
+    <div class="control-panel">
+        <div class="input-row">
+            <div class="input-group">
+                <label>🏷️ TEAM NAMES (comma separated)</label>
+                <input type="text" id="teamInput" value="Alpha, Bravo, Charlie, Delta" placeholder="e.g. Eagles, Sharks, Lions">
+            </div>
+            <div class="input-group">
+                <label>👥 NUMBER OF PEOPLE</label>
+                <input type="number" id="peopleInput" value="12" min="1" max="50" step="1">
+            </div>
+            <button class="generate-btn" id="generateBtn">GENERATE TILES</button>
+        </div>
+        <div class="info-badge" id="distributionInfo"></div>
+    </div>
+
+    <!-- grid of flip tiles injected here -->
+    <div id="tileGrid" class="grid-container"></div>
+    <div class="footnote">✨ tap any tile — it flips to show the team name</div>
+</div>
+
+<script>
+    (function() {
+        // ---------- helpers ----------
+        const teamInput = document.getElementById('teamInput');
+        const peopleInput = document.getElementById('peopleInput');
+        const generateBtn = document.getElementById('generateBtn');
+        const tileGrid = document.getElementById('tileGrid');
+        const distributionInfo = document.getElementById('distributionInfo');
+
+        // Predefined set of cheerful colors (front & back will share similar hue but back slightly deeper)
+        const colorPalette = [
+            { front: '#F97316', back: '#C2410C' },  // orange
+            { front: '#10B981', back: '#047857' },  // emerald
+            { front: '#3B82F6', back: '#1E40AF' },  // blue
+            { front: '#EC4899', back: '#9D174D' },  // pink
+            { front: '#8B5CF6', back: '#5B21B6' },  // violet
+            { front: '#F59E0B', back: '#B45309' },  // amber
+            { front: '#06B6D4', back: '#0E7490' },  // cyan
+            { front: '#EF4444', back: '#B91C1C' },  // red
+            { front: '#14B8A6', back: '#115E59' },  // teal
+            { front: '#D946EF', back: '#A21CAF' },  // fuchsia
+            { front: '#F97316', back: '#C2410C' },  // (duplicates for larger groups, but it's fine)
+            { front: '#84CC16', back: '#3F6212' },  // lime
+            { front: '#06B6D4', back: '#0E7490' },  // cyan again
+            { front: '#F43F5E', back: '#9F1239' },  // rose
+            { front: '#6366F1', back: '#3730A3' }   // indigo
+        ];
+
+        function getTeamColors(index) {
+            return colorPalette[index % colorPalette.length];
+        }
+
+        // Parse teams from comma-separated string, trim, remove empty
+        function parseTeams(str) {
+            return str.split(',').map(s => s.trim()).filter(s => s.length > 0);
+        }
+
+        // Calculate near-equal distribution: returns array of team names for each person
+        function assignTeams(teams, totalPeople) {
+            if (!teams.length || totalPeople === 0) return [];
+            const assignments = [];
+            const teamCount = teams.length;
+            const base = Math.floor(totalPeople / teamCount);
+            const remainder = totalPeople % teamCount;
+
+            // create array with base counts, then add 1 for first 'remainder' teams
+            for (let i = 0; i < teamCount; i++) {
+                let count = base + (i < remainder ? 1 : 0);
+                for (let j = 0; j < count; j++) {
+                    assignments.push(teams[i]);
+                }
+            }
+            // shuffle to avoid all tiles of same team clumping (Fisher–Yates)
+            for (let i = assignments.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [assignments[i], assignments[j]] = [assignments[j], assignments[i]];
+            }
+            return assignments;
+        }
+
+        // Build distribution text
+        function updateDistributionInfo(teams, assignments) {
+            if (!teams.length || !assignments.length) {
+                distributionInfo.innerText = '✨ enter teams & number, then generate';
+                return;
+            }
+            const counts = teams.map(team => {
+                const cnt = assignments.filter(t => t === team).length;
+                return `${team}: ${cnt}`;
+            }).join(' · ');
+            distributionInfo.innerText = `📊 ${counts}`;
+        }
+
+        // Generate tiles based on current inputs
+        function generateTiles() {
+            const rawTeams = teamInput.value;
+            const teams = parseTeams(rawTeams);
+            const people = parseInt(peopleInput.value, 10);
+
+            // validation
+            if (teams.length === 0) {
+                alert('Please enter at least one team name.');
+                return;
+            }
+            if (isNaN(people) || people < 1) {
+                alert('Number of people must be at least 1.');
+                return;
+            }
+            if (people > 80) {  // reasonable limit, prevent overcrowding
+                alert('For better experience, keep number of people ≤ 80.');
+                return;
+            }
+
+            const assignments = assignTeams(teams, people);
+            if (assignments.length === 0) {
+                tileGrid.innerHTML = ''; // nothing
+                distributionInfo.innerText = '⚠️ no people?';
+                return;
+            }
+
+            // Clear grid
+            tileGrid.innerHTML = '';
+
+            // Loop through each person (each tile)
+            assignments.forEach((teamName, idx) => {
+                const colorStyle = getTeamColors(idx);
+
+                // Create flip container
+                const tileDiv = document.createElement('div');
+                tileDiv.className = 'tile-flip';
+                tileDiv.setAttribute('data-flipped', 'false');
+                tileDiv.setAttribute('data-team', teamName);   // optional
+
+                // inner wrapper
+                const inner = document.createElement('div');
+                inner.className = 'tile-inner';
+
+                // front (visible: question mark)
+                const front = document.createElement('div');
+                front.className = 'tile-front';
+                front.style.background = colorStyle.front;
+                front.textContent = '?';   // question mark
+
+                // back (hidden initially: shows team name)
+                const back = document.createElement('div');
+                back.className = 'tile-back';
+                back.style.background = colorStyle.back;
+                back.textContent = teamName;
+
+                inner.appendChild(front);
+                inner.appendChild(back);
+                tileDiv.appendChild(inner);
+
+                // ----- flip on click / touch -----
+                tileDiv.addEventListener('click', function(e) {
+                    e.stopPropagation();   // just avoid weirdness
+                    const flipped = this.getAttribute('data-flipped') === 'true';
+                    this.setAttribute('data-flipped', flipped ? 'false' : 'true');
+                });
+
+                // optional touch support – same handler works
+                tileGrid.appendChild(tileDiv);
+            });
+
+            // Update info line
+            updateDistributionInfo(teams, assignments);
+        }
+
+        // Attach event to generate button
+        generateBtn.addEventListener('click', generateTiles);
+
+        // Optional: run on page load with default values (already prefilled)
+        window.addEventListener('load', () => {
+            generateTiles();   // shows 12 tiles with Alpha/Bravo/Charlie/Delta
+        });
+
+        // also allow 'enter' in inputs? not necessary but nice
+        [teamInput, peopleInput].forEach(input => {
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    generateBtn.click();
+                }
+            });
+        });
+
+        // Handle small screen / tap feedback (css handles it)
+    })();
+</script>
+</body>
+</html>
