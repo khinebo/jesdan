@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Team Picker · flip tiles</title>
+    <title>Team Picker · flip tiles (reveal only once)</title>
     <style>
         * {
             box-sizing: border-box;
@@ -162,6 +162,7 @@
             border-radius: 50%;
             box-shadow: 0 12px 22px -6px rgba(0,40,50,0.4);
         }
+        /* flipped state: rotate to show back (team name) */
         .tile-flip[data-flipped="true"] .tile-inner {
             transform: rotateY(180deg);
         }
@@ -182,7 +183,7 @@
         }
         /* face-up: question mark */
         .tile-front {
-            background: #f2ba7e;  /* warm fallback – each tile gets unique color via js */
+            background: #f2ba7e;  /* fallback – each tile gets unique color via js */
             color: white;
             font-size: 3.2rem;
             transform: rotateY(0deg);
@@ -201,7 +202,11 @@
             font-weight: 600;
             border: 3px solid rgba(255,255,255,0.8);
         }
-        /* tiny badge for stats */
+        /* visual hint: disabled cursor for already flipped tiles */
+        .tile-flip[data-flipped="true"] {
+            cursor: default;
+            filter: brightness(0.98) saturate(1.1);
+        }
         .footnote {
             text-align: center;
             color: #2f5b6b;
@@ -235,12 +240,11 @@
 
     <!-- grid of flip tiles injected here -->
     <div id="tileGrid" class="grid-container"></div>
-    <div class="footnote">✨ tap any tile — it flips to show the team name</div>
+    <div class="footnote">✨ tap any tile to reveal its team — it stays flipped until you generate new ones</div>
 </div>
 
 <script>
     (function() {
-        // ---------- helpers ----------
         const teamInput = document.getElementById('teamInput');
         const peopleInput = document.getElementById('peopleInput');
         const generateBtn = document.getElementById('generateBtn');
@@ -311,7 +315,7 @@
             distributionInfo.innerText = `📊 ${counts}`;
         }
 
-        // Generate tiles based on current inputs
+        // Generate tiles based on current inputs (completely fresh set)
         function generateTiles() {
             const rawTeams = teamInput.value;
             const teams = parseTeams(rawTeams);
@@ -333,12 +337,12 @@
 
             const assignments = assignTeams(teams, people);
             if (assignments.length === 0) {
-                tileGrid.innerHTML = ''; // nothing
+                tileGrid.innerHTML = ''; 
                 distributionInfo.innerText = '⚠️ no people?';
                 return;
             }
 
-            // Clear grid
+            // Clear grid completely
             tileGrid.innerHTML = '';
 
             // Loop through each person (each tile)
@@ -348,6 +352,7 @@
                 // Create flip container
                 const tileDiv = document.createElement('div');
                 tileDiv.className = 'tile-flip';
+                // all tiles start unflipped (data-flipped = "false")
                 tileDiv.setAttribute('data-flipped', 'false');
                 tileDiv.setAttribute('data-team', teamName);   // optional
 
@@ -371,14 +376,17 @@
                 inner.appendChild(back);
                 tileDiv.appendChild(inner);
 
-                // ----- flip on click / touch -----
+                // ----- FLIP HANDLER: only once per tile, no flipping back -----
                 tileDiv.addEventListener('click', function(e) {
-                    e.stopPropagation();   // just avoid weirdness
-                    const flipped = this.getAttribute('data-flipped') === 'true';
-                    this.setAttribute('data-flipped', flipped ? 'false' : 'true');
+                    e.stopPropagation();
+                    // If tile is already flipped, do nothing (can't flip back)
+                    if (this.getAttribute('data-flipped') === 'true') {
+                        return;
+                    }
+                    // Otherwise set flipped to true (reveal team, stays that way)
+                    this.setAttribute('data-flipped', 'true');
                 });
 
-                // optional touch support – same handler works
                 tileGrid.appendChild(tileDiv);
             });
 
@@ -389,12 +397,12 @@
         // Attach event to generate button
         generateBtn.addEventListener('click', generateTiles);
 
-        // Optional: run on page load with default values (already prefilled)
+        // Run on page load with default values
         window.addEventListener('load', () => {
             generateTiles();   // shows 12 tiles with Alpha/Bravo/Charlie/Delta
         });
 
-        // also allow 'enter' in inputs? not necessary but nice
+        // Allow 'enter' in inputs to trigger generate
         [teamInput, peopleInput].forEach(input => {
             input.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') {
@@ -403,7 +411,6 @@
             });
         });
 
-        // Handle small screen / tap feedback (css handles it)
     })();
 </script>
 </body>
