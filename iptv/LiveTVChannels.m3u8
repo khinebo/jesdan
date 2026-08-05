@@ -44,8 +44,10 @@ https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achan
 #EXTINF:-1 tvg-id="Smithsonian.ca" tvg-name="CA| SMITHSONIAN HD" tvg-logo="http://51.158.145.100/picons/logos/CANADA/176903.png" group-title="INFOTAINMENT",SMITHSONIAN HD
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A176903.m3u8
 
-#EXTINF:-1 tvg-id="164750" tvg-name="TH| TNN24Thai" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png" group-title="THAI",Thai Channel 3
+#EXTINF:-1 tvg-id="164750" tvg-name="TH| TNN24Thai" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png" group-title="THAI",Thai TV 3
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164750.m3u8
+#EXTINF:-1 tvg-id="164755" tvg-name="TH| TV5 THAI HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png" group-title="THAI",Thai TV 5
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164755.m3u8
 #EXTINF:-1 tvg-id="164725" tvg-name="TH| PBS THAI" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png" group-title="THAI",Thai PBS
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164725.m3u8
 #EXTINF:-1 tvg-id="1907197" tvg-name="TH| Thairath TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png" group-title="THAI",Thairath TV
