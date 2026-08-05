@@ -1,7 +1,7 @@
 #EXTM3U x-tvg-url="https://i.mjh.nz/au/Brisbane/epg.xml.gz"
 
 #EXTINF:-1 tvg-id="TennisChannel.us" tvg-name="GO| TENNIS CHANNEL" tvg-logo="http://51.158.145.100/picons/logos/USA/1930919.png" group-title="SPORTS",TENNIS CHANNEL
-https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1930919.m3u8
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A811667.m3u8
 #EXTINF:-1 tvg-id="1930918" tvg-name="GO| TENNIS CHANNEL 2" tvg-logo="http://51.158.145.100/picons/logos/USA/1930918.png" group-title="SPORTS",TENNIS CHANNEL 2
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1930918.m3u8
 
