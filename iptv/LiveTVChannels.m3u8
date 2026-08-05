@@ -1,24 +1,24 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-id="1520176" tvg-name="AU| KAYO - FOX SPORTS 501 CRICKET" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS 501
+#EXTINF:-1 tvg-id="1520176" tvg-name="AU| KAYO - FOX SPORTS 501 CRICKET" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS 501
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520176.m3u8
-#EXTINF:-1 tvg-id="1520171" tvg-name="AU| KAYO - FOX SPORTS 502 LEAUGE" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS 502
+#EXTINF:-1 tvg-id="1520171" tvg-name="AU| KAYO - FOX SPORTS 502 LEAUGE" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS 502
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520171.m3u8
-#EXTINF:-1 tvg-id="1520175" tvg-name="AU| KAYO - FOX SPORTS 503" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS 503
+#EXTINF:-1 tvg-id="1520175" tvg-name="AU| KAYO - FOX SPORTS 503" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS 503
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520175.m3u8
-#EXTINF:-1 tvg-id="1520170" tvg-name="AU| KAYO - FOX SPORTS 504 FOTTY" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS 504
+#EXTINF:-1 tvg-id="1520170" tvg-name="AU| KAYO - FOX SPORTS 504 FOTTY" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS 504
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520170.m3u8
-#EXTINF:-1 tvg-id="FoxSports5.au" tvg-name="AU| KAYO - FOX SPORTS 505" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS 505
+#EXTINF:-1 tvg-id="FoxSports5.au" tvg-name="AU| KAYO - FOX SPORTS 505" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS 505
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520174.m3u8
-#EXTINF:-1 tvg-id="FoxSports6.au" tvg-name="AU| KAYO - FOX SPORTS 506" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS 506
+#EXTINF:-1 tvg-id="FoxSports6.au" tvg-name="AU| KAYO - FOX SPORTS 506" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS 506
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520169.m3u8
-#EXTINF:-1 tvg-id="1520173" tvg-name="AU| KAYO - FOX SPORTS 507" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS 507
+#EXTINF:-1 tvg-id="1520173" tvg-name="AU| KAYO - FOX SPORTS 507" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS 507
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520173.m3u8
-#EXTINF:-1 tvg-id="FoxSportsNews.au" tvg-name="AU| KAYO - FOX SPORTS NEWS" tvg-logo="http://103.176.90.118/picons/logos/logos/KAYO-FOX-SPORTS.png" group-title="AU| SPORTS",FOX SPORTS NEWS
+#EXTINF:-1 tvg-id="FoxSportsNews.au" tvg-name="AU| KAYO - FOX SPORTS NEWS" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="AU| SPORTS",FOX SPORTS NEWS
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520172.m3u8
-#EXTINF:-1 tvg-id="1520168" tvg-name="AU| KAYO - ESPN 1" tvg-logo="http://picons.cmshulk.com/picons/1520168.png" group-title="AU| SPORTS",ESPN 1
+#EXTINF:-1 tvg-id="1520168" tvg-name="AU| KAYO - ESPN 1" tvg-logo="https://picons.cmshulk.com/picons/espn1.png" group-title="AU| SPORTS",ESPN 1
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520168.m3u8
-#EXTINF:-1 tvg-id="1520167" tvg-name="AU| KAYO - ESPN 2" tvg-logo="http://picons.cmshulk.com/picons/1520167.png" group-title="AU| SPORTS",ESPN 2
+#EXTINF:-1 tvg-id="1520167" tvg-name="AU| KAYO - ESPN 2" tvg-logo="https://picons.cmshulk.com/picons/espn2.png" group-title="AU| SPORTS",ESPN 2
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520167.m3u8
 
 #EXTINF:-1 tvg-id="2112701" tvg-name="STC| BBC WORLD NEWS ʰᵉᵛᶜ" tvg-logo="http://51.158.145.100/picons/logos/ARABICNEW/BBCWORLDNEWS.png" group-title="NEWS",BBC WORLD NEWS
