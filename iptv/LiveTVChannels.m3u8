@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U x-tvg-url="https://i.mjh.nz/au/Brisbane/epg.xml.gz"
 
 #EXTINF:-1 tvg-id="TennisChannel.us" tvg-name="GO| TENNIS CHANNEL" tvg-logo="http://51.158.145.100/picons/logos/USA/1930919.png" group-title="SPORTS",TENNIS CHANNEL
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1930919.m3u8
@@ -94,13 +94,38 @@ https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achan
 #EXTINF:-1 tvg-id="Smithsonian.ca" tvg-name="CA| SMITHSONIAN HD" tvg-logo="http://51.158.145.100/picons/logos/CANADA/176903.png" group-title="INFOTAINMENT",SMITHSONIAN HD
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A176903.m3u8
 
-#EXTINF:-1 tvg-id="164750" tvg-name="TH| TNN24Thai" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png" group-title="THAI",THAI TV 3
+#EXTINF:-1 channel-id="mjh-abc-qld" tvg-id="mjh-abc-qld" tvg-logo="https://i.mjh.nz/.images/abc-nsw.png" tvg-chno="21" group-title="AU TV" , ABC TV
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://c.mjh.nz/abc-qld.m3u8
+#EXTINF:-1 channel-id="mjh-abc-news" tvg-id="mjh-abc-news" tvg-logo="https://i.mjh.nz/.images/abc-news.png" tvg-chno="24" group-title="AU TV" , ABC NEWS
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://c.mjh.nz/abc-news.m3u8
+#EXTINF:-1 channel-id="mjh-sbs-sbst" tvg-id="mjh-sbs-sbst" tvg-logo="https://image.pr.sbsod.com/b073959a-a63e-5b6a-a05a-157d615a4b8c" tvg-chno="30" group-title="AU TV" , SBS
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/sbs-sbst.m3u8
+#EXTINF:-1 channel-id="mjh-seven-bri" tvg-id="mjh-seven-bri" tvg-logo="https://i.mjh.nz/.images/auto-seven-bri-9608a4.png" tvg-chno="71" group-title="AU TV" , Seven
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/seven-bri.m3u8
+#EXTINF:-1 channel-id="mjh-channel-9-qld" tvg-id="mjh-channel-9-qld" tvg-logo="https://imageresizer.static9.net.au/lx1XIWcrYZRtnfJOqvxNn9CshDI=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F09%2F630608%2F9nine-1.png" tvg-chno="91" group-title="AU TV" , Channel 9
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/channel-9-qld.m3u8
+#EXTINF:-1 channel-id="mjh-10-qld" tvg-id="mjh-10-qld" tvg-logo="https://10play.com.au/ip/s3/2025/06/25/b18ae76555d114f7bfaf1c3bfa43dd3f-1384577.png" tvg-chno="10" group-title="AU TV" , 10
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-qld.m3u8
+
+#EXTINF:-1 tvg-id="164750" tvg-name="TH| TNN24Thai" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png" group-title="THAI TV",THAI TV 3
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164750.m3u8
-#EXTINF:-1 tvg-id="164755" tvg-name="TH| TV5 THAI HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png" group-title="THAI",THAI TV 5
+#EXTINF:-1 tvg-id="164755" tvg-name="TH| TV5 THAI HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png" group-title="THAI TV",THAI TV 5
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164755.m3u8
-#EXTINF:-1 tvg-id="164725" tvg-name="TH| PBS THAI" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png" group-title="THAI",THAI PBS
+#EXTINF:-1 tvg-id="164725" tvg-name="TH| PBS THAI" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png" group-title="THAI TV",THAI PBS
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164725.m3u8
-#EXTINF:-1 tvg-id="1907197" tvg-name="TH| Thairath TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png" group-title="THAI",THAIRATH TV
+#EXTINF:-1 tvg-id="1907197" tvg-name="TH| Thairath TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png" group-title="THAI TV",THAIRATH TV
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1907197.m3u8
-#EXTINF:-1 tvg-id="164652" tvg-name="TH| GMM-ONE THAI" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_onehd.png" group-title="THAI",GMM-ONE
+#EXTINF:-1 tvg-id="164652" tvg-name="TH| GMM-ONE THAI" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_onehd.png" group-title="THAI TV",GMM-ONE
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164652.m3u8
