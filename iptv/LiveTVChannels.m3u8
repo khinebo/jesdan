@@ -26,6 +26,25 @@ https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achan
 #EXTINF:-1 tvg-id="1520167" tvg-name="AU| KAYO - ESPN 2" tvg-logo="https://picons.cmshulk.com/picons/espn2.png" group-title="SPORTS | AU",ESPN 2
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520167.m3u8
 
+#EXTINF:-1 tvg-id="SkySportsAction.uk" tvg-name="UK-NOWTV| SKY SPORTS ACTION HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905865.png" group-title="SPORTS | UK",SKY SPORTS ACTION
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905865.m3u8
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK-NOWTV| SKY SPORTS CRICKET HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905862.png" group-title="SPORTS | UK",SKY SPORTS CRICKET
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905862.m3u8
+#EXTINF:-1 tvg-id="SkySportsF1.uk" tvg-name="UK-NOWTV| SKY SPORTS F1 HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905860.png" group-title="SPORTS | UK",SKY SPORTS F1
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905860.m3u8
+#EXTINF:-1 tvg-id="SkySportsFootball.uk" tvg-name="UK-NOWTV| SKY SPORTS FOOTBALL HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905856.png" group-title="SPORTS | UK",SKY SPORTS FOOTBALL
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905856.m3u8
+#EXTINF:-1 tvg-id="SkySportsMainEvent.uk" tvg-name="UK-NOWTV| SKY SPORTS MAIN EVENT HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905852.png" group-title="SPORTS | UK",SKY SPORTS MAIN EVENT
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905852.m3u8
+#EXTINF:-1 tvg-id="SkySportsMix.uk" tvg-name="UK-NOWTV| SKY SPORTS MIX HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905848.png" group-title="SPORTS | UK",SKY SPORTS MIX
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905848.m3u8
+#EXTINF:-1 tvg-id="uk.Sky Sports Premier League HD" tvg-name="UK-NOWTV| SKY SPORTS PREMIER LEAGUE HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905842.png" group-title="SPORTS | UK",SKY SPORTS PREMIER LEAGUE
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905842.m3u8
+#EXTINF:-1 tvg-id="SkySportsTennis.uk" tvg-name="UK-NOWTV| SKY SPORTS TENNIS HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905836.png" group-title="SPORTS | UK",SKY SPORTS TENNIS
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905836.m3u8
+#EXTINF:-1 tvg-id="SkySportsPlus.uk" tvg-name="UK-NOWTV| SKY SPORTS+ HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905833.png" group-title="SPORTS | UK",SKY SPORTS+
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905833.m3u8
+
 #EXTINF:-1 tvg-id="SkySport1.nz" tvg-name="NZ| SKY SPORT 1 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 1
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636918.m3u8
 #EXTINF:-1 tvg-id="SkySport2.nz" tvg-name="NZ| SKY SPORT 2 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 2
