@@ -88,6 +88,8 @@ https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/streamsports99%3Acha
 https://i.mjh.nz/.r/bloomberg-tv.m3u8
 #EXTINF:-1 tvg-id="CNBC.uk" tvg-name="UK| CNBC" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/CNBC.png" group-title="NEWS",CNBC
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164037.m3u8
+#EXTINF:-1 tvg-id="ReutersTV.us" tvg-logo="https://i.imgur.com/6eQ2nCJ.png" group-title="News",Reuters TV
+https://amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv/reuters-reuters-hls/playlist.m3u8
 #EXTINF:-1 tvg-id="1795752" tvg-name="US| YAHOO FINANCE" tvg-logo="http://51.158.145.100/picons/logos/USA/1795752.png" group-title="NEWS",YAHOO FINANCE
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1919742.m3u8
 #EXTINF:-1 tvg-id="237963" tvg-name="AR| DW NEWS ENGLISH" tvg-logo="http://51.158.145.100/picons/logos/ARABICNEW/DWNEWSENGLISH.png" group-title="NEWS",DW NEWS ENGLISH
