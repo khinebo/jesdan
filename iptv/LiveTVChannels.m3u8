@@ -98,6 +98,10 @@ https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achan
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A237963.m3u8
 #EXTINF:-1 tvg-id="NHKWorld.jp" tvg-name="FR| NHK WORLD-JAPAN ᴿᴬᵂ" tvg-logo="http://51.158.145.100/picons/logos/france/1972545.png" group-title="NEWS",NHK WORLD JAPAN
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1972545.m3u8
+#EXTINF:-1 channel-id="mjh-channel-news-asia" tvg-id="mjh-channel-news-asia" tvg-logo="https://i.mjh.nz/.images/channel-news-asia.png" group-title="NEWS" , Channel News Asia
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/channel-news-asia.m3u8
 
 #EXTINF:-1 tvg-id="1556637" tvg-name="UK| BBC EARTH HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1556637.png" group-title="INFOTAINMENT",BBC EARTH
 https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1556637.m3u8
