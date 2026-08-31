@@ -1,0 +1,153 @@
+#EXTM3U x-tvg-url="https://i.mjh.nz/au/Brisbane/epg.xml.gz"
+
+#EXTINF:-1 tvg-id="TennisChannel.us" tvg-name="GO| TENNIS CHANNEL" tvg-logo="http://51.158.145.100/picons/logos/USA/1930919.png" group-title="SPORTS",TENNIS CHANNEL
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A811667.m3u8
+#EXTINF:-1 tvg-id="1930918" tvg-name="GO| TENNIS CHANNEL 2" tvg-logo="http://51.158.145.100/picons/logos/USA/1930918.png" group-title="SPORTS",TENNIS CHANNEL 2
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1930918.m3u8
+#EXTINF:-1 tvg-id="1930918" tvg-name="GO| TENNIS CHANNEL 2" tvg-logo="http://51.158.145.100/picons/logos/USA/1930918.png" group-title="SPORTS",TENNIS CHANNEL 2 USA
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/streamsports99%3Achannel%3AdXNhLXNwb3J0c3xVU0EgVGVubmlzIENoYW5uZWwgMiAoVDIp.m3u8
+
+#EXTINF:-1 tvg-id="1520176" tvg-name="AU| KAYO - FOX SPORTS 501 CRICKET" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS 501
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520176.m3u8
+#EXTINF:-1 tvg-id="1520171" tvg-name="AU| KAYO - FOX SPORTS 502 LEAUGE" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS 502
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520171.m3u8
+#EXTINF:-1 tvg-id="1520175" tvg-name="AU| KAYO - FOX SPORTS 503" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS 503
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520175.m3u8
+#EXTINF:-1 tvg-id="1520170" tvg-name="AU| KAYO - FOX SPORTS 504 FOTTY" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS 504
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520170.m3u8
+#EXTINF:-1 tvg-id="FoxSports5.au" tvg-name="AU| KAYO - FOX SPORTS 505" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS 505
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520174.m3u8
+#EXTINF:-1 tvg-id="FoxSports6.au" tvg-name="AU| KAYO - FOX SPORTS 506" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS 506
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520169.m3u8
+#EXTINF:-1 tvg-id="1520173" tvg-name="AU| KAYO - FOX SPORTS 507" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS 507
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520173.m3u8
+#EXTINF:-1 tvg-id="FoxSportsNews.au" tvg-name="AU| KAYO - FOX SPORTS NEWS" tvg-logo="https://picons.cmshulk.com/picons/foxsports.png" group-title="SPORTS | AU",FOX SPORTS NEWS
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520172.m3u8
+#EXTINF:-1 tvg-id="1520168" tvg-name="AU| KAYO - ESPN 1" tvg-logo="https://picons.cmshulk.com/picons/espn1.png" group-title="SPORTS | AU",ESPN 1
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520168.m3u8
+#EXTINF:-1 tvg-id="1520167" tvg-name="AU| KAYO - ESPN 2" tvg-logo="https://picons.cmshulk.com/picons/espn2.png" group-title="SPORTS | AU",ESPN 2
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1520167.m3u8
+#EXTINF:-1 channel-id="mjh-sky-racing-1" tvg-id="mjh-sky-racing-1" tvg-logo="https://i.mjh.nz/.images/sky-racing-1.png" group-title="SPORTS | AU" , Sky Racing #1
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/sky-racing-1.m3u8
+#EXTINF:-1 channel-id="mjh-sky-racing-2" tvg-id="mjh-sky-racing-2" tvg-logo="https://i.mjh.nz/.images/sky-racing-2.png" group-title="SPORTS | AU" , Sky Racing #2
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/sky-racing-2.m3u8
+
+#EXTINF:-1 tvg-id="SkySportsAction.uk" tvg-name="UK-NOWTV| SKY SPORTS ACTION HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905865.png" group-title="SPORTS | UK",SKY SPORTS ACTION
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905865.m3u8
+#EXTINF:-1 tvg-id="SkySportsCricket.uk" tvg-name="UK-NOWTV| SKY SPORTS CRICKET HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905862.png" group-title="SPORTS | UK",SKY SPORTS CRICKET
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905862.m3u8
+#EXTINF:-1 tvg-id="SkySportsF1.uk" tvg-name="UK-NOWTV| SKY SPORTS F1 HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905860.png" group-title="SPORTS | UK",SKY SPORTS F1
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905860.m3u8
+#EXTINF:-1 tvg-id="SkySportsFootball.uk" tvg-name="UK-NOWTV| SKY SPORTS FOOTBALL HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905856.png" group-title="SPORTS | UK",SKY SPORTS FOOTBALL
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905856.m3u8
+#EXTINF:-1 tvg-id="SkySportsMainEvent.uk" tvg-name="UK-NOWTV| SKY SPORTS MAIN EVENT HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905852.png" group-title="SPORTS | UK",SKY SPORTS MAIN EVENT
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905852.m3u8
+#EXTINF:-1 tvg-id="SkySportsMix.uk" tvg-name="UK-NOWTV| SKY SPORTS MIX HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905848.png" group-title="SPORTS | UK",SKY SPORTS MIX
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905848.m3u8
+#EXTINF:-1 tvg-id="uk.Sky Sports Premier League HD" tvg-name="UK-NOWTV| SKY SPORTS PREMIER LEAGUE HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905842.png" group-title="SPORTS | UK",SKY SPORTS PREMIER LEAGUE
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905842.m3u8
+#EXTINF:-1 tvg-id="SkySportsTennis.uk" tvg-name="UK-NOWTV| SKY SPORTS TENNIS HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905836.png" group-title="SPORTS | UK",SKY SPORTS TENNIS
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905836.m3u8
+#EXTINF:-1 tvg-id="SkySportsPlus.uk" tvg-name="UK-NOWTV| SKY SPORTS+ HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1905833.png" group-title="SPORTS | UK",SKY SPORTS+
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1905833.m3u8
+
+#EXTINF:-1 tvg-id="SkySport1.nz" tvg-name="NZ| SKY SPORT 1 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 1
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636918.m3u8
+#EXTINF:-1 tvg-id="SkySport2.nz" tvg-name="NZ| SKY SPORT 2 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 2
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636919.m3u8
+#EXTINF:-1 tvg-id="SkySport3.nz" tvg-name="NZ| SKY SPORT 3 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 3
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636920.m3u8
+#EXTINF:-1 tvg-id="SkySport4.nz" tvg-name="NZ| SKY SPORT 4 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 4
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636921.m3u8
+#EXTINF:-1 tvg-id="SkySport5.nz" tvg-name="NZ| SKY SPORT 5 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 5
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636922.m3u8
+#EXTINF:-1 tvg-id="SkySport6.nz" tvg-name="NZ| SKY SPORT 6 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 6
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636923.m3u8
+#EXTINF:-1 tvg-id="SkySport7.nz" tvg-name="NZ| SKY SPORT 7 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 7
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636924.m3u8
+#EXTINF:-1 tvg-id="SkySport8.nz" tvg-name="NZ| SKY SPORT 8 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 8
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636925.m3u8
+#EXTINF:-1 tvg-id="SkySport9.nz" tvg-name="NZ| SKY SPORT 9 HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 9
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636926.m3u8
+#EXTINF:-1 tvg-id="636927" tvg-name="NZ| SKY SPORT 10 SELECT HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/sky_sports.jpg" group-title="SPORTS | NZ",SKY SPORT 10
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A636927.m3u8
+
+#EXTINF:-1 tvg-id="2112701" tvg-name="STC| BBC WORLD NEWS ʰᵉᵛᶜ" tvg-logo="http://51.158.145.100/picons/logos/ARABICNEW/BBCWORLDNEWS.png" group-title="NEWS",BBC WORLD NEWS
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A2112558.m3u8
+#EXTINF:-1 tvg-id="1929292" tvg-name="JOYN| CNN INTERNATIONAL HD ᴿᴬᵂ" tvg-logo="http://51.158.145.100/picons/logos/logos/1929292.png" group-title="NEWS",CNN INTERNATIONAL
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A2030949.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraEnglish.nl" tvg-name="PLAY+| AL JAZEERA ENGLISH ᴴᴰ" tvg-logo="http://51.158.145.100/picons/logos/NETHERLANDNEW/ALJAZEERA.png" group-title="NEWS",AL JAZEERA ENGLISH
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1698649.m3u8
+#EXTINF:-1 tvg-id="MSNBC.us" tvg-name="US| MS NOW HD" tvg-logo="http://51.158.145.100/picons/logos/USA/45535.png" group-title="NEWS",MS NOW
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/streamsports99%3Achannel%3AY2FuYWRhLWdlbmVyYWx8Q0EgTVMgTk9XIChNU05CQyk.m3u8
+#EXTINF:-1 channel-id="mjh-bloomberg-tv" tvg-id="mjh-bloomberg-tv" tvg-logo="https://i.mjh.nz/.images/bloomberg-tv.png" group-title="NEWS" , Bloomberg TV
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/bloomberg-tv.m3u8
+#EXTINF:-1 tvg-id="CNBC.uk" tvg-name="UK| CNBC" tvg-logo="http://51.158.145.100/picons/logos/UKNEW/CNBC.png" group-title="NEWS",CNBC
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164037.m3u8
+#EXTINF:-1 tvg-id="ReutersTV.us" tvg-logo="https://i.imgur.com/6eQ2nCJ.png" group-title="NEWS",Reuters TV
+https://amg00453-reuters-amg00453c1-xumo-us-2073.playouts.now.amagi.tv/reuters-reuters-hls/playlist.m3u8
+#EXTINF:-1 tvg-id="1795752" tvg-name="US| YAHOO FINANCE" tvg-logo="http://51.158.145.100/picons/logos/USA/1795752.png" group-title="NEWS",YAHOO FINANCE
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1919742.m3u8
+#EXTINF:-1 tvg-id="237963" tvg-name="AR| DW NEWS ENGLISH" tvg-logo="http://51.158.145.100/picons/logos/ARABICNEW/DWNEWSENGLISH.png" group-title="NEWS",DW NEWS ENGLISH
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A237963.m3u8
+#EXTINF:-1 tvg-id="NHKWorld.jp" tvg-name="FR| NHK WORLD-JAPAN ᴿᴬᵂ" tvg-logo="http://51.158.145.100/picons/logos/france/1972545.png" group-title="NEWS",NHK WORLD JAPAN
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1972545.m3u8
+#EXTINF:-1 channel-id="mjh-channel-news-asia" tvg-id="mjh-channel-news-asia" tvg-logo="https://i.mjh.nz/.images/channel-news-asia.png" group-title="NEWS" , Channel News Asia
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/channel-news-asia.m3u8
+
+#EXTINF:-1 tvg-id="1556637" tvg-name="UK| BBC EARTH HD" tvg-logo="http://51.158.145.100/picons/logos/UK/1556637.png" group-title="INFOTAINMENT",BBC EARTH
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1556637.m3u8
+#EXTINF:-1 tvg-id="AWealthofEntertainment.us" tvg-name="US| AWE HD" tvg-logo="http://51.158.145.100/picons/logos/USA/91955.png" group-title="INFOTAINMENT",AWE
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A91955.m3u8
+#EXTINF:-1 tvg-id="2117206" tvg-name="YP| AWE PLUS ᴿᴬᵂ" tvg-logo="http://51.158.145.100/picons/logos/INDIANEW/AWEPLUS.png" group-title="INFOTAINMENT",AWE PLUS
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A2117206.m3u8
+#EXTINF:-1 tvg-id="Smithsonian.ca" tvg-name="CA| SMITHSONIAN HD" tvg-logo="http://51.158.145.100/picons/logos/CANADA/176903.png" group-title="INFOTAINMENT",SMITHSONIAN HD
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A176903.m3u8
+
+#EXTINF:-1 channel-id="mjh-abc-qld" tvg-id="mjh-abc-qld" tvg-logo="https://i.mjh.nz/.images/abc-nsw.png" tvg-chno="21" group-title="AU TV" , ABC TV
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://c.mjh.nz/abc-qld.m3u8
+#EXTINF:-1 channel-id="mjh-abc-news" tvg-id="mjh-abc-news" tvg-logo="https://i.mjh.nz/.images/abc-news.png" tvg-chno="24" group-title="AU TV" , ABC NEWS
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://c.mjh.nz/abc-news.m3u8
+#EXTINF:-1 channel-id="mjh-sbs-sbst" tvg-id="mjh-sbs-sbst" tvg-logo="https://image.pr.sbsod.com/b073959a-a63e-5b6a-a05a-157d615a4b8c" tvg-chno="30" group-title="AU TV" , SBS
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/sbs-sbst.m3u8
+#EXTINF:-1 channel-id="mjh-seven-bri" tvg-id="mjh-seven-bri" tvg-logo="https://i.mjh.nz/.images/auto-seven-bri-9608a4.png" tvg-chno="71" group-title="AU TV" , SEVEN
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/seven-bri.m3u8
+#EXTINF:-1 channel-id="mjh-channel-9-qld" tvg-id="mjh-channel-9-qld" tvg-logo="https://imageresizer.static9.net.au/lx1XIWcrYZRtnfJOqvxNn9CshDI=/768x0/https%3A%2F%2Fvms-tv-images-prod.s3-ap-southeast-2.amazonaws.com%2F2024%2F09%2F630608%2F9nine-1.png" tvg-chno="91" group-title="AU TV" , NINE
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/channel-9-qld.m3u8
+#EXTINF:-1 channel-id="mjh-10-qld" tvg-id="mjh-10-qld" tvg-logo="https://10play.com.au/ip/s3/2025/06/25/b18ae76555d114f7bfaf1c3bfa43dd3f-1384577.png" tvg-chno="10" group-title="AU TV" , TEN
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/10-qld.m3u8
+#EXTINF:-1 channel-id="mjh-sky-news-now" tvg-id="mjh-sky-news-now" tvg-logo="https://i.mjh.nz/.images/sky-news-now.png" group-title="AU TV" , Sky News Now
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+#EXTVLCOPT:http-referrer=
+https://i.mjh.nz/.r/sky-news-now.m3u8
+
+#EXTINF:-1 tvg-id="164750" tvg-name="TH| TNN24Thai" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch3.png" group-title="THAI TV",THAI TV 3
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164750.m3u8
+#EXTINF:-1 tvg-id="164755" tvg-name="TH| TV5 THAI HD" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_ch5.png" group-title="THAI TV",THAI TV 5
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164755.m3u8
+#EXTINF:-1 tvg-id="164725" tvg-name="TH| PBS THAI" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_tpbs.png" group-title="THAI TV",THAI PBS
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164725.m3u8
+#EXTINF:-1 tvg-id="1907197" tvg-name="TH| Thairath TV" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_thairath.png" group-title="THAI TV",THAIRATH TV
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A1907197.m3u8
+#EXTINF:-1 tvg-id="164652" tvg-name="TH| GMM-ONE THAI" tvg-logo="https://khinebo.github.io/jesdan/iptv/th_onehd.png" group-title="THAI TV",GMM-ONE
+https://flixnest.app/flix-streams/u/ldawkpswioj/live/stream/strongvaulttv%3Achannel%3A164652.m3u8
